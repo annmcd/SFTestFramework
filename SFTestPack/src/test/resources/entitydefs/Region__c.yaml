@@ -1,0 +1,99 @@
+name: region__c
+dataTypes:
+  - name: ActiveFrom__c
+    value: Date
+  - name: ActiveTo__c
+    value: Date
+  - name: BatchId__c
+    value: Text(50)
+  - name: DataSource__c
+    value: Text(200)
+  - name: Description__c
+    value: Text(255)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: IsActive__c
+    value: Checkbox
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: RegionalDirector__c
+    value: Lookup(User)
+  - name: RegionCode__c
+    value: Text(10)
+  - name: RegionID__c
+    value: Number(18, 0)  (External ID) (Unique)
+  - name: ReportGroup1__c
+    value: Text(255)
+  - name: SalesDirector__c
+    value: Lookup(User)
+  - name: SalesGroup__c
+    value: Picklist
+labels:
+  - name: ActiveFrom__c
+    value: Active From
+  - name: ActiveTo__c
+    value: Active To
+  - name: BatchId__c
+    value: BatchId
+  - name: DataSource__c
+    value: DataSource
+  - name: Description__c
+    value: Description
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: IsActive__c
+    value: Active
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Region Name
+  - name: RegionalDirector__c
+    value: Regional Director
+  - name: RegionCode__c
+    value: Region Code
+  - name: RegionID__c
+    value: Region ID
+  - name: ReportGroup1__c
+    value: Reporting Group
+  - name: SalesDirector__c
+    value: Sales Director
+  - name: SalesGroup__c
+    value: Sales Group
+deLabels:
+  - name: ActiveFrom__c
+    value: Gültig von
+  - name: ActiveTo__c
+    value: Gültig bis
+  - name: Description__c
+    value: Beschreibung
+  - name: IsActive__c
+    value: Aktiv
+  - name: RegionalDirector__c
+    value: Regional Direktor
+  - name: RegionCode__c
+    value: Regionscode
+  - name: ReportGroup1__c
+    value: Reporting Gruppe
+  - name: SalesDirector__c
+    value: Vertriebsweg
+  - name: SalesGroup__c
+    value: Vertriebsgruppe
+picklists:
+  - name: SalesGroup__c
+    value: Key Account,Broker,Direct
+dePicklists:
+removals:
+mandatory:
+  - name: IsActive__c
+  - name: MarkForDeletion__c
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsDeleted
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: OwnerId
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

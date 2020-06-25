@@ -1,0 +1,23 @@
+name: individual
+dataTypes:
+  - name: GDPRDoubleOptIn__c
+    value: Checkbox
+  - name: GDPRDoubleOptInDate__c
+    value: Date/Time
+  - name: Lead__c
+    value: Lookup(Lead)
+labels:
+  - name: GDPRDoubleOptIn__c
+    value: GDPR Double Opt In
+  - name: GDPRDoubleOptInDate__c
+    value: GDPR Double Opt In Date
+  - name: Lead__c
+    value: Lead
+deLabels:
+picklists:
+dePicklists:
+removals:
+mandatory:
+  - name: GDPRDoubleOptIn__c
+encryptedFields:
+restrictedPickLists:

@@ -1,0 +1,17 @@
+#ruleName: Target_Sharing_Read_Access_for_Key_Account_Sales_Hierarchy
+#ruleLabel: Target Sharing - Read Access for Key Account Sales Hierarchy
+#type: Criteria
+#object: Target__c
+#sharingRule:
+#  - { field: "Name", operator: "notEqual", value: "NULL"}
+#access:
+#  - { defaultAccess: "Read", contactAccess: "", opportunityAccess: "", caseAccess: "", sharedToRoleAndSubordinates: "Director_Central_Key_Accounts" }
+#---
+ruleName: Target_Sharing_Read_Access_for_Regional_Sales_Hierarchy
+ruleLabel: Target Sharing - Read Access for Regional Sales Hierarchy
+type: Criteria
+object: Target__c
+sharingRule:
+  - { field: "Name", operator: "notEqual", value: "NULL"}
+access:
+  - { defaultAccess: "Read", contactAccess: "", opportunityAccess: "", caseAccess: "", sharedToRoleAndSubordinates: "Director_Sales" }

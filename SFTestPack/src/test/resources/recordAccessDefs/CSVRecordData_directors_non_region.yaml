@@ -1,0 +1,725 @@
+#Records owned by Regional Director users which are not assigned to a region
+# e.g regional broker market and director central key accounts
+#Lookup name acts as lookup key for creating records and finding where clauses of ETLEntity/EntityType combinations
+#columnHeaders are the values in the required values in the CSV to honour constraints
+#whereConditions allow us to find the records after they have been created
+#Regions are added by Regional Directors scenario.
+
+#=========================Broker Consultant Account===========================
+lookupName: BrokerConsultantAccount.Sales
+whereConditions:
+  - {condition: "Region__r.regionID__c=1" }
+  - {condition: "Owner.Username = 'sales_director@canadalife.de.$environment'" }
+columnHeaders:
+  - { header: "BrokerConsultantAccountId__c=2010"}
+  - { header: "User:Owner.Username=sales_director@canadalife.de.$environment"}
+  - { header: "Region__r.regionID__c = 1"}
+---
+lookupName: BrokerConsultantAccount.ZKA 1
+whereConditions:
+  - {condition: "Region__r.regionID__c=3" }
+  - {condition: "Owner.Username = 'zka1@canadalife.de.$environment'" }
+columnHeaders:
+  - { header: "BrokerConsultantAccountId__c=2012"}
+  - { header: "User:Owner.Username=zka1@canadalife.de.$environment"}
+  - { header: "Region__r.regionID__c = 3"}
+---
+lookupName: BrokerConsultantAccount.ZKA 2
+whereConditions:
+  - {condition: "Region__r.regionID__c=4" }
+  - {condition: "Owner.Username = 'zka2@canadalife.de.$environment'"}
+columnHeaders:
+  - { header: "BrokerConsultantAccountId__c=2013"}
+  - { header: "User:Owner.Username=zka2@canadalife.de.$environment"}
+  - { header: "Region__r.regionID__c = 4"}
+---
+lookupName: BrokerConsultantAccount.ZKA 3
+whereConditions:
+  - {condition: "Region__r.regionID__c=5" }
+  - {condition: "Owner.Username = 'zka3@canadalife.de.$environment'"}
+columnHeaders:
+  - { header: "BrokerConsultantAccountId__c=2014"}
+  - { header: "User:Owner.Username=zka3@canadalife.de.$environment"}
+  - { header: "Region__r.regionID__c = 5"}
+---
+lookupName: BrokerConsultantAccount.Admin
+whereConditions:
+  - {condition: "Region__r.regionID__c=6" }
+  - {condition: "Owner.Username = 'admin_user@canadalife.de.$environment'" }
+columnHeaders:
+  - { header: "BrokerConsultantAccountId__c=2015"}
+  - { header: "User:Owner.Username=admin_user@canadalife.de.$environment"}
+  - { header: "Region__r.regionID__c = 6"}
+---
+#==========================Broker Accounts===================================
+lookupName: BrokerAccount.Sales
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c ='2010'"  }
+  - {condition: "Owner.Username='sales_director@canadalife.de.$environment'"  }
+columnHeaders:
+  - { header: "Name = DirectorSales"}
+  - { header: "AccountId__c = 2010"}
+  - { header: "Owner.Username=sales_director@canadalife.de.$environment"}
+  - { header: "BusinessResponsible__r.Username = sales_director@canadalife.de.$environment"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c= 2010"}
+  - { header: "RecordType.Name = Brokerage"}
+  - { header: "BrokerStatus__c = active"}
+---
+lookupName: BrokerAccount.ZKA 1
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c='2012'",  }
+  - {condition: "Owner.Username='zka1@canadalife.de.$environment'"}
+columnHeaders:
+  - { header: "Name = ZKA1"}
+  - { header: "AccountId__c = 2012"}
+  - { header: "Owner.Username=zka1@canadalife.de.$environment"}
+  - { header: "BusinessResponsible__r.Username = zka1@canadalife.de.$environment"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c= 2012"}
+  - { header: "RecordType.Name = Brokerage"}
+  - { header: "BrokerStatus__c = active"}
+---
+lookupName: BrokerAccount.ZKA 2
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c='2013'"  }
+  - {condition: "Owner.Username='zka2@canadalife.de.$environment'"}
+columnHeaders:
+  - { header: "Name = CKA2"}
+  - { header: "AccountId__c = 2013"}
+  - { header: "Owner.Username=zka2@canadalife.de.$environment"}
+  - { header: "BusinessResponsible__r.Username = zka2@canadalife.de.$environment"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c= 2013"}
+  - { header: "RecordType.Name = Brokerage"}
+  - { header: "BrokerStatus__c = active"}
+---
+lookupName: BrokerAccount.ZKA 3
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c='2014'",  }
+  - {condition: "Owner.Username='zka3@canadalife.de.$environment'"}
+columnHeaders:
+  - { header: "Name = CKA3"}
+  - { header: "AccountId__c = 2014"}
+  - { header: "Owner.Username=zka3@canadalife.de.$environment"}
+  - { header: "BusinessResponsible__r.Username = zka3@canadalife.de.$environment"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c= 2014"}
+  - { header: "RecordType.Name = Brokerage"}
+  - { header: "BrokerStatus__c = active"}
+---
+lookupName: BrokerAccount.Admin
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c='2015'",  }
+  - {condition: "Owner.Username='admin_user@canadalife.de.$environment'"}
+columnHeaders:
+  - { header: "Name = Admin"}
+  - { header: "AccountId__c = 2015"}
+  - { header: "Owner.Username=admin_user@canadalife.de.$environment"}
+  - { header: "BusinessResponsible__r.Username = admin_user@canadalife.de.$environment"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c= 2015"}
+  - { header: "RecordType.Name = Brokerage"}
+  - { header: "BrokerStatus__c = active"}
+---
+#================Statement Broker======================
+lookupName: StatementBroker.Sales
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '2010'"  }
+  - {condition: "Owner.Username='sales_director@canadalife.de.$environment'"  }
+columnHeaders:
+  - { header: "BusinessAccount__r.AccountId__c=2010"}
+  - { header: "User:Owner.Username=sales_director@canadalife.de.$environment"}
+  - { header: "StatementBrokerId__c = A-2010"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = 2010"}
+---
+lookupName: StatementBroker.ZKA 1
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '2012'"  }
+  - {condition: "Owner.Username='zka1@canadalife.de.$environment'"  }
+columnHeaders:
+  - { header: "BusinessAccount__r.AccountId__c=2012"}
+  - { header: "User:Owner.Username=zka1@canadalife.de.$environment"}
+  - { header: "StatementBrokerId__c = A-2012"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = 2012"}
+---
+lookupName: StatementBroker.ZKA 2
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c ='2013'"  }
+  - {condition: "Owner.Username='zka2@canadalife.de.$environment'"  }
+columnHeaders:
+  - { header: "BusinessAccount__r.AccountId__c=2013"}
+  - { header: "User:Owner.Username=zka2@canadalife.de.$environment"}
+  - { header: "StatementBrokerId__c = A-2013"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = 2013"}
+---
+lookupName: StatementBroker.ZKA 3
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c ='2014'"  }
+  - {condition: "Owner.Username='zka3@canadalife.de.$environment'"  }
+columnHeaders:
+  - { header: "BusinessAccount__r.AccountId__c=2014"}
+  - { header: "User:Owner.Username=zka3@canadalife.de.$environment"}
+  - { header: "StatementBrokerId__c = A-2014"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = 2014"}
+---
+lookupName: StatementBroker.Admin
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c ='2015'"  }
+  - {condition: "Owner.Username='admin_user@canadalife.de.$environment'"  }
+columnHeaders:
+  - { header: "BusinessAccount__r.AccountId__c=2015"}
+  - { header: "User:Owner.Username=admin_user@canadalife.de.$environment"}
+  - { header: "StatementBrokerId__c = A-2015"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = 2015"}
+---
+#-----------------New Policy-------------------
+lookupName: NewPolicy.Sales
+whereConditions:
+  - {condition: "Account.AccountId__c = 2010"}
+  - {condition: "policyId__c = '2010'"}
+columnHeaders:
+  - { header: "Account.AccountId__c=2010"}
+  - { header: "policyId__c=2010"}
+---
+lookupName: NewPolicy.ZKA 1
+whereConditions:
+  - {condition: "Account.AccountId__c = 2012"}
+  - {condition: "policyId__c = '2012'"}
+columnHeaders:
+  - { header: "Account.AccountId__c=2012"}
+  - { header: "policyId__c=2012"}
+---
+lookupName: NewPolicy.ZKA 2
+whereConditions:
+  - {condition: "Account.AccountId__c = 2013"}
+  - {condition: "policyId__c = '2013'"}
+columnHeaders:
+  - { header: "Account.AccountId__c=2013"}
+  - { header: "policyId__c=2013"}
+---
+lookupName: NewPolicy.ZKA 3
+whereConditions:
+  - {condition: "Account.AccountId__c = 2014"}
+  - {condition: "policyId__c = '2014'"}
+columnHeaders:
+  - { header: "Account.AccountId__c=2014"}
+  - { header: "policyId__c=2014"}
+---
+lookupName: NewPolicy.Admin
+whereConditions:
+  - {condition: "Account.AccountId__c = 2015"}
+  - {condition: "policyId__c = '2015'"}
+columnHeaders:
+  - { header: "Account.AccountId__c=2015"}
+  - { header: "policyId__c=2015"}
+
+---
+lookupName: Policy.Sales
+whereConditions:
+  - {condition: "Account.AccountId__c = 2010"}
+  - {condition: "policyId__c = '2010'"}
+  - {condition: "ownerId in (select id from user where username = 'sales_director@canadalife.de.$environment')"}
+columnHeaders:
+  - { header: "Owner.Username=sales_director@canadalife.de.$environment"}
+  - { header: "PolicyNumber__c=2010"}
+  - { header: "BrokerConsultant__r.Username=sales_director@canadalife.de.$environment"}
+  - { header: "Account.AccountId__c=2010"}
+  - { header: "PolicyId__c=2010"}
+---
+lookupName: Policy.ZKA 1
+whereConditions:
+  - {condition: "Account.AccountId__c = 2012"}
+  - {condition: "policyId__c = '2012'"}
+  - {condition: "ownerId in (select id from user where username ='zka1@canadalife.de.$environment')"}
+columnHeaders:
+  - { header: "Owner.Username=zka1@canadalife.de.$environment"}
+  - { header: "PolicyNumber__c=2012"}
+  - { header: "BrokerConsultant__r.Username=zka1@canadalife.de.$environment"}
+  - { header: "Account.AccountId__c=2012"}
+  - { header: "PolicyId__c=2012"}
+---
+lookupName: Policy.ZKA 2
+whereConditions:
+  - {condition: "Account.AccountId__c = 2013"}
+  - {condition: "policyId__c = '2013'"}
+  - {condition: "ownerId in (select id from user where username ='zka2@canadalife.de.$environment')"}
+columnHeaders:
+  - { header: "Owner.Username=zka2@canadalife.de.$environment"}
+  - { header: "PolicyNumber__c=2013"}
+  - { header: "BrokerConsultant__r.Username=zka2@canadalife.de.$environment"}
+  - { header: "Account.AccountId__c=2013"}
+  - { header: "PolicyId__c=2013"}
+---
+lookupName: Policy.ZKA 3
+whereConditions:
+  - {condition: "Account.AccountId__c = 2014"}
+  - {condition: "policyId__c = '2014'"}
+  - {condition: "ownerId in (select id from user where username ='zka3@canadalife.de.$environment')"}
+columnHeaders:
+  - { header: "Owner.Username=zka3@canadalife.de.$environment"}
+  - { header: "PolicyNumber__c=2014"}
+  - { header: "BrokerConsultant__r.Username=zka3@canadalife.de.$environment"}
+  - { header: "Account.AccountId__c=2014"}
+  - { header: "PolicyId__c=2014"}
+---
+lookupName: Policy.Admin
+whereConditions:
+  - {condition: "Account.AccountId__c = 2015"}
+  - {condition: "policyId__c = '2015'"}
+  - {condition: "ownerId in (select id from user where username ='admin_user@canadalife.de.$environment')"}
+columnHeaders:
+  - { header: "Owner.Username=admin_user@canadalife.de.$environment"}
+  - { header: "PolicyNumber__c=2015"}
+  - { header: "BrokerConsultant__r.Username=admin_user@canadalife.de.$environment"}
+  - { header: "Account.AccountId__c=2015"}
+  - { header: "PolicyId__c=2015"}
+---
+#===========================CommissionPayments===========
+lookupName: CommissionPayments.Sales
+whereConditions:
+  - {condition: "StatementBroker__r.StatementBrokerId__c = 'A-2010'"}
+  - {condition: "Name = '2010'"}
+columnHeaders:
+  - { header: "PaymentAmount__c = 2010.9100000"}
+  - { header: "StatementDate__c = 2010-05-15"}
+  - { header: "StatementBroker__r.StatementBrokerId__c = A-2010"}
+  - { header: "CommissionPaymentId__c = 2010"}
+  - { header: "Name = 2010"}
+---
+lookupName: CommissionPayments.ZKA 1
+whereConditions:
+  - {condition: "StatementBroker__r.StatementBrokerId__c = 'A-2012'"}
+  - {condition: "Name = '2012'"}
+columnHeaders:
+  - { header: "PaymentAmount__c = 2012.9100000"}
+  - { header: "StatementDate__c = 2012-05-15"}
+  - { header: "StatementBroker__r.StatementBrokerId__c = A-2012"}
+  - { header: "CommissionPaymentId__c = 2012"}
+  - { header: "Name = 2012"}
+---
+lookupName: CommissionPayments.ZKA 2
+whereConditions:
+  - {condition: "StatementBroker__r.StatementBrokerId__c = 'A-2013'"}
+  - {condition: "Name = '2013'"}
+columnHeaders:
+  - { header: "PaymentAmount__c = 2013.9100000"}
+  - { header: "StatementDate__c = 2013-05-15"}
+  - { header: "StatementBroker__r.StatementBrokerId__c = A-2013"}
+  - { header: "CommissionPaymentId__c = 2013"}
+  - { header: "Name = 2013"}
+---
+lookupName: CommissionPayments.ZKA 3
+whereConditions:
+  - {condition: "StatementBroker__r.StatementBrokerId__c = 'A-2014'"}
+  - {condition: "Name = '2014'"}
+columnHeaders:
+  - { header: "PaymentAmount__c = 2014.9100000"}
+  - { header: "StatementDate__c = 2014-05-15"}
+  - { header: "StatementBroker__r.StatementBrokerId__c = A-2014"}
+  - { header: "CommissionPaymentId__c = 2014"}
+  - { header: "Name = 2014"}
+---
+lookupName: CommissionPayments.Admin
+whereConditions:
+  - {condition: "StatementBroker__r.StatementBrokerId__c = 'A-2015'"}
+  - {condition: "Name = '2015'"}
+columnHeaders:
+  - { header: "PaymentAmount__c = 2015.9100000"}
+  - { header: "StatementDate__c = 2015-05-15"}
+  - { header: "StatementBroker__r.StatementBrokerId__c = A-2015"}
+  - { header: "CommissionPaymentId__c = 2015"}
+  - { header: "Name = 2015"}
+---
+#================Commission Agreements============
+
+lookupName: CommissionAgreements.Sales
+whereConditions:
+  - {condition: "Owner.Username='sales_director@canadalife.de.$environment'"}
+  - {condition: "CommissionAgreementId__c = '2010'"}
+columnHeaders:
+  - { header: "User:Owner.Username=sales_director@canadalife.de.$environment"}
+  - { header: "CommissionAgreementId__c = 2010"}
+  - { header: "BusinessResponsible__r.Username = sales_director@canadalife.de.$environment"}
+---
+lookupName: CommissionAgreements.ZKA 1
+whereConditions:
+  - {condition: "Owner.Username='zka1@canadalife.de.$environment'"}
+  - {condition: "CommissionAgreementId__c = '2012'"}
+columnHeaders:
+  - { header: "User:Owner.Username=zka1@canadalife.de.$environment"}
+  - { header: "CommissionAgreementId__c = 2012"}
+  - { header: "BusinessResponsible__r.Username = zka1@canadalife.de.$environment"}
+---
+lookupName: CommissionAgreements.ZKA 2
+whereConditions:
+  - {condition: "Owner.Username='zka2@canadalife.de.$environment'"}
+  - {condition: "CommissionAgreementId__c = '2013'"}
+columnHeaders:
+  - { header: "User:Owner.Username=zka2@canadalife.de.$environment"}
+  - { header: "CommissionAgreementId__c = 2013"}
+  - { header: "BusinessResponsible__r.Username = zka2@canadalife.de.$environment"}
+---
+lookupName: CommissionAgreements.ZKA 3
+whereConditions:
+  - {condition: "Owner.Username='zka3@canadalife.de.$environment'"}
+  - {condition: "CommissionAgreementId__c = '2014'"}
+columnHeaders:
+  - { header: "User:Owner.Username=zka3@canadalife.de.$environment"}
+  - { header: "CommissionAgreementId__c = 2014"}
+  - { header: "BusinessResponsible__r.Username = zka3@canadalife.de.$environment"}
+---
+lookupName: CommissionAgreements.Admin
+whereConditions:
+  - {condition: "Owner.Username='admin_user@canadalife.de.$environment'"}
+  - {condition: "CommissionAgreementId__c = '2015'"}
+columnHeaders:
+  - { header: "User:Owner.Username=admin_user@canadalife.de.$environment"}
+  - { header: "CommissionAgreementId__c = 2015"}
+  - { header: "BusinessResponsible__r.Username =admin_user@canadalife.de.$environment"}
+---
+#=======Agreement Line Item============================
+lookupName: AgreementLineItem.Sales
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='2010'"}
+  - {condition: "AgreementLineItemId__c = '2010'"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c=2010"}
+  - { header: "AgreementLineItemId__c = 2010"}
+---
+lookupName: AgreementLineItem.ZKA 1
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='2012'"}
+  - {condition: "AgreementLineItemId__c = '2012'"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c=2012"}
+  - { header: "AgreementLineItemId__c = 2012"}
+---
+lookupName: AgreementLineItem.ZKA 2
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='2013'"}
+  - {condition: "AgreementLineItemId__c = '2013'"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c=2013"}
+  - { header: "AgreementLineItemId__c = 2013"}
+---
+lookupName: AgreementLineItem.ZKA 3
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='2014'"}
+  - {condition: "AgreementLineItemId__c = '2014'"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c=2014"}
+  - { header: "AgreementLineItemId__c = 2014"}
+---
+lookupName: AgreementLineItem.Admin
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='2015'"}
+  - {condition: "AgreementLineItemId__c = '2015'"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c=2015"}
+  - { header: "AgreementLineItemId__c = 2015"}
+---
+#=================Policy Application==============
+lookupName: PolicyApplication.Sales
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='2010'"}
+  - {condition: "PolicyApplicationid__c = 2010"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c = 2010"}
+  - { header: "PolicyApplicationid__c = 2010"}
+---
+lookupName: PolicyApplication.ZKA 1
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='2012'"}
+  - {condition: "PolicyApplicationid__c = 2012"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c = 2012"}
+  - { header: "PolicyApplicationid__c = 2012"}
+---
+lookupName: PolicyApplication.ZKA 2
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='2013'"}
+  - {condition: "PolicyApplicationid__c = 2013"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c = 2013"}
+  - { header: "PolicyApplicationid__c = 2013"}
+---
+lookupName: PolicyApplication.ZKA 3
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='2014'"}
+  - {condition: "PolicyApplicationid__c = 2014"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c = 2014"}
+  - { header: "PolicyApplicationid__c = 2014"}
+---
+lookupName: PolicyApplication.Admin
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='2015'"}
+  - {condition: "PolicyApplicationid__c = 2015"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c = 2015"}
+  - { header: "PolicyApplicationid__c = 2015"}
+---
+#==============IHK Number ======================
+lookupName: IHKNumber.Sales
+whereConditions:
+  - {condition: "IHKNumber__c = '2010'"}
+  - {condition: "Account__r.AccountId__c=2010"}
+columnHeaders:
+  - { header: "IHKNumber__c = 2010"}
+  - { header: "Account__r.AccountId__c=2010"}
+---
+lookupName: IHKNumber.Director Central Key Accounts
+whereConditions:
+  - {condition: "IHKNumber__c = '2011'"}
+  - {condition: "Account__r.AccountId__c=2011"}
+columnHeaders:
+  - { header: "IHKNumber__c = 2011"}
+  - { header: "Account__r.AccountId__c=2011"}
+---
+lookupName: IHKNumber.ZKA 1
+whereConditions:
+  - {condition: "IHKNumber__c = '2012'"}
+  - {condition: "Account__r.AccountId__c=2012"}
+columnHeaders:
+  - { header: "IHKNumber__c = 2012"}
+  - { header: "Account__r.AccountId__c=2012"}
+---
+lookupName: IHKNumber.ZKA 2
+whereConditions:
+  - {condition: "IHKNumber__c = '2013'"}
+  - {condition: "Account__r.AccountId__c=2013"}
+columnHeaders:
+  - { header: "IHKNumber__c = 2013"}
+  - { header: "Account__r.AccountId__c=2013"}
+---
+lookupName: IHKNumber.ZKA 3
+whereConditions:
+  - {condition: "IHKNumber__c = '2014'"}
+  - {condition: "Account__r.AccountId__c=2014"}
+columnHeaders:
+  - { header: "IHKNumber__c = 2014"}
+  - { header: "Account__r.AccountId__c=2014"}
+---
+lookupName: IHKNumber.Admin
+whereConditions:
+  - {condition: "IHKNumber__c = '2015'"}
+  - {condition: "Account__r.AccountId__c=2015"}
+columnHeaders:
+  - { header: "IHKNumber__c = 2015"}
+  - { header: "Account__r.AccountId__c=2015"}
+---
+#===========================Target=========================
+lookupName: Target.Sales
+whereConditions:
+  - {condition: "TargetId__c = '2010'"}
+  - {condition: "ownerId in (select id from user where username ='sales_director@canadalife.de.$environment')"}
+columnHeaders:
+  - { header: "TargetId__c = 2010"}
+  - { header: "SalesPerson__r.Username = sales_director@canadalife.de.$environment"}
+  - { header: "User:Owner.Username=sales_director@canadalife.de.$environment"}
+---
+lookupName: Target.ZKA 1
+whereConditions:
+  - {condition: "TargetId__c = '2012'"}
+  - {condition: "ownerId in (select id from user where username
+  ='zka1@canadalife.de.$environment')"}
+columnHeaders:
+  - { header: "TargetId__c = 2012"}
+  - { header: "SalesPerson__r.Username = zka1@canadalife.de.$environment"}
+  - { header: "User:Owner.Username=zka1@canadalife.de.$environment"}
+---
+lookupName: Target.ZKA 2
+whereConditions:
+  - {condition: "TargetId__c = '2013'"}
+  - {condition: "ownerId in (select id from user where username
+  ='zka2@canadalife.de.$environment')"}
+columnHeaders:
+  - { header: "TargetId__c = 2013"}
+  - { header: "SalesPerson__r.Username = zka2@canadalife.de.$environment"}
+  - { header: "User:Owner.Username=zka2@canadalife.de.$environment"}
+---
+lookupName: Target.ZKA 3
+whereConditions:
+  - {condition: "TargetId__c = '2014'"}
+  - {condition: "ownerId in (select id from user where username='zka3@canadalife.de.$environment')"}
+columnHeaders:
+  - { header: "TargetId__c = 2014"}
+  - { header: "SalesPerson__r.Username = zka3@canadalife.de.$environment"}
+  - { header: "User:Owner.Username=zka3@canadalife.de.$environment"}
+---
+lookupName: Target.Admin
+whereConditions:
+  - {condition: "TargetId__c = '2015'"}
+  - {condition: "ownerId in (select id from user where  username='admin_user@canadalife.de.$environment')"}
+columnHeaders:
+  - { header: "TargetId__c = 2015"}
+  - { header: "SalesPerson__r.Username =admin_user@canadalife.de.$environment"}
+  - { header: "User:Owner.Username=admin_user@canadalife.de.$environment"}
+---
+#==============================Opportunity======================
+lookupName: Opportunity.Sales
+whereConditions:
+  - {condition: "Account.AccountId__c = 2010"}
+  - {condition: "OpportunityId__c = '2010'"}
+columnHeaders:
+  - { header: "Account.AccountId__c = 2010"}
+  - { header: "OpportunityId__c = 2010"}
+  - { header: "Name = Y2006_M12_A1_Obernd.kreutzer@canadalife.de_R12"}
+  - { header: "StageName = Closed Won"}
+  - { header: "CloseDate = 2019-09-15"}
+  - { header: "Pricebook2.Name=Standard Price Book"}
+---
+lookupName: Opportunity.ZKA 1
+whereConditions:
+  - {condition: "Account.AccountId__c = 2012"}
+  - {condition: "OpportunityId__c = '2012'"}
+columnHeaders:
+  - { header: "Account.AccountId__c = 2012"}
+  - { header: "OpportunityId__c = 2012"}
+  - { header: "Name = Y2006_M12_A1_Obernd.kreutzer@canadalife.de_R12"}
+  - { header: "StageName = Closed Won"}
+  - { header: "CloseDate = 2019-09-15"}
+  - { header: "Pricebook2.Name=Standard Price Book"}
+---
+lookupName: Opportunity.ZKA 2
+whereConditions:
+  - {condition: "Account.AccountId__c = 2013"}
+  - {condition: "OpportunityId__c = '2013'"}
+columnHeaders:
+  - { header: "Account.AccountId__c = 2013"}
+  - { header: "OpportunityId__c = 2013"}
+  - { header: "Name = Y2006_M12_A1_Obernd.kreutzer@canadalife.de_R12"}
+  - { header: "StageName = Closed Won"}
+  - { header: "CloseDate = 2019-09-15"}
+  - { header: "Pricebook2.Name=Standard Price Book"}
+---
+lookupName: Opportunity.ZKA 3
+whereConditions:
+  - {condition: "Account.AccountId__c = 2014"}
+  - {condition: "OpportunityId__c = '2014'"}
+columnHeaders:
+  - { header: "Account.AccountId__c = 2014"}
+  - { header: "OpportunityId__c = 2014"}
+  - { header: "Name = Y2006_M12_A1_Obernd.kreutzer@canadalife.de_R12"}
+  - { header: "StageName = Closed Won"}
+  - { header: "CloseDate = 2019-09-15"}
+  - { header: "Pricebook2.Name=Standard Price Book"}
+---
+lookupName: Opportunity.Admin
+whereConditions:
+  - {condition: "Account.AccountId__c = 2015"}
+  - {condition: "OpportunityId__c = '2015'"}
+columnHeaders:
+  - { header: "Account.AccountId__c = 2015"}
+  - { header: "OpportunityId__c = 2015"}
+  - { header: "Name = Y2006_M12_A1_Obernd.kreutzer@canadalife.de_R12"}
+  - { header: "StageName = Closed Won"}
+  - { header: "CloseDate = 2019-09-15"}
+  - { header: "Pricebook2.Name=Standard Price Book"}
+---
+#========Opportunity Line Item ===================
+lookupName: OpportunityLineItem.Sales
+whereConditions:
+  - {condition: "APEItemId__c = '2010'"}
+  - {condition: "Opportunity.OpportunityId__c = '2010'"}
+columnHeaders:
+  - { header: "APEItemId__c = 2010"}
+  - { header: "Opportunity.OpportunityId__c = 2010"}
+  - { header: "PolicyNumber__r.PolicyId__c = 2010"}
+  - { header: "Quantity = 1"}
+  - { header: "TotalPrice = 132.84"}
+  - { header: "Product2.ProductId__c= 11"}
+  - { header: "ProductClass__c=Basis"}
+---
+lookupName: OpportunityLineItem.ZKA 1
+whereConditions:
+  - {condition: "APEItemId__c = '2012'"}
+  - {condition: "Opportunity.OpportunityId__c = '2012'"}
+columnHeaders:
+  - { header: "APEItemId__c = 2012"}
+  - { header: "Opportunity.OpportunityId__c = 2012"}
+  - { header: "PolicyNumber__r.PolicyId__c = 2012"}
+  - { header: "Quantity = 1"}
+  - { header: "TotalPrice = 132.84"}
+  - { header: "Product2.ProductId__c= 11"}
+  - { header: "ProductClass__c=Basis"}
+---
+lookupName: OpportunityLineItem.ZKA 2
+whereConditions:
+  - {condition: "APEItemId__c = '2013'"}
+  - {condition: "Opportunity.OpportunityId__c = '2013'"}
+columnHeaders:
+  - { header: "APEItemId__c = 2013"}
+  - { header: "Opportunity.OpportunityId__c = 2013"}
+  - { header: "PolicyNumber__r.PolicyId__c = 2013"}
+  - { header: "Quantity = 1"}
+  - { header: "TotalPrice = 132.84"}
+  - { header: "Product2.ProductId__c= 11"}
+  - { header: "ProductClass__c=Basis"}
+---
+lookupName: OpportunityLineItem.ZKA 3
+whereConditions:
+  - {condition: "APEItemId__c = '2014'"}
+  - {condition: "Opportunity.OpportunityId__c = '2014'"}
+columnHeaders:
+  - { header: "APEItemId__c = 2014"}
+  - { header: "Opportunity.OpportunityId__c = 2014"}
+  - { header: "PolicyNumber__r.PolicyId__c = 2014"}
+  - { header: "Quantity = 1"}
+  - { header: "TotalPrice = 132.84"}
+  - { header: "Product2.ProductId__c= 11"}
+  - { header: "ProductClass__c=Basis"}
+---
+lookupName: OpportunityLineItem.Admin
+whereConditions:
+  - {condition: "APEItemId__c = '2015'"}
+  - {condition: "Opportunity.OpportunityId__c = '2015'"}
+columnHeaders:
+  - { header: "APEItemId__c = 2015"}
+  - { header: "Opportunity.OpportunityId__c = 2015"}
+  - { header: "PolicyNumber__r.PolicyId__c = 2015"}
+  - { header: "Quantity = 1"}
+  - { header: "TotalPrice = 132.84"}
+  - { header: "Product2.ProductId__c= 11"}
+  - { header: "ProductClass__c=Basis"}
+---
+lookupName: ISuiteTask.Sales
+whereConditions:
+  - {condition: "ISuiteTaskid__c = '2010'"}
+  - {condition: "PolicyNumber__r.PolicyId__c = '2010'"}
+columnHeaders:
+  - { header: "ISuiteTaskid__c = 2010"}
+  - { header: "User:Owner.Username=sales_director@canadalife.de.$environment"}
+  - { header: "PolicyNumber__r.PolicyId__c = 2010"}
+---
+lookupName: ISuiteTask.ZKA 1
+whereConditions:
+  - {condition: "ISuiteTaskid__c = '2012'"}
+  - {condition: "PolicyNumber__r.PolicyId__c = '2012'"}
+columnHeaders:
+  - { header: "ISuiteTaskid__c = 2012"}
+  - { header: "User:Owner.Username=zka1@canadalife.de.$environment"}
+  - { header: "PolicyNumber__r.PolicyId__c = 2012"}
+---
+lookupName: ISuiteTask.ZKA 2
+whereConditions:
+  - {condition: "ISuiteTaskid__c = '2013'"}
+  - {condition: "PolicyNumber__r.PolicyId__c = '2013'"}
+columnHeaders:
+  - { header: "ISuiteTaskid__c = 2013"}
+  - { header: "User:Owner.Username=zka2@canadalife.de.$environment"}
+  - { header: "PolicyNumber__r.PolicyId__c = 2013"}
+---
+lookupName: ISuiteTask.ZKA 3
+whereConditions:
+  - {condition: "ISuiteTaskid__c = '2014'"}
+  - {condition: "PolicyNumber__r.PolicyId__c = '2014'"}
+columnHeaders:
+  - { header: "ISuiteTaskid__c = 2014"}
+  - { header: "User:Owner.Username=zka3@canadalife.de.$environment"}
+  - { header: "PolicyNumber__r.PolicyId__c = 2014"}
+---
+lookupName: ISuiteTask.Admin
+whereConditions:
+  - {condition: "ISuiteTaskid__c = '2015'"}
+  - {condition: "PolicyNumber__r.PolicyId__c = '2015'"}
+columnHeaders:
+  - { header: "ISuiteTaskid__c = 2015"}
+  - { header: "User:Owner.Username=admin_user@canadalife.de.$environment"}
+  - { header: "PolicyNumber__r.PolicyId__c = 2015"}

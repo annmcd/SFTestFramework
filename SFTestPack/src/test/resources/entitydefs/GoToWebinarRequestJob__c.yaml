@@ -1,0 +1,56 @@
+name: gotowebinarrequestjob__c
+dataTypes:
+  - name: Status__c
+    value: Picklist
+  - name: GoToWebinarSessionID__c
+    value: Master-Detail(GoToWebinar Session)
+  - name: GoToWebinarRegistrantKey__c
+    value: Text(30)
+  - name: RequestType__c
+    value: Picklist
+  - name: Name
+    value: Auto Number
+  - name: GoToWebinarWebinarKey__c
+    value: Text(30)
+  - name: GTWPassword__c
+    value: Text(100)
+  - name: GTWUsername__c
+    value: Text(100)
+  - name: CampaignMemberID__c
+    value: Text(18)
+  - name: GTWCurrentErrorMessage__c
+    value: Long Text Area(32768)
+labels:
+  - name: Status__c
+    value: Status
+  - name: GoToWebinarSessionID__c
+    value: GoToWebinar Session ID
+  - name: GoToWebinarRegistrantKey__c
+    value: GoToWebinar Registrant Key
+  - name: RequestType__c
+    value: Request Type
+  - name: Name
+    value: Job Number
+  - name: GoToWebinarWebinarKey__c
+    value: GoToWebinar Webinar Key
+  - name: GTWPassword__c
+    value: GTW Password
+  - name: GTWUsername__c
+    value: GTW Username
+  - name: CampaignMemberID__c
+    value: Campaign Member ID
+  - name: GTWCurrentErrorMessage__c
+    value: GoToWebinar Current Error Message
+deLabels:
+picklists:
+  - name: Status__c
+    value: To Be Processed,Processed Successfully,Error Occurred
+  - name: RequestType__c
+    value: Delete Registrant,Create Registrant
+dePicklists:
+removals:
+mandatory:
+  - name: Status__c
+  - name: RequestType__c
+encryptedFields:
+restrictedPickLists:

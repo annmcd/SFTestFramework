@@ -1,0 +1,78 @@
+name: agreement_line_item__c
+dataTypes:
+  - name: AgreementLineItemId__c
+    value: Text(255)  (External ID) (Unique Case Insensitive)
+  - name: BatchId__c
+    value: Text(50)
+  - name: CommissionAgreement__c
+    value: Master-Detail(Commission Agreement)
+  - name: DataSource__c
+    value: Text(200)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: GISProductCode__c
+    value: Text(10)
+  - name: InitialRate__c
+    value: Percent(16, 2)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: ProductId__c
+    value: Lookup(Product)
+  - name: RenewalRate__c
+    value: Percent(16, 2)
+labels:
+  - name: AgreementLineItemId__c
+    value: AgreementLineItemId
+  - name: BatchId__c
+    value: BatchId
+  - name: CommissionAgreement__c
+    value: Commission Agreement
+  - name: DataSource__c
+    value: DataSource
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: GISProductCode__c
+    value: GIS Product
+  - name: InitialRate__c
+    value: Initial Commission Rate
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Agreement Line Item Name
+  - name: ProductId__c
+    value: Salesforce Product
+  - name: RenewalRate__c
+    value: Renewal Commission Rate
+deLabels:
+  - name: CommissionAgreement__c
+    value: Courtagevereinbarungs-Nr.
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: GISProductCode__c
+    value: GIS Produkt
+  - name: InitialRate__c
+    value: Abschlussprovision
+  - name: ProductId__c
+    value: Produkt
+  - name: RenewalRate__c
+    value: Bestandsprovision
+picklists:
+dePicklists:
+removals:
+  - name: CommissionRate__c
+  - name: CommissionType__c
+  - name: RelationshipKey__c
+mandatory:
+  - name: CommissionAgreement__c
+  - name: MarkForDeletion__c
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsDeleted
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:
+  - name: AgreementLineItemId__c

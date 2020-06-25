@@ -1,0 +1,61 @@
+name: salesreporttarget__c
+dataTypes:
+  - name: BatchId__c
+    value: Text(50)
+  - name: DataSource__c
+    value: Text(200)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: OwnerId
+    value: Lookup(User,Group)
+  - name: Year__c
+    value: Number(4, 0)
+  - name: Month__c
+    value: Number(2, 0)
+  - name: APEGross__c
+    value: Currency(9, 0)
+  - name: APEbAV__c
+    value: Currency(9, 0)
+  - name: APEWorkingAbilityCover__c
+    value: Currency(9, 0)
+  - name: Productivity__c
+    value: Number(18, 0)
+labels:
+  - name: BatchId__c
+    value: Batch ID
+  - name: DataSource__c
+    value: Data Source
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Year__c
+    value: Year
+  - name: Month__c
+    value: Month
+  - name: APEGross__c
+    value: APE Gross
+  - name: APEbAV__c
+    value: APE bAV
+  - name: APEWorkingAbilityCover__c
+    value: APE Working Ability Cover
+  - name: Productivity__c
+    value: Productivity
+deLabels:
+  - name: Year__c
+    value: Jahr
+  - name: Month__c
+    value: Monat
+  - name: APEWorkingAbilityCover__c
+    value: APE Arbeitskraft
+  - name: Productivity__c
+    value: Plan Produktivität
+picklists:
+dePicklists:
+removals:
+mandatory:
+  - name: MarkForDeletion__c
+encryptedFields:
+restrictedPickLists:

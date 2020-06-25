@@ -1,0 +1,18 @@
+name: test
+environment:
+  partnerEndPoint: https://test.salesforce.com/services/Soap/u/46.0
+  enterpriseEndPoint: https://test.salesforce.com/services/Soap/c/46.0
+  proxyServer: ilserverproxy
+  proxyPort: 8080
+  user: integration.user@canadalife.de.test
+  encryptedPassword: VG9yb250b18yMDIwWkVaZG83YUp2TUxGTDZzQktRa01RbjZa
+  logDirectory: //WintstAI1250/crm_data/test/logs
+  dataDirectory: //WintstAI1250/crm_data/test/data
+  batchIdFile: //WintstAI1250/crm_data/test/data/batchId.txt
+entities:
+  - etlEntityName: OpportunityLineItem
+    sfEntityName: OpportunityLineItem
+    csvFile: OpportunityLineItem.csv
+    externalId: APEItemId__c
+    run: true
+    delete: true

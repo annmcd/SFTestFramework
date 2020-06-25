@@ -1,0 +1,35 @@
+name: campaigneventsession__c
+dataTypes:
+  - name: CampaignEventSlot__c
+    value: Master-Detail(Campaign Event Slot)
+  - name: Capacity__c
+    value: Number(5, 0)
+  - name: Details__c
+    value: Text Area(255)
+  - name: RoomName__c
+    value: Text(100)
+labels:
+  - name: CampaignEventSlot__c
+    value: Campaign Event Slot
+  - name: Capacity__c
+    value: Capacity
+  - name: Details__c
+    value: Details
+  - name: RoomName__c
+    value: Room Name
+deLabels:
+  - name: CampaignEventSlot__c
+    value: Slot
+  - name: Capacity__c
+    value: Session Kapazität
+  - name: Details__c
+    value: Beschreibung
+  - name: RoomName__c
+    value: Name des Raums
+picklists:
+dePicklists:
+removals:
+mandatory:
+  - name: CampaignEventSlot__c
+encryptedFields:
+restrictedPickLists:

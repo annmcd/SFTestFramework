@@ -1,0 +1,27 @@
+jobs:
+  - { user: admin_user@canadalife.de}
+  - { user: bcbawu@canadalife.ie }
+  - { user: bcbayern@canadalife.ie }
+  - { user: bcmitte@canadalife.ie }
+  - { user: bcnord@canadalife.ie }
+  - { user: bcnrw@canadalife.ie }
+  - { user: businessadmin@canadalife.de}
+  - { user: controlling_user@canadalife.de  }
+  - { user: german_legal_rep@canadalife.ie}
+  - { user: integration.user@canadalife.de}
+  - { user: regdirbawu@canadalife.ie}
+  - { user: regdirbayern@canadalife.ie  }
+  - { user: regdircentral@canadalife.ie }
+  - { user: regdirmitte@canadalife.ie }
+  - { user: regdirnord@canadalife.ie}
+  - { user: regdirnrw@canadalife.ie}
+  - { user: sales_management@canadalife.de  }
+  - { user: sales_support@canadalife.de }
+  - { user: vto_user@canadalife.de}
+  - { user: zka1@canadalife.de}
+  - { user: zka2@canadalife.de }
+  - { user: zka3@canadalife.de  }
+  - { user: regdir_coop@canadalife.de } #Release 2 2020
+  - { user: regdirrka@canadalife.ie } #Release 2 2020
+  - { user: sales_director@canadalife.de } #Release 2 2020
+  - { user: dir_sal_chan_man@canadalife.de } #Release 2 2020

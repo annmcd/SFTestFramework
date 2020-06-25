@@ -1,0 +1,120 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+    <input type=hidden name="oid" value="00D4E0000009gsV">
+    <input type=hidden name="retURL" value="http://www.canadalife.de”>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type=" hidden" name="debug" value=1> -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="dbarry@cloutpartners.com">                                       -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <label for="salutation">Salutation</label><select id="salutation" name="salutation">
+    <option value="">--None--</option>
+    <option value="Mr.">Mr.</option>
+    <option value="Ms.">Ms.</option>
+    <option value="Mrs.">Mrs.</option>
+    <option value="Dr.">Dr.</option>
+    <option value="Prof.">Prof.</option>
+</select><br>
+
+    <label for="first_name">First Name</label><input id="first_name" maxlength="40" name="first_name" size="20"
+                                                     type="text"/><br>
+
+    <label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20"
+                                                   type="text"/><br>
+
+    <label for="street">Street</label><textarea name="street"></textarea><br>
+
+    <label for="zip">Zip</label><input id="zip" maxlength="20" name="zip" size="20" type="text"/><br>
+
+    <label for="city">City</label><input id="city" maxlength="40" name="city" size="20" type="text"/><br>
+
+    <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text"/><br>
+
+    Confirm Email Address:<input id="00N4E000005Hqg5" maxlength="80" name="00N4E000005Hqg5" size="20" type="text"/><br>
+
+    <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text"/><br>
+
+    <label for="mobile">Mobile</label><input id="mobile" maxlength="40" name="mobile" size="20" type="text"/><br>
+
+    Preferred Contact Type:<select id="00N4E0000055SIg" name="00N4E0000055SIg" title="Preferred Contact Type">
+    <option value="">--None--</option>
+    <option value="email">email</option>
+    <option value="phone">phone</option>
+    <option value="mobile">mobile</option>
+</select><br>
+
+    Contactable From To:<input id="00N4E0000055SJA" maxlength="80" name="00N4E0000055SJA" size="20" type="text"/><br>
+
+    Has Contract with CLE:<input id="00N4E0000055SKS" name="00N4E0000055SKS" type="checkbox" value="1"/><br>
+
+    Advising Topic:<select id="00N4E000005Hl0b" name="00N4E000005Hl0b" title="Advising Topic">
+    <option value="">--None--</option>
+    <option value="Basisrente">Basisrente</option>
+    <option value="Betriebliche">Betriebliche</option>
+    <option value="Altersversorgung">Altersversorgung</option>
+    <option value="Private Rente">Private Rente</option>
+    <option value="Sofortrente">Sofortrente</option>
+    <option value="Berufsunfähigkeitsversicherung">Berufsunfähigkeitsversicherung</option>
+    <option value="Grundfähigkeitsabsicherung">Grundfähigkeitsabsicherung</option>
+    <option value="Dread Disease/Schwere Krankheiten Vorsorge">Dread Disease/Schwere Krankheiten Vorsorge</option>
+    <option value="Risikolebensversicherung">Risikolebensversicherung</option>
+</select><br>
+
+    Advising Product:<select id="00N4E0000055SIb" name="00N4E0000055SIb" title="Advising Product">
+    <option value="">--None--</option>
+    <option value="GENERATION basic">GENERATION basic</option>
+    <option value="GENERATION business">GENERATION business</option>
+    <option value="GENERATION private">GENERATION private</option>
+    <option value="Flexibler Kapitalplan">Flexibler Kapitalplan</option>
+    <option value="Garantie Investment Rente">Garantie Investment Rente</option>
+    <option value="Schwere Krankheiten Vorsorge">Schwere Krankheiten Vorsorge</option>
+    <option value="RISIKOLEBEN komfort">RISIKOLEBEN komfort</option>
+    <option value="RISIKOLEBEN optimal">RISIKOLEBEN optimal</option>
+    <option value="Berufsunfähigkeitsschutz">Berufsunfähigkeitsschutz</option>
+    <option value="Grundfähigkeitsversicherung">Grundfähigkeitsversicherung</option>
+    <option value="Premium Grundfähigkeitsversicherung">Premium Grundfähigkeitsversicherung</option>
+</select><br>
+
+    Sum Insured:<input id="00N4E0000055K5F" name="00N4E0000055K5F" size="20" type="text"/><br>
+
+    Sum Pension:<input id="00N4E0000055K5K" name="00N4E0000055K5K" size="20" type="text"/><br>
+
+    End Age:<input id="00N4E0000055K5P" name="00N4E0000055K5P" size="20" type="text"/><br>
+
+    <input type="hidden" id="Campaign_ID" name="Campaign_ID" value="7014E000000FnDwQAK"/><br>
+
+    <input type="hidden" id="member_status" name="member_status" value="Responded"/><br>
+
+    <input type=“hidden’ id="recordType" name="recordType" value="0124E000000jp4Z"/><br>
+
+    GDPR Opt In:<input id="00N4E000005HqMZ" name="00N4E000005HqMZ" type="checkbox" value="1"/><br>
+
+    Privacy Policy:<input id="00N4E000005HqtE" name="00N4E000005HqtE" type="checkbox" value="1"/><br>
+
+    <input type="submit" name="submit"><br>
+    <br>
+
+    Wir verarbeiten Ihre personenbezogenen Daten nur im zulässigen Rahmen der gesetzlichen Bestimmungen, insbesondere
+    der EU-Datenschutz-Grunderordnung (DSGVO). Für weitere Informationen, lesen Sie bitte die <a title="Privacy Policy"
+                                                                                                 href="https://www.canadalife.de/datenschutzhinweise/"
+                                                                                                 target="_blank"
+                                                                                                 rel="noopener">Privacy
+    Policy</a> ergänzenden Hinweise zum Datenschutz
+
+</form>

@@ -1,0 +1,30 @@
+name: orgcontrolpanel__c
+dataTypes:
+  - name: Enable_Outbound_Messages__c
+    value: Checkbox
+  - name: Enable_Process_Builder_Flow__c
+    value: Checkbox
+  - name: Enable_Triggers__c
+    value: Checkbox
+  - name: Enable_Validation_Rules__c
+    value: Checkbox
+  - name: Enable_Workflow_Rules__c
+    value: Checkbox
+labels:
+  - name: Enable_Outbound_Messages__c
+    value: Enable Outbound Messages
+  - name: Enable_Process_Builder_Flow__c
+    value: Enable Process Builder/Flow
+  - name: Enable_Triggers__c
+    value: Enable Triggers
+  - name: Enable_Validation_Rules__c
+    value: Enable Validation Rules
+  - name: Enable_Workflow_Rules__c
+    value: Enable Workflow Rules
+deLabels:
+picklists:
+dePicklists:
+removals:
+mandatory:
+encryptedFields:
+restrictedPickLists:

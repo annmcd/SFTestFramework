@@ -1,0 +1,101 @@
+name: opportunity
+dataTypes:
+  - name: AccountId
+    value: Lookup(Account)
+  - name: AccountTarget__c
+    value: Lookup(Target)
+  - name: BatchId__c
+    value: Text(50)
+  - name: BrokerConsultantAccount__c
+    value: Lookup(Broker Consultant Account)
+  - name: BrokerConsultantTarget__c
+    value: Lookup(Target)
+  - name: CloseDate
+    value: Date
+  - name: CLETarget__c
+    value: Lookup(Target)
+  - name: DataSource__c
+    value: Text(200)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(120)
+  - name: NetAPE__c
+    value: Roll-Up Summary (SUM Transaction)
+  - name: OpportunityId__c
+    value: Text(120)  (External ID) (Unique Case Insensitive)
+  - name: OwnerId
+    value: Lookup(User)
+  - name: Pricebook2Id
+    value: Lookup(Price Book)
+  - name: RegionalDirectorTarget__c
+    value: Lookup(Target)
+  - name: SalesDirectorTarget__c
+    value: Lookup(Target)
+  - name: StageName
+    value: Picklist
+labels:
+  - name: AccountTarget__c
+    value: Account Target
+  - name: BatchId__c
+    value: Batch ID
+  - name: BrokerConsultantAccount__c
+    value: Broker Consultant Account
+  - name: BrokerConsultantTarget__c
+    value: Broker Consultant Target
+  - name: CloseDate
+    value: Close Date
+  - name: CLETarget__c
+    value: CLE Target
+  - name: DataSource__c
+    value: Data Source
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Opportunity Name
+  - name: NetAPE__c
+    value: NetAPE
+  - name: OpportunityId__c
+    value: Opportunity ID
+  - name: Pricebook2Id
+    value: Price Book
+  - name: RegionalDirectorTarget__c
+    value: Regional Director Target
+  - name: SalesDirectorTarget__c
+    value: Sales Director Target
+  - name: StageName
+    value: Stage
+deLabels:
+picklists:
+  - name: StageName
+    value: Qualification,Needs Analysis,Proposal,Negotiation,Closed Won,Closed Lost
+  - name: ForecastCategory
+    value: Omitted,Pipeline,Best Case,Commit,Closed
+  - name: ForecastCategoryName
+    value: Omitted,Pipeline,Best Case,Commit,Closed
+dePicklists:
+removals:
+mandatory:
+  - name: CloseDate
+  - name: MarkForDeletion__c
+  - name: Name
+  - name: OwnerId
+  - name: StageName
+  - name: IsDeleted
+  - name: IsClosed
+  - name: IsWon
+  - name: ForecastCategory
+  - name: HasOpportunityLineItem
+  - name: CreatedDate
+  - name: CreatedById
+  - name: LastModifiedDate
+  - name: LastModifiedById
+  - name: SystemModstamp
+  - name: HasOpenActivity
+  - name: HasOverdueTask
+encryptedFields:
+restrictedPickLists:

@@ -1,0 +1,71 @@
+name: accountteammember
+dataTypes:
+  - name: AccountTeamMemberId__c
+    value: Text(200)  (External ID)
+  - name: AccountAccessLevel
+    value: Picklist
+  - name: BatchId__c
+    value: Text(50)
+  - name: CaseAccessLevel
+    value: Picklist
+  - name: ContactAccessLevel
+    value: Picklist
+  - name: DataSource__c
+    value: Text(200)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: OpportunityAccessLevel
+    value: Picklist
+  - name: TeamMemberRole
+    value: Picklist
+labels:
+  - name: AccountTeamMemberId__c
+    value: Account Team Member Id
+  - name: AccountAccessLevel
+    value: Account Access
+  - name: BatchId__c
+    value: BatchId
+  - name: CaseAccessLevel
+    value: Case Access
+  - name: ContactAccessLevel
+    value: Contact Access
+  - name: DataSource__c
+    value: DataSource
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: OpportunityAccessLevel
+    value: Opportunity Access
+  - name: TeamMemberRole
+    value: Team Role
+deLabels:
+  - name: ETLVersion__c
+    value: ETL Version
+picklists:
+  - name: AccountAccessLevel
+    value: Private,Read Only,Read/Write,Owner
+  - name: CaseAccessLevel
+    value: Private,Read Only,Read/Write,Owner
+  - name: ContactAccessLevel
+    value: Private,Read Only,Read/Write,Controlled By Parent
+  - name: OpportunityAccessLevel
+    value: Private,Read Only,Read/Write,Owner
+  - name: TeamMemberRole
+    value: Account Manager,Channel Manager,Executive Sponsor,Lead Qualifier,Pre-Sales Consultant,Sales Manager,Sales Rep,Policy Manager,Commission Agreement Manager
+dePicklists:
+removals:
+mandatory:
+  - name: MarkForDeletion__c
+  - name: AccountId
+  - name: UserId
+  - name: CreatedDate
+  - name: CreatedById
+  - name: LastModifiedDate
+  - name: LastModifiedById
+  - name: SystemModstamp
+  - name: IsDeleted
+encryptedFields:
+restrictedPickLists:

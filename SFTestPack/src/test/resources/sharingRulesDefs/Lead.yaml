@@ -1,0 +1,17 @@
+ruleName: BC_Lead_Admin
+ruleLabel: BC Lead Admin
+type: Criteria
+object: Lead
+sharingRule:
+  - { field: "RecordTypeId", operator: "equals", value: "Lead Mgt"}
+access:
+  - { defaultAccess: "Edit" , leadAccess: "", sharedWith: "BC Lead Admin", sharedToRole: "" }
+---
+ruleName: EventMgt
+ruleLabel: Event Mgt
+type: Criteria
+object: Lead
+sharingRule:
+  - { field: "RecordTypeId", operator: "equals", value: "Event Mgt"}
+access:
+  - { defaultAccess: "Edit" , leadAccess: "", sharedWith: "", sharedToRole: "Full_Access_Germany" }

@@ -1,0 +1,233 @@
+name: lead
+dataTypes:
+  - name: AdvisingProduct__c
+    value: Picklist
+  - name: AdvisingTopic__c
+    value: Picklist
+  - name: BusinessAccount__c
+    value: Lookup(Account)
+  - name: CampaignMemberID__c
+    value: Text(18)
+  - name: CampaignRegisteredTo__c
+    value: Lookup(Campaign)
+  - name: CommentBroker__c
+    value: Text(255)
+  - name: CommentCLE__c
+    value: Text(255)
+  - name: CommissionAgreement__c
+    value: Text(80)
+  - name: Company
+    value: Text(255)
+  - name: ConfirmEmailAddress__c
+    value: Email
+  - name: ContactableFromTo__c
+    value: Text(80)
+  - name: DateOfBirth__c
+    value: Date
+  - name: DietaryRequirement__c
+    value: Text(200)
+  - name: DurationofParticipation__c
+    value: Text(255)
+  - name: Email
+    value: Email
+  - name: EndAge__c
+    value: Number(2, 0)
+  - name: EventId__c
+    value: Text(20)
+  - name: GDPROptIn__c
+    value: Checkbox
+  - name: HasContractwithCLE__c
+    value: Checkbox
+  - name: IndividualId
+    value: Lookup(Individual)
+  - name: LeadEventStatus__c
+    value: Text(20)
+  - name: LeadSource
+    value: Picklist
+  - name: LeadType__c
+    value: Picklist
+  - name: MatchedSalesContactID__c
+    value: Text(18)
+  - name: MobilePhone
+    value: Phone
+  - name: NeedHotelroom__c
+    value: Checkbox
+  - name: Phone
+    value: Phone
+  - name: PreferredContactType__c
+    value: Picklist
+  - name: PrivacyPolicy__c
+    value: Checkbox
+  - name: RecordTypeId
+    value: Record Type
+  - name: RegisteredSessionsJSON__c
+    value: Long Text Area(2500)
+  - name: StartdateLead__c
+    value: Date
+  - name: Status
+    value: Picklist
+  - name: SumInsured__c
+    value: Currency(18, 0)
+  - name: SumPension__c
+    value: Currency(18, 0)
+  - name: Title
+    value: Text(128)
+  - name: ToBeDeleted__c
+    value: Checkbox
+  - name: VVIDNumber__c
+    value: Text(18)
+labels:
+  - name: AdvisingProduct__c
+    value: Advising Product
+  - name: AdvisingTopic__c
+    value: Advising Topic
+  - name: BusinessAccount__c
+    value: Business Account
+  - name: CampaignMemberID__c
+    value: CampaignMemberID
+  - name: CampaignRegisteredTo__c
+    value: Campaign Registered to
+  - name: CommentBroker__c
+    value: Broker Comment
+  - name: CommentCLE__c
+    value: Comment CLE
+  - name: CommissionAgreement__c
+    value: Commission Agreement
+  - name: Company
+    value: Company
+  - name: ConfirmEmailAddress__c
+    value: Confirm Email Address
+  - name: ContactableFromTo__c
+    value: Contactable From To
+  - name: DateOfBirth__c
+    value: Date Of Birth
+  - name: DietaryRequirement__c
+    value: Dietary Requirement
+  - name: DurationofParticipation__c
+    value: Duration of Participation
+  - name: Email
+    value: Email
+  - name: EndAge__c
+    value: EndAge
+  - name: EventId__c
+    value: Event ID
+  - name: GDPROptIn__c
+    value: GDPR Opt In
+  - name: HasContractwithCLE__c
+    value: Has Contract with CLE
+  - name: IndividualId
+    value: Individual
+  - name: LeadEventStatus__c
+    value: Lead Event Status
+  - name: LeadSource
+    value: Lead Source
+  - name: LeadType__c
+    value: Lead Type
+  - name: MatchedSalesContactID__c
+    value: Matched Sales Contact ID
+  - name: MobilePhone
+    value: Mobile
+  - name: NeedHotelroom__c
+    value: Need Hotelroom
+  - name: Phone
+    value: Phone
+  - name: PreferredContactType__c
+    value: Preferred Contact Type
+  - name: PrivacyPolicy__c
+    value: Privacy Policy
+  - name: RecordTypeId
+    value: Lead Record Type
+  - name: RegisteredSessionsJSON__c
+    value: Registered Sessions (JSON)
+  - name: StartdateLead__c
+    value: Startdate Lead
+  - name: Status
+    value: Lead Status
+  - name: SumInsured__c
+    value: Sum Insured
+  - name: SumPension__c
+    value: Sum Pension
+  - name: ToBeDeleted__c
+    value: To Be Deleted
+  - name: VVIDNumber__c
+    value: VVID Number
+deLabels:
+  - name: AdvisingProduct__c
+    value: Produkt
+  - name: AdvisingTopic__c
+    value: Thema
+  - name: BusinessAccount__c
+    value: Geschäftspartner
+  - name: CommentBroker__c
+    value: Anmerkung Broker
+  - name: CommentCLE__c
+    value: Anmerkung CLE
+  - name: CommissionAgreement__c
+    value: GP Nr.
+  - name: ContactableFromTo__c
+    value: Erreichbar zwischen
+  - name: DateOfBirth__c
+    value: Geburtsdatum
+  - name: DietaryRequirement__c
+    value: Besondere Lebensmittel
+  - name: EndAge__c
+    value: Endalter
+  - name: EventId__c
+    value: Event Nr.
+  - name: HasContractwithCLE__c
+    value: Vertrag mit CLE
+  - name: LeadType__c
+    value: Lead-Typ
+  - name: NeedHotelroom__c
+    value: Benötigt Hotelzimmer
+  - name: PreferredContactType__c
+    value: Bevorzugte Kontaktmethode
+  - name: StartdateLead__c
+    value: Startdatum
+  - name: SumInsured__c
+    value: Versicherungssumme
+  - name: SumPension__c
+    value: Rentenbetrag
+  - name: VVIDNumber__c
+    value: VVID Nummer
+  - name: DietaryRequired__c
+    value: Besondere Lebensmittel
+  - name: GPNo__c
+    value: GP Nr.
+picklists:
+  - name: AdvisingProduct__c
+    value: GENERATION basic,GENERATION business,GENERATION private,Flexibler Kapitalplan,Garantie Investment Rente,Schwere Krankheiten Vorsorge,RISIKOLEBEN komfort,RISIKOLEBEN optimal,Berufsunfähigkeitsschutz,Grundfähigkeitsversicherung,Premium Grundfähigkeitsversicherung
+  - name: AdvisingTopic__c
+    value: Basisrente,Betriebliche Altersversorgung,Private Rente,Sofortrente,Berufsunfähigkeitsversicherung,Grundfähigkeitsabsicherung,Dread Disease/Schwere Krankheiten Vorsorge,Risikolebensversicherung
+  - name: LeadSource
+    value: Website,Commercial,Customer event,Employee referral,Google AdWords,others,Partner,Acquired list,Webinar,Trade Fair
+  - name: LeadType__c
+    value: Customer,Broker
+  - name: PreferredContactType__c
+    value: email,phone,mobile
+  - name: Status
+    value: New Lead,Pre-Qualification,Lead RD,Lead BC,Lead Broker,Lead CLE,Application In Work,Rejection,No Further Interest,Contract,Invitation sent,registered,participated,failed to appear,unannounced participation,registration cancelled (internal reasons),registration cancelled by attendee,Converted,No Response To Invitation,To Be Invited,Cancelled
+  - name: GeocodeAccuracy
+    value: Address,NearAddress,Block,Street,ExtendedZip,Zip,Neighborhood,City,County,State,Unknown
+dePicklists:
+removals:
+  - name: Profession__c
+mandatory:
+  - name: GDPROptIn__c
+  - name: HasContractwithCLE__c
+  - name: NeedHotelroom__c
+  - name: PrivacyPolicy__c
+  - name: Status
+  - name: ToBeDeleted__c
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsConverted
+  - name: IsDeleted
+  - name: IsUnreadByOwner
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: Name
+  - name: OwnerId
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

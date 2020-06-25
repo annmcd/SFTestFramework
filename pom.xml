@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.cle.salesforce.test</groupId>
+    <artifactId>SFTestFramework</artifactId>
+    <version>1.2.3</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>SFObjectModel</module>
+        <module>SFConfigManager</module>
+        <module>SFTestPack</module>
+    </modules>
+    <properties>
+        <serenity.version>2.0.90</serenity.version>
+        <sftestpack.version>3.0.0</sftestpack.version>
+    </properties>
+    <build>
+        <plugins>
+            <!-- <plugin>
+                 <groupId>net.serenity-bdd.maven.plugins</groupId>
+                 <artifactId>serenity-maven-plugin</artifactId>
+                 <version>${serenity.version}</version>
+                 <dependencies>
+                     <dependency>
+                         <artifactId>serenity-emailer</artifactId>
+                         <groupId>net.serenity-bdd</groupId>
+                         <version>${serenity.version}</version>
+                     </dependency>
+                     <dependency>
+                         <groupId>com.cle.salesforce.test</groupId>
+                         <artifactId>SFTestPack</artifactId>
+                         <version>${sftestpack.version}</version>
+                     </dependency>
+                 </dependencies>
+                 <executions>
+                     <execution>
+                         <goals>
+                             <goal>aggregate</goal>
+                         </goals>
+                         <id>serenity-reports</id>
+                         <phase>post-integration-test</phase>
+                     </execution>
+                 </executions>
+             </plugin> -->
+        </plugins>
+    </build>
+    <repositories>
+        <repository>
+            <id>salesforce</id>
+            <url>https://cle-crm.pkgs.visualstudio.com/_packaging/salesforce/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>salesforce</id>
+            <url>https://cle-crm.pkgs.visualstudio.com/_packaging/salesforce/maven/v1</url>
+        </repository>
+    </distributionManagement>
+</project>

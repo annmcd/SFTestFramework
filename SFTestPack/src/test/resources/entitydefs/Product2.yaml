@@ -1,0 +1,82 @@
+name: product2
+dataTypes:
+  - name: BatchId__c
+    value: Text(50)
+  - name: CoverType__c
+    value: Picklist
+  - name: DataSource__c
+    value: Text(200)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: Family
+    value: Picklist
+  - name: IsActive
+    value: Checkbox
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(255)
+  - name: ProductCode
+    value: Text(255)
+  - name: ProductGroup__c
+    value: Picklist
+  - name: ProductID__c
+    value: Number(18, 0)  (External ID) (Unique)
+labels:
+  - name: BatchId__c
+    value: BatchId
+  - name: CoverType__c
+    value: Cover Type
+  - name: DataSource__c
+    value: DataSource
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: Family
+    value: Product Family
+  - name: IsActive
+    value: Active
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Product Name
+  - name: ProductCode
+    value: Product Code
+  - name: ProductGroup__c
+    value: Product Group
+  - name: ProductID__c
+    value: Product ID
+deLabels:
+  - name: CoverType__c
+    value: Absicherungstyp
+  - name: ProductGroup__c
+    value: Produkt Gruppe
+  - name: ProductID__c
+    value: Produkt ID
+picklists:
+  - name: CoverType__c
+    value: Pension,Protection
+  - name: Family
+    value: Arbeitskraft
+  - name: ProductGroup__c
+    value: ALR,CBU,CGN,FDS,FKP,FRP,GAK,GFP,GFV,GIR,GNB,GNP,GNR,GRB,GRP,GRR,PFL,PFS,PFV,PGR,PKP,PMK,PRR,RLV,SFP,SKS,SKV,XRP
+dePicklists:
+  - name: CoverType__c
+    value: Rente,Risiko
+removals:
+  - name: CurrentlyOffered__c
+  - name: AllowedForScanning__c
+  - name: PremiumType__c
+  - name: ProductClass__c
+mandatory:
+  - name: IsActive
+  - name: MarkForDeletion__c
+  - name: Name
+  - name: CreatedDate
+  - name: CreatedById
+  - name: LastModifiedDate
+  - name: LastModifiedById
+  - name: SystemModstamp
+  - name: IsDeleted
+  - name: IsArchived
+encryptedFields:
+restrictedPickLists:

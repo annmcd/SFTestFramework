@@ -1,0 +1,65 @@
+name: pricebook2
+dataTypes:
+  - name: BatchId__c
+    value: Text(50)
+  - name: Description
+    value: Text(255)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: ExternalId__c
+    value: Text(255)  (External ID)
+  - name: IsActive
+    value: Checkbox
+  - name: IsArchived
+    value: Checkbox
+  - name: IsDeleted
+    value: Checkbox
+  - name: IsStandard
+    value: Checkbox
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(255)
+  - name: PriceBookId__c
+    value: Number(18, 0)
+labels:
+  - name: BatchId__c
+    value: Batch ID
+  - name: Description
+    value: Description
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: ExternalId__c
+    value: External ID
+  - name: IsActive
+    value: Active
+  - name: IsArchived
+    value: Archived
+  - name: IsDeleted
+    value: Deleted
+  - name: IsStandard
+    value: Is Standard Price Book
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Price Book Name
+  - name: PriceBookId__c
+    value: ID
+deLabels:
+picklists:
+dePicklists:
+removals:
+mandatory:
+  - name: IsActive
+  - name: IsArchived
+  - name: IsDeleted
+  - name: IsStandard
+  - name: MarkForDeletion__c
+  - name: Name
+  - name: CreatedDate
+  - name: CreatedById
+  - name: LastModifiedDate
+  - name: LastModifiedById
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

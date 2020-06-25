@@ -1,0 +1,88 @@
+name: event
+dataTypes:
+  - name: Description
+    value: Long Text Area(32000)
+  - name: EndDate
+    value: Date/Time
+  - name: IsAllDayEvent
+    value: Checkbox
+  - name: StartDateTime
+    value: Date/Time
+  - name: EndDateTime
+    value: Date/Time
+  - name: ActivityDate
+    value: Date/Time
+  - name: ActivityDateTime
+    value: Date/Time
+  - name: Location
+    value: Text(255)
+  - name: Subject
+    value: Picklist
+  - name: Type
+    value: Picklist
+  - name: OwnerId
+    value: Lookup(User,Calendar)
+  - name: ShowAs
+    value: Picklist
+  - name: WhatId
+    value: Lookup(Commission Agreement)
+labels:
+  - name: Description
+    value: Description
+  - name: EndDate
+    value: End
+  - name: IsAllDayEvent
+    value: All-Day Event
+  - name: StartDateTime
+    value: Start
+  - name: EndDateTime
+    value: End
+  - name: ActivityDate
+    value: Date
+  - name: ActivityDateTime
+    value: Time
+  - name: Location
+    value: Location
+  - name: Subject
+    value: Subject
+  - name: Type
+    value: Type
+  - name: OwnerId
+    value: Assigned To
+  - name: ShowAs
+    value: Show Time As
+  - name: WhatId
+    value: Relates To
+deLabels:
+  - name: Description
+    value: Beschreibung
+  - name: EndDate
+    value: Ende
+  - name: IsAllDayEvent
+    value: Ganztägiges Ereignis
+  - name: StartDateTime
+    value: Start
+  - name: EndDateTime
+    value: Ende
+  - name: Location
+    value: Ort
+  - name: Subject
+    value: Thema
+  - name: Type
+    value: Typ
+  - name: OwnerId
+    value: Zugeordnet zu
+  - name: WhatId
+    value: Name
+picklists:
+  - name: Type
+    value: Maklergespräch,Strategiegespräch,Schulung,Workshop,Roadshow,Webinar,Sonstiges,Telefongespräch,Outlooktermin,Seminar,Messe
+  - name: ShowAs
+    value: Busy,Out of Office,Free
+dePicklists:
+  - name: Type
+    value: Maklergespräch,Strategiegespräch,Schulung,Workshop,Roadshow,Webinar,Sonstiges,Telefongespräch,Outlooktermin,Seminar,Messe
+removals:
+mandatory:
+encryptedFields:
+restrictedPickLists:

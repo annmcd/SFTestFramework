@@ -1,0 +1,250 @@
+name: contact
+dataTypes:
+  - name: AddressAddition1__c
+    value: Text(40)
+  - name: AddressAddition2__c
+    value: Text(40)
+  - name: AdvisingProduct__c
+    value: Picklist
+  - name: AdvisingTopic__c
+    value: Picklist
+  - name: BatchId__c
+    value: Text(50)
+  - name: BrokerComment__c
+    value: Text(255)
+  - name: CommentCLE__c
+    value: Text(255)
+  - name: CommissionAgreement__c
+    value: Text(80)
+  - name: CompanyName__c
+    value: Text(255)
+  - name: ContactableFromTo__c
+    value: Text(80)
+  - name: ContactId__c
+    value: Text(255)  (External ID) (Unique Case Insensitive)
+  - name: ContactSource__c
+    value: Picklist
+  - name: DataSource__c
+    value: Text(200)
+  - name: DateOfBirth__c
+    value: Date
+  - name: DietaryRequirement__c
+    value: Text(200)
+  - name: DoNotCall
+    value: Checkbox
+  - name: EndAge__c
+    value: Number(2, 0)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: EventID__c
+    value: Text(20)
+  - name: Gender__c
+    value: Picklist
+  - name: HasContractWithCLE__c
+    value: Checkbox
+  - name: HasOptedOutOfEmail
+    value: Checkbox
+  - name: HasOptedOutOfFax
+    value: Checkbox
+  - name: Housenumber__c
+    value: Text(10)
+  - name: ISuitePartnerId__c
+    value: Text(20)
+  - name: LeadSource__c
+    value: Picklist
+  - name: LeadType__c
+    value: Picklist
+  - name: LongAddress__c
+    value: Text(255)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: MobilePhone
+    value: Phone
+  - name: NeedHotelroom__c
+    value: Checkbox
+  - name: Outdated__c
+    value: Checkbox
+  - name: OwnerId
+    value: Lookup(User)
+  - name: PaxusPartnerId__c
+    value: Text(20)
+  - name: PreferredContactType__c
+    value: Picklist
+  - name: StartdateLead__c
+    value: Date
+  - name: SumInsured__c
+    value: Currency(18, 0)
+  - name: SumPension__c
+    value: Currency(18, 0)
+  - name: Title
+    value: Text(128)
+  - name: VVIDNumber__c
+    value: Text(18)  (External ID) (Unique Case Insensitive)
+labels:
+  - name: AddressAddition1__c
+    value: Address Addition 1
+  - name: AddressAddition2__c
+    value: Address Addition 2
+  - name: AdvisingProduct__c
+    value: Advising Product
+  - name: AdvisingTopic__c
+    value: Advising Topic
+  - name: BatchId__c
+    value: BatchId
+  - name: BrokerComment__c
+    value: Broker Comment
+  - name: CommentCLE__c
+    value: Comment CLE
+  - name: CommissionAgreement__c
+    value: Commission Agreement
+  - name: CompanyName__c
+    value: Company Name
+  - name: ContactableFromTo__c
+    value: Contactable From To
+  - name: ContactId__c
+    value: Contact ID
+  - name: ContactSource__c
+    value: Contact Source
+  - name: DataSource__c
+    value: DataSource
+  - name: DateOfBirth__c
+    value: Date Of Birth
+  - name: DietaryRequirement__c
+    value: Dietary Requirement
+  - name: DoNotCall
+    value: Do Not Call
+  - name: EndAge__c
+    value: EndAge
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: EventID__c
+    value: Event ID
+  - name: Gender__c
+    value: Gender
+  - name: HasContractWithCLE__c
+    value: Has Contract with CLE
+  - name: HasOptedOutOfEmail
+    value: Has opted out of Email
+  - name: HasOptedOutOfFax
+    value: Has opted out of Fax
+  - name: Housenumber__c
+    value: Housenumber
+  - name: ISuitePartnerId__c
+    value: ISuitePartnerId
+  - name: LeadSource__c
+    value: Lead Source
+  - name: LeadType__c
+    value: Lead Type
+  - name: LongAddress__c
+    value: Address
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: MobilePhone
+    value: Mobile
+  - name: NeedHotelroom__c
+    value: Need Hotelroom
+  - name: Outdated__c
+    value: Outdated
+  - name: OwnerId
+    value: Contact Owner
+  - name: PaxusPartnerId__c
+    value: Paxus Partner ID
+  - name: PreferredContactType__c
+    value: Preferred Contact Type
+  - name: StartdateLead__c
+    value: Startdate Lead
+  - name: SumInsured__c
+    value: Sum Insured
+  - name: SumPension__c
+    value: Sum Pension
+  - name: Title
+    value: Title
+  - name: VVIDNumber__c
+    value: VVID Number
+deLabels:
+  - name: AddressAddition1__c
+    value: Adresszusatz 1
+  - name: AddressAddition2__c
+    value: Adresszusatz 2
+  - name: AdvisingProduct__c
+    value: Produkt
+  - name: AdvisingTopic__c
+    value: Thema
+  - name: BrokerComment__c
+    value: Anmerkung Broker
+  - name: CommentCLE__c
+    value: Anmerkung CLE
+  - name: CommissionAgreement__c
+    value: GP Nr.
+  - name: CompanyName__c
+    value: Firma
+  - name: ContactableFromTo__c
+    value: Erreichbar zwischen
+  - name: ContactSource__c
+    value: Datenquelle
+  - name: DataSource__c
+    value: Datenquelle
+  - name: DateOfBirth__c
+    value: Geburtsdatum
+  - name: DietaryRequirement__c
+    value: Besondere Lebensmittel
+  - name: EndAge__c
+    value: Endalter
+  - name: EventID__c
+    value: Event Nr.
+  - name: Gender__c
+    value: Geschlecht
+  - name: HasContractWithCLE__c
+    value: Vertrag mit CLE
+  - name: Housenumber__c
+    value: Hausnummer
+  - name: LeadSource__c
+    value: Lead-Quelle
+  - name: LeadType__c
+    value: Lead-Typ
+  - name: LongAddress__c
+    value: Adresse
+  - name: NeedHotelroom__c
+    value: Benötigt Hotelzimmer
+  - name: Outdated__c
+    value: veraltet
+  - name: PreferredContactType__c
+    value: Bevorzugte Kontaktmethode
+  - name: StartdateLead__c
+    value: Startdatum
+  - name: SumInsured__c
+    value: Versicherungssumme
+  - name: SumPension__c
+    value: Rentenbetrag
+  - name: VVIDNumber__c
+    value: VVID Nummer
+picklists:
+  - name: AdvisingProduct__c
+    value: GENERATION basic,GENERATION business,GENERATION private,Flexibler Kapitalplan,Garantie Investment Rente,Schwere Krankheiten Vorsorge,RISIKOLEBEN komfort,RISIKOLEBEN optimal,Berufsunfähigkeitsschutz,Grundfähigkeitsversicherung,Premium Grundfähigkeitsversicherung
+  - name: AdvisingTopic__c
+    value: Basisrente,Betriebliche Altersversorgung,Private Rente,Sofortrente,Berufsunfähigkeitsversicherung,Grundfähigkeitsabsicherung,Dread Disease/Schwere Krankheiten Vorsorge,Risikolebensversicherung
+  - name: ContactSource__c
+    value: ISuite,Salesforce,Betreuungskompass,Outlook
+  - name: Gender__c
+    value: male,female
+  - name: LeadSource__c
+    value: Commercial,Customer Event,Employee Referral,Google AdWords,Others,Partner,Acquired List,Trade Fair,Webinar,Website
+  - name: LeadType__c
+    value: Customer,Broker
+  - name: PreferredContactType__c
+    value: email,phone,mobile
+  - name: Salutation
+    value: Mr.,Ms.,Mrs.,Dr.,Prof.
+  - name: MailingGeocodeAccuracy
+    value: Address,NearAddress,Block,Street,ExtendedZip,Zip,Neighborhood,City,County,State,Unknown
+  - name: OtherGeocodeAccuracy
+    value: Address,NearAddress,Block,Street,ExtendedZip,Zip,Neighborhood,City,County,State,Unknown
+dePicklists:
+removals:
+mandatory:
+  - name: HasContractWithCLE__c
+  - name: MarkForDeletion__c
+  - name: NeedHotelroom__c
+  - name: Outdated__c
+encryptedFields:
+restrictedPickLists:

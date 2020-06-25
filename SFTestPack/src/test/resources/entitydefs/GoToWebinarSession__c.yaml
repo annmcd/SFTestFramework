@@ -1,0 +1,228 @@
+﻿name: gotowebinarsession__c
+dataTypes:
+  - name: GTWAbsenteeFollowUpEmail__c
+    value: Checkbox
+  - name: GTWAccountKey__c
+    value: Text(50)
+  - name: GTWAttendeeFollowUpEmail__c
+    value: Checkbox
+  - name: Campaign__c
+    value: Master-Detail(Campaign)
+  - name: GTWConfirmationEmail__c
+    value: Checkbox
+  - name: GTWBroadcast__c
+    value: Checkbox
+  - name: GTWCurrentErrorMessage__c
+    value: Text(255)
+  - name: GTWCurrentStatus__c
+    value: Formula (Text)
+  - name: GTWDeniedRegistrants__c
+    value: Number(5, 0)
+  - name: GTWDescription__c
+    value: Text Area(255)
+  - name: GTWExperienceType__c
+    value: Text(30)
+  - name: GTWHasDisclaimer__c
+    value: Checkbox
+  - name: GTWImpromptu__c
+    value: Checkbox
+  - name: GTWInSession__c
+    value: Checkbox
+  - name: GTWIsMainOrganizerActive__c
+    value: Checkbox
+  - name: GTWIsPasswordProtected__c
+    value: Checkbox
+  - name: GTWIsOndemand__c
+    value: Checkbox
+  - name: GTWLocale__c
+    value: Text(20)
+  - name: GTWNumberOfRegistrants__c
+    value: Number(5, 0)
+  - name: GTWOrganiser__c
+    value: Lookup(User)
+  - name: GTWOrganiserKey__c
+    value: Text(50)
+  - name: GTWPendingRegistrants__c
+    value: Number(5, 0)
+  - name: GTWRecurrencePeriod__c
+    value: Text(50)
+  - name: GTWRegistrationLimit__c
+    value: Number(5, 0)
+  - name: GTWDate__c
+    value: Date
+  - name: GTWEndTime__c
+    value: Time
+  - name: GTWSessionID__c
+    value: Text(50)
+  - name: Name
+    value: Text(80)
+  - name: GTWReminderEmail__c
+    value: Checkbox
+  - name: GTWStartTime__c
+    value: Time
+  - name: GTWStatus__c
+    value: Picklist
+  - name: GTWSubject__c
+    value: Text(128)
+  - name: GTWTimezone__c
+    value: Picklist
+  - name: GTWType__c
+    value: Picklist
+  - name: GTWVerifyHumanRegistrant__c
+    value: Checkbox
+  - name: GTWWebinarID__c
+    value: Text(100)
+labels:
+  - name: GTWAbsenteeFollowUpEmail__c
+    value: Absentee Follow Up Email
+  - name: GTWAccountKey__c
+    value: Account Key
+  - name: GTWAttendeeFollowUpEmail__c
+    value: Attendee Follow Up Email
+  - name: Campaign__c
+    value: Campaign
+  - name: GTWConfirmationEmail__c
+    value: Confirmation Email
+  - name: GTWBroadcast__c
+    value: Broadcast
+  - name: GTWCurrentErrorMessage__c
+    value: Current Error Message
+  - name: GTWCurrentStatus__c
+    value: Current Status
+  - name: GTWDeniedRegistrants__c
+    value: Denied Registrants
+  - name: GTWDescription__c
+    value: Description
+  - name: GTWExperienceType__c
+    value: Experience Type
+  - name: GTWHasDisclaimer__c
+    value: Has Disclaimer
+  - name: GTWImpromptu__c
+    value: Impromptu
+  - name: GTWInSession__c
+    value: In Session
+  - name: GTWIsMainOrganizerActive__c
+    value: Is Main Organizer Active
+  - name: GTWIsPasswordProtected__c
+    value: Is Password Protected?
+  - name: GTWIsOndemand__c
+    value: IsOndemand
+  - name: GTWLocale__c
+    value: Locale
+  - name: GTWNumberOfRegistrants__c
+    value: Number Of Registrants
+  - name: GTWOrganiser__c
+    value: Organiser
+  - name: GTWOrganiserKey__c
+    value: Organiser Key
+  - name: GTWPendingRegistrants__c
+    value: Pending Registrants
+  - name: GTWRecurrencePeriod__c
+    value: Recurrence Period
+  - name: GTWRegistrationLimit__c
+    value: Registration Limit
+  - name: GTWDate__c
+    value: Session Date
+  - name: GTWEndTime__c
+    value: Session End Time
+  - name: GTWSessionID__c
+    value: Session ID
+  - name: Name
+    value: Session Name
+  - name: GTWReminderEmail__c
+    value: Session Reminder Email
+  - name: GTWStartTime__c
+    value: Session Start Time
+  - name: GTWStatus__c
+    value: Status
+  - name: GTWSubject__c
+    value: Subject
+  - name: GTWTimezone__c
+    value: Timezone
+  - name: GTWType__c
+    value: Type
+  - name: GTWVerifyHumanRegistrant__c
+    value: Verify Human Registrant
+  - name: GTWWebinarID__c
+    value: WebinarID
+deLabels:
+  - name: GTWAbsenteeFollowUpEmail__c
+    value: Follow Up Email für Abwesende
+  - name: GTWAttendeeFollowUpEmail__c
+    value: Follow Up Email für Teilnehmer
+  - name: Campaign__c
+    value: Kampagne
+  - name: GTWConfirmationEmail__c
+    value: Betätigungsemail
+  - name: GTWBroadcast__c
+    value: Broadcast möglich
+  - name: GTWCurrentErrorMessage__c
+    value: aktuelle Fehlermeldung
+  - name: GTWCurrentStatus__c
+    value: aktueller Status
+  - name: GTWDeniedRegistrants__c
+    value: abgelehnte Teilnehmer
+  - name: GTWDescription__c
+    value: Beschreibung
+  - name: GTWExperienceType__c
+    value: Erfahrungstyp
+  - name: GTWHasDisclaimer__c
+    value: hat Disclaimer
+  - name: GTWImpromptu__c
+    value: Impromtu
+  - name: GTWInSession__c
+    value: in der Stitzung
+  - name: GTWIsMainOrganizerActive__c
+    value: Ist Hauptorganisator aktiv
+  - name: GTWIsPasswordProtected__c
+    value: ist Passwort geschützt
+  - name: GTWLocale__c
+    value: Lokal
+  - name: GTWNumberOfRegistrants__c
+    value: aktuelle. Anzahl der Teiilnehmer
+  - name: GTWOrganiser__c
+    value: Organisator
+  - name: GTWOrganiserKey__c
+    value: Organisator Key (Schlüssel)
+  - name: GTWPendingRegistrants__c
+    value: wartende Teilnehmer
+  - name: GTWRecurrencePeriod__c
+    value: Wiederholungszeitraum
+  - name: GTWRegistrationLimit__c
+    value: max. Anzahl der Teiilnehmer
+  - name: GTWDate__c
+    value: Datum der Sitzung
+  - name: GTWEndTime__c
+    value: Endzeit der Sitzung
+  - name: GTWSessionID__c
+    value: Sitzungs ID
+  - name: GTWReminderEmail__c
+    value: Erinnerungsemail
+  - name: GTWStartTime__c
+    value: Startzeit der Stitzung
+  - name: GTWStatus__c
+    value: Status
+  - name: GTWSubject__c
+    value: Betreff
+  - name: GTWTimezone__c
+    value: Zeitzone
+  - name: GTWType__c
+    value: Typ
+  - name: GTWVerifyHumanRegistrant__c
+    value: Verifizierung natürlich Person (Chapcha)
+  - name: GTWWebinarID__c
+    value: Webinar ID
+picklists:
+  - name: GTWStatus__c
+    value: Draft,Session Created,Error Creating Session,Session Updated,Error Updating Session,Session Deleted,Error Deleting Session,Session Completed,Session Attendees Processed
+  - name: GTWTimezone__c
+    value: Deutschland
+  - name: GTWType__c
+    value: single_session,series,sequence
+dePicklists:
+  - name: GTWStatus__c
+    value: geplant,Fehler bei der Erstellung,Fehler bei Löschung,Fehler beim Update,erstellt,Sitzung gelöscht,Update der Sitzung
+removals:
+mandatory:
+encryptedFields:
+restrictedPickLists:

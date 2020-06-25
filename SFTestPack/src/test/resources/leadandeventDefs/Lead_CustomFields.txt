@@ -1,0 +1,24 @@
+#All the CustomFields that we expect to see on the Lead Entity, the ids have to be sought dynamically
+SumInsured
+SumPension
+EndAge
+DietaryRequirement
+LeadType
+AdvisingTopic
+StartdateLead
+CommentCLE
+DateOfBirth
+AdvisingProduct
+PreferredContactType
+ContactableFromTo
+HasContractwithCLE
+NeedHotelroom
+CommissionAgreement
+VVIDNumber
+CommentBroker
+EventId
+ToBeDeleted
+GDPROptIn
+ConfirmEmailAddress
+PrivacyPolicy
+DurationofParticipation

@@ -1,0 +1,244 @@
+name: commission_agreement__c
+dataTypes:
+  - name: ApplicationCZvonGP__c
+    value: Date
+  - name: ApplicationGPanCZ__c
+    value: Date
+  - name: ApplicationReceived__c
+    value: Date
+  - name: BankGP__c
+    value: Checkbox
+  - name: BatchId__c
+    value: Text(50)
+  - name: BookOfBusinessExport__c
+    value: Text(10)
+  - name: BrokerConsultantAccount__c
+    value: Lookup(Broker Consultant Account)
+  - name: BusinessAccount__c
+    value: Lookup(Account)
+  - name: BusinessResponsible__c
+    value: Lookup(User)
+  - name: Cancellation__c
+    value: Date
+  - name: CareIndicator__c
+    value: Picklist (Multi-Select)
+  - name: CommissionAgreementId__c
+    value: Text(20)  (External ID) (Unique Case Sensitive)
+  - name: CommissionAgreementStatus__c
+    value: Picklist
+  - name: CommissionAgreementType__c
+    value: Picklist
+  - name: CommissionLiability__c
+    value: Currency(16, 2)
+  - name: DataSource__c
+    value: Text(200)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: FirstApplicationReceived__c
+    value: Date
+  - name: KeyAccountNumber__c
+    value: Text(255)
+  - name: LapsAmount__c
+    value: Currency(16, 2)
+  - name: LapsLiability__c
+    value: Currency(16, 2)
+  - name: LapsPercent__c
+    value: Percent(16, 2)
+  - name: LapsPercentDisplay__c
+    value: Formula (Percent)
+  - name: LastApplicationReceived__c
+    value: Date
+  - name: LastPolicyDate__c
+    value: Date
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: OwnerId
+    value: Lookup(User,Group)
+  - name: ParentCommissionAgreement__c
+    value: Lookup(Commission Agreement)
+  - name: Partnernet__c
+    value: Picklist (Multi-Select)
+  - name: PortalStatementBroker__c
+    value: Lookup(Statement Broker)
+  - name: Proportional__c
+    value: Text(50)
+  - name: ProtectionOfTrustAmount__c
+    value: Currency(16, 2)
+  - name: ProtectionOfTrustStatus__c
+    value: Checkbox
+  - name: StatementBroker__c
+    value: Lookup(Statement Broker)
+  - name: VTOComment__c
+    value: Text(100)
+labels:
+  - name: ApplicationCZvonGP__c
+    value: CZ from GP
+  - name: ApplicationGPanCZ__c
+    value: CZ to GP
+  - name: ApplicationReceived__c
+    value: Application Received
+  - name: BankGP__c
+    value: Bank Account
+  - name: BatchId__c
+    value: BatchId
+  - name: BookOfBusinessExport__c
+    value: BoB / IBFR
+  - name: BrokerConsultantAccount__c
+    value: Broker Consultant Account
+  - name: BusinessAccount__c
+    value: Account Name
+  - name: BusinessResponsible__c
+    value: Broker Consultant
+  - name: Cancellation__c
+    value: Cancellation
+  - name: CareIndicator__c
+    value: Care Indicator
+  - name: CommissionAgreementId__c
+    value: Commission Agreement ID
+  - name: CommissionAgreementStatus__c
+    value: Status
+  - name: CommissionAgreementType__c
+    value: Commission Agreement Type
+  - name: CommissionLiability__c
+    value: Commission Liable
+  - name: DataSource__c
+    value: DataSource
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: FirstApplicationReceived__c
+    value: First Application Received
+  - name: KeyAccountNumber__c
+    value: Key Account Number
+  - name: LapsAmount__c
+    value: Laps Amount
+  - name: LapsLiability__c
+    value: Laps Liability
+  - name: LapsPercent__c
+    value: Laps Percent
+  - name: LapsPercentDisplay__c
+    value: Laps Percent
+  - name: LastApplicationReceived__c
+    value: Last Application Received
+  - name: LastPolicyDate__c
+    value: Last Policy Issued
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Commission Agreement Name
+  - name: OwnerId
+    value: Owner
+  - name: ParentCommissionAgreement__c
+    value: Member of Network
+  - name: Partnernet__c
+    value: Partnernet
+  - name: PortalStatementBroker__c
+    value: Portal Broker
+  - name: Proportional__c
+    value: Commission Payment Type
+  - name: ProtectionOfTrustAmount__c
+    value: VSH Amount
+  - name: ProtectionOfTrustStatus__c
+    value: VSH Status
+  - name: StatementBroker__c
+    value: H-Number
+  - name: VTOComment__c
+    value: Comment
+deLabels:
+  - name: ApplicationCZvonGP__c
+    value: CZ von GP
+  - name: ApplicationGPanCZ__c
+    value: CZ an GP
+  - name: ApplicationReceived__c
+    value: Bewerbungseingang
+  - name: BankGP__c
+    value: Bank GP
+  - name: BookOfBusinessExport__c
+    value: BoB / IBFR Code
+  - name: BrokerConsultantAccount__c
+    value: VL/BD-Konto
+  - name: BusinessAccount__c
+    value: Makler Name
+  - name: BusinessResponsible__c
+    value: VL/BD
+  - name: Cancellation__c
+    value: Kündigung
+  - name: CareIndicator__c
+    value: Betreuungsgruppe
+  - name: CommissionAgreementId__c
+    value: Provisionsvereinbarungs ID
+  - name: CommissionAgreementStatus__c
+    value: Status
+  - name: CommissionAgreementType__c
+    value: Makler Typ
+  - name: CommissionLiability__c
+    value: Haftung AP
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: FirstApplicationReceived__c
+    value: Erster Antrag eingegangen
+  - name: KeyAccountNumber__c
+    value: KA Nummer
+  - name: LapsAmount__c
+    value: Stornoreserve
+  - name: LapsLiability__c
+    value: Haftung Stornoreserve
+  - name: LapsPercent__c
+    value: Stornoreservesatz
+  - name: LapsPercentDisplay__c
+    value: Stornoreservesatz
+  - name: LastApplicationReceived__c
+    value: Letzter Antrag eingegangen
+  - name: LastPolicyDate__c
+    value: Letzter Antrag policiert
+  - name: ParentCommissionAgreement__c
+    value: Mitglied des Netzwerks
+  - name: PortalStatementBroker__c
+    value: Portal Broker
+  - name: Proportional__c
+    value: Provisionszahlungsart
+  - name: ProtectionOfTrustAmount__c
+    value: VSH Betrag
+  - name: ProtectionOfTrustStatus__c
+    value: VSH Status
+  - name: StatementBroker__c
+    value: H-Nummer
+  - name: VTOComment__c
+    value: Bemerkung
+picklists:
+  - name: CareIndicator__c
+    value: Top-5
+  - name: CommissionAgreementStatus__c
+    value: Aktiv,Bewerbung,Bewerbung (CNB),CNB,Kündigung,NZG,Sali,Sali(ohne IHK),Widerruf,Widerruf(ohne IHK),PoolGP,PoolGP (IHK gelöscht),PoolGP (CLE GP)
+  - name: CommissionAgreementType__c
+    value: MFA,Broker,No Contract,No Info,Special agreement
+  - name: Partnernet__c
+    value: Portal Access,Correspondence Post,Correspondence Online,Commission Statement Post,Commission Statement Online,Application Queries Post,Application Queries Online
+dePicklists:
+  - name: CommissionAgreementType__c
+    value: Makler,MFA,Kein Vertrag,Keine Information,Sondervereinbarung
+  - name: Partnernet__c
+    value: Nachbearbeitung Anträge Online,Nachbearbeitung Anträge per Post,CCV Abrechnung Online,CCV Abrechnung per Post,Schriftverkehr Online,Schriftverkehr per Post,Zugang BrokerPortal
+removals:
+  - name: CommissionAgreement__c
+  - name: CommissionPaid__c
+  - name: MainAccount__c
+  - name: MemberOfNetwork__c
+  - name: ParentContract__c
+  - name: PortalBroker__c
+  - name: RecordTypeId
+  - name: GPIHKNumber__c
+mandatory:
+  - name: BankGP__c
+  - name: MarkForDeletion__c
+  - name: OwnerId
+  - name: ProtectionOfTrustStatus__c
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsDeleted
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

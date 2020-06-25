@@ -1,0 +1,253 @@
+name: campaign
+dataTypes:
+  - name: CampaignContent__c
+    value: Picklist
+  - name: ContactOnQuestions__c
+    value: Lookup(User)
+  - name: DietaryRequirementForRegistration__c
+    value: Checkbox
+  - name: DisplayVVIDNumberForRegistration__c
+    value: Checkbox
+  - name: DocumentURL__c
+    value: URL(255)
+  - name: DurationOfParticipation__c
+    value: Text(255)
+  - name: EventCapacity__c
+    value: Number(4, 0)
+  - name: EventCommonName__c
+    value: Text(100)
+  - name: FADbTransaction__c
+    value: Text(8)
+  - name: Goal__c
+    value: Picklist
+  - name: GTWSessionID__c
+    value: Text(50)
+  - name: GutBeratenPoints__c
+    value: Number(18, 0)
+  - name: IsRegConfirmationRequired__c
+    value: Checkbox
+  - name: IsRestrictedCampaign__c
+    value: Checkbox
+  - name: LocationCity__c
+    value: Text(40)
+  - name: LocationName__c
+    value: Text(40)
+  - name: LocationNameExtension__c
+    value: Text(40)
+  - name: LocationStreet__c
+    value: Text(40)
+  - name: LocationUrl__c
+    value: URL(255)
+  - name: LocationZip__c
+    value: Text(20)
+  - name: Name
+    value: Text(80)
+  - name: NeedHotelRoomAvailabilityForRegistration__c
+    value: Checkbox
+  - name: OwnerId
+    value: Lookup(User)
+  - name: PointsEarning__c
+    value: Number(3, 0)
+  - name: RegistrationURL__c
+    value: URL(255)
+  - name: SurveyURL__c
+    value: URL(255)
+  - name: TrainerEMail__c
+    value: Formula (Text)
+  - name: TrainerFirstName__c
+    value: Formula (Text)
+  - name: TrainerLastName__c
+    value: Formula (Text)
+  - name: TrainerPhone__c
+    value: Formula (Text)
+  - name: TrainerSalutation__c
+    value: Formula (Text)
+  - name: TrainingType__c
+    value: Picklist
+  - name: Type
+    value: Picklist
+  - name: VVIDNumberForRegistration__c
+    value: Checkbox
+  - name: WBINumber__c
+    value: Text(9)
+  - name: WebinarMinAttendanceDuration__c
+    value: Number(18, 0)
+  - name: WebinarStart__c
+    value: Date/Time
+labels:
+  - name: CampaignContent__c
+    value: Campaign Content
+  - name: ContactOnQuestions__c
+    value: Contact On Questions
+  - name: DietaryRequirementForRegistration__c
+    value: Dietary Requirement For Registration
+  - name: DisplayVVIDNumberForRegistration__c
+    value: Display VVIDNumber For Registration
+  - name: DocumentURL__c
+    value: Document URL
+  - name: DurationOfParticipation__c
+    value: Duration Of Participation
+  - name: EventCapacity__c
+    value: Event Capacity
+  - name: EventCommonName__c
+    value: Event Common Name
+  - name: FADbTransaction__c
+    value: FA-DB Transaction
+  - name: Goal__c
+    value: Goal
+  - name: GTWSessionID__c
+    value: GoToWebinar Session ID
+  - name: GutBeratenPoints__c
+    value: Gut Beraten Points
+  - name: IsRegConfirmationRequired__c
+    value: Confirm Registration
+  - name: IsRestrictedCampaign__c
+    value: Is Restricted Campaign
+  - name: LocationCity__c
+    value: City
+  - name: LocationName__c
+    value: Location Name
+  - name: LocationNameExtension__c
+    value: Address Extension
+  - name: LocationStreet__c
+    value: Street
+  - name: LocationUrl__c
+    value: Website
+  - name: LocationZip__c
+    value: Zip Code
+  - name: Name
+    value: Campaign Name
+  - name: NeedHotelRoomAvailabilityForRegistration__c
+    value: Need Hotel Room Avail For Registration
+  - name: OwnerId
+    value: Campaign Owner
+  - name: PointsEarning__c
+    value: Points Earning
+  - name: RegistrationURL__c
+    value: Registration URL
+  - name: SurveyURL__c
+    value: Survey URL
+  - name: TrainerEMail__c
+    value: Trainer EMail
+  - name: TrainerFirstName__c
+    value: Trainer First Name
+  - name: TrainerLastName__c
+    value: Trainer Last Name
+  - name: TrainerPhone__c
+    value: Trainer Phone
+  - name: TrainerSalutation__c
+    value: Trainer Salutation
+  - name: TrainingType__c
+    value: Training Type
+  - name: Type
+    value: Type
+  - name: VVIDNumberForRegistration__c
+    value: VVIDNumber For Registration
+  - name: WBINumber__c
+    value: WBI Number
+  - name: WebinarMinAttendanceDuration__c
+    value: Webinar Min Attendance Duration
+  - name: WebinarStart__c
+    value: Webinar Start
+deLabels:
+  - name: CampaignContent__c
+    value: Inhalt
+  - name: ContactOnQuestions__c
+    value: Kontakt bei Rückfragen
+  - name: DietaryRequirementForRegistration__c
+    value: Benötigt Besondere Lebensmittel
+  - name: DisplayVVIDNumberForRegistration__c
+    value: Anzeige der VVID
+  - name: DocumentURL__c
+    value: Dokumentenlink
+  - name: DurationOfParticipation__c
+    value: Teilnahmedauer
+  - name: EventCapacity__c
+    value: Anzahl Teilnehmer
+  - name: EventCommonName__c
+    value: Event Gruppenname
+  - name: FADbTransaction__c
+    value: FA-DB Vorgangsnr.
+  - name: Goal__c
+    value: Ziel
+  - name: GutBeratenPoints__c
+    value: Gut beraten Punkte
+  - name: IsRegConfirmationRequired__c
+    value: Registrierung manuell bestätigen
+  - name: IsRestrictedCampaign__c
+    value: Nur Für Eingeladene Teilnehmer
+  - name: LocationCity__c
+    value: Ort
+  - name: LocationName__c
+    value: Veranstaltungsort
+  - name: LocationNameExtension__c
+    value: Adresszusatz
+  - name: LocationStreet__c
+    value: Straße und Hausnummer
+  - name: LocationZip__c
+    value: PLZ
+  - name: PointsEarning__c
+    value: Gut Beraten Punkte
+  - name: RegistrationURL__c
+    value: Registrierungslink
+  - name: SurveyURL__c
+    value: Umfragelink
+  - name: TrainerEMail__c
+    value: Trainer EMail
+  - name: TrainerFirstName__c
+    value: Trainer Vorname
+  - name: TrainerLastName__c
+    value: Trainer Nachame
+  - name: TrainerPhone__c
+    value: Trainer Telefon
+  - name: TrainerSalutation__c
+    value: Trainer Anrede
+  - name: TrainingType__c
+    value: Durchführungsweg
+  - name: WBINumber__c
+    value: WBI Nummer
+  - name: WebinarMinAttendanceDuration__c
+    value: Min. Teilnahmedauer
+picklists:
+  - name: CampaignContent__c
+    value: Privat-- Life-/Pension Coverage,Privat-- Health-/Long-Term-Care coverage,Privat - Property-/Indemnity Coverage,Business Clients - Precaution (bAV/Personenversicherung),Business Clients - Property-/Indemnity Coverage,Cross-Category,Advisory skills
+  - name: Goal__c
+    value: APE,Image / Brand,Product presentations/strengthening,New Broker Leads,New Customer Leads
+  - name: TrainingType__c
+    value: Classroom Training,Individual Training,Blended Learning,Guided E-Learning,Self-paced E-Learning,Learning at the Desk
+  - name: Type
+    value: Workshops (single event),Webinars,Roadshows (several events),Dublin-Journeys,Sport Events,Conventions,Customer Events (local Events),Sales Campaign
+dePicklists:
+  - name: CampaignContent__c
+    value: Beratungskompetenz,Firmenkunden - Vorsorge (bAV/Personenversicherung),Firmenkunden - Sach-/Schadenversicherung,Spartenübergreifend,Privat - Sach-/Schadenversicherung,Privat-Vorsorge - Kranken-/Pflegeversicherung,Privat-Vorsorge - Lebens-/Rentenversicherung
+  - name: Goal__c
+    value: APE,Image / Brand,neue GP gewinnen (Leads),neue Endkunden gewinnen,Produktvorstellungen/-stärkung
+  - name: TrainingType__c
+    value: Blended Learning,Präsenzveranstaltung,gesteuertes E-Learning,Einzeltraining,Lernen am Arbeitsplatz,selbstgesteuertes E-Learning
+removals:
+mandatory:
+  - name: DietaryRequirementForRegistration__c
+  - name: DisplayVVIDNumberForRegistration__c
+  - name: IsRegConfirmationRequired__c
+  - name: IsRestrictedCampaign__c
+  - name: Name
+  - name: NeedHotelRoomAvailabilityForRegistration__c
+  - name: OwnerId
+  - name: VVIDNumberForRegistration__c
+  - name: IsDeleted
+  - name: IsActive
+  - name: NumberOfLeads
+  - name: NumberOfConvertedLeads
+  - name: NumberOfContacts
+  - name: NumberOfResponses
+  - name: NumberOfOpportunities
+  - name: NumberOfWonOpportunities
+  - name: AmountAllOpportunities
+  - name: AmountWonOpportunities
+  - name: CreatedDate
+  - name: CreatedById
+  - name: LastModifiedDate
+  - name: LastModifiedById
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

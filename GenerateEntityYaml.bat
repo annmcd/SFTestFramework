@@ -1,0 +1,1 @@
+mvn clean test -Pyaml-generator -DentityList=%1

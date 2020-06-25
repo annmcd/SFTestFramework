@@ -1,0 +1,204 @@
+name: strategic_data__c
+dataTypes:
+  - name: AccountID__c
+    value: Master-Detail(Account)
+  - name: AdvisorySoftware__c
+    value: Picklist (Multi-Select)
+  - name: BatchId__c
+    value: Text(50)
+  - name: BiPRO__c
+    value: Checkbox
+  - name: BiPROSystem__c
+    value: Picklist
+  - name: BusinessAreaCapital__c
+    value: Picklist
+  - name: BusinessAreaHealth__c
+    value: Picklist
+  - name: BusinessAreaLife__c
+    value: Picklist
+  - name: BusinessAreaProperties__c
+    value: Picklist
+  - name: ClientManagementSystem__c
+    value: Picklist (Multi-Select)
+  - name: Communication__c
+    value: Picklist (Multi-Select)
+  - name: ConferencingTool__c
+    value: Picklist
+  - name: DataSource__c
+    value: Text(200)
+  - name: ESignaturePlatform__c
+    value: Picklist
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: GeneralInformation__c
+    value: Picklist (Multi-Select)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: PotentialClass__c
+    value: Picklist
+  - name: RiskAssessmentPlatform__c
+    value: Picklist
+  - name: SocialMediaPlatform__c
+    value: Picklist (Multi-Select)
+  - name: StrategicDataID__c
+    value: Text(255)  (External ID) (Unique Case Insensitive)
+  - name: SupportProfile__c
+    value: Picklist (Multi-Select)
+  - name: TargetGroup__c
+    value: Picklist (Multi-Select)
+  - name: HasTLSEncryption__c
+    value: Checkbox
+  - name: IsUsingConferencingTool__c
+    value: Checkbox
+labels:
+  - name: AccountID__c
+    value: AccountID
+  - name: AdvisorySoftware__c
+    value: Advisory Software
+  - name: BatchId__c
+    value: BatchId
+  - name: bAVPlatform__c
+    value: bAV Platform
+  - name: BiPRO__c
+    value: BiPRO
+  - name: BiPROSystem__c
+    value: BiPRO System
+  - name: BusinessAreaCapital__c
+    value: Business Area Capital
+  - name: BusinessAreaHealth__c
+    value: Business Area Health
+  - name: BusinessAreaLife__c
+    value: Business Area Life
+  - name: BusinessAreaProperties__c
+    value: Business Area Properties
+  - name: ClientManagementSystem__c
+    value: Client Management System
+  - name: Communication__c
+    value: Communication
+  - name: ConferencingTool__c
+    value: Conferencing Tool
+  - name: DataSource__c
+    value: DataSource
+  - name: ESignaturePlatform__c
+    value: ESignature Platform
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: GeneralInformation__c
+    value: General Information
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Strategic Data Name
+  - name: PotentialClass__c
+    value: Potential Class
+  - name: RiskAssessmentPlatform__c
+    value: Risk Assessment Platform
+  - name: SocialMediaPlatform__c
+    value: Social Media
+  - name: StrategicDataID__c
+    value: StrategicDataID
+  - name: SupportProfile__c
+    value: Support Profile
+  - name: TargetGroup__c
+    value: Target Group
+  - name: HasTLSEncryption__c
+    value: TLS Encryption
+  - name: IsUsingConferencingTool__c
+    value: Use Conferencing Tool
+deLabels:
+  - name: AccountID__c
+    value: Geschäftspartner
+  - name: AdvisorySoftware__c
+    value: Beratungssoftware
+  - name: bAVPlatform__c
+    value: bAV Portallösung
+  - name: BiPRO__c
+    value: BiPRO
+  - name: BiPROSystem__c
+    value: BiPRO System
+  - name: BusinessAreaCapital__c
+    value: Geschäftsfeld Kapital
+  - name: BusinessAreaHealth__c
+    value: Geschäftsfeld Kranken
+  - name: BusinessAreaLife__c
+    value: Geschäftsfeld Leben
+  - name: BusinessAreaProperties__c
+    value: Geschäftsfeld Sach
+  - name: ClientManagementSystem__c
+    value: Kundenverwaltungssysteme
+  - name: Communication__c
+    value: Kommunikation
+  - name: ConferencingTool__c
+    value: Konferenz-Software
+  - name: ESignaturePlatform__c
+    value: E-Signatur-Lösung
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: GeneralInformation__c
+    value: Allgemeine Informationen
+  - name: PotentialClass__c
+    value: Potentialstufe
+  - name: RiskAssessmentPlatform__c
+    value: Risikovoranfrage
+  - name: StrategicDataID__c
+    value: Strategiedaten ID
+  - name: SupportProfile__c
+    value: Unterstützungsprofil
+  - name: TargetGroup__c
+    value: Zielgruppe
+  - name: HasTLSEncryption__c
+    value: TLS Verschlüsselung
+  - name: IsUsingConferencingTool__c
+    value: Onlineberatung
+picklists:
+  - name: AdvisorySoftware__c
+    value: CLE VorsorgePlaner,Dr. Kriebel Rechner,eVorsorge,FB-xpert (Franke & Bornberg),FinanzPlaner 24,Haufe AltersvorsorgePlaner,Levelnine,Morgen & Morgen,none,Other,softfair,xbAV
+  - name: bAVPlatform__c
+    value: e-pension,e-Vorsorge,none,other,x-bav
+  - name: BiPROSystem__c
+    value: AMS,b-Tix,DEMV,Finanzoffice,Fondskonzept,IWM,Keasy,Mr Money,NKK,other,Salia,smartinsurtech,VEMA,VIAS,Vivofinanz,Zeitsprung
+  - name: BusinessAreaCapital__c
+    value: very low,low,middle,high,very high
+  - name: BusinessAreaHealth__c
+    value: very low,low,middle,high,very high
+  - name: BusinessAreaLife__c
+    value: very low,low,middle,high,very high
+  - name: BusinessAreaProperties__c
+    value: very low,low,middle,high,very high
+  - name: ClientManagementSystem__c
+    value: ab-Agenta (artBASE),AGENTURA (ASAsoft GmbH),Akquise-Center (Softfair),Ameise (blau direkt),AMS (AssFinet),Apella MSC (Apella),Aperco Makleroffice (Aperco),Avario CRM (Avario),BiPRO-Box (Mr. Money),b-tix Client (b-tix),CASA (CHARTA),CORPIT VS (Corpi),Dokumentenservice (i-planner),Dokumentenservice (VEMA),Dokumenten-Service (zeitsprung),Easy client (easy login GmbH),eigenes MVP (Check24),eigenes MVP (pma),eigenes MVP (VVH),FinanceOffice (IWM),FinanzProfiT (Implanium),Finass (Frank Weber Softwareentwicklung),GIN-AX (K2-Consult),IMA (Inveda),InfoAgent (Buchholz),Inopool (ino24),IVM (Holl & Partner),Keasy (vfm),KVV (eZ Software),LISA (wmLISA Software),Makler Jeannie (Balk & Braun),Maklerservicecenter (FondsKonzept),Moneycheck-CRM (Finanzsystemhaus),myVast (Volz),none,OASIS (NKK),openVIVA c2 (mb Support),Other,Polaris (Gallwitz),Power Weiss (Weiss),Professional Works (DEMV),SALIA (SQL Projekt),Scan2find (ASPOA),serviceOFFICE (Mapware),U-Makler (Novosys),VENTA (C1FinCon),VENTA KVM (Fonds Finanz),VIAS (LUTRONIK)
+  - name: Communication__c
+    value: Applications to Broker CLE,Applications to Broker Consultant,Communication via EMail,Communication via Phone,Communication via Post,No communication desired,Send Policy to Broker,Send Policy to Policy-Holder
+  - name: ConferencingTool__c
+    value: Facetime,Flexperto,Go To Meeting/Webinar,Microsoft Teams,none,other,Skype,Snapview,Teamviewer,VEMALife,Zoom
+  - name: ESignaturePlatform__c
+    value: Adobe Sign,Canada Life Angebotssoftware (edocbox),edocbox (Nepatec),E-Signatur mit Franke & Bornberg,E-Signatur mit Morgen & Morgen,E-Signatur mit Softfair,E-Signatur mit vers.diagnose,Insign (IS2),none,other
+  - name: GeneralInformation__c
+    value: Additional Info Sheet filled,Commission Sacrifice Tariffs,Maturing Policies,Poolmember,Re-Investment-Manager in use,Re-Investment-Manager received
+  - name: PotentialClass__c
+    value: A,B,C,D
+  - name: RiskAssessmentPlatform__c
+    value: Canada Life Magnum,none,other,Riva (über Leveline oder Softfair),vers.diagnose
+  - name: SocialMediaPlatform__c
+    value: Facebook,Instagram,Linkedin,none,other,TikTok,Twitter,Xing,YouTube
+  - name: SupportProfile__c
+    value: Advanced (Product-)Training,Advisorytool,Broker-Portal,Call Center,Clear Sales-Approach,Client Activity,DMA Inhouse-Trainings,External Consultancy,Incentives,Kompetence-Support,Leads,Local Marketing,Online Fundinformation,Online-Presentations,Preliminary Risk-Assecssment,Seminars / Workshops,SME Support for Client Appointments,Support- and Sales-Concept for Client Contact,Support getting new clients,Support on Cancellations,Support on Client Appointments,Support on Salesactivities,Tele-Interview,Telephonetraining,Valuable Presentation Materials,Webinars
+dePicklists:
+removals:
+  - name: Partnernet__c
+mandatory:
+  - name: AccountID__c
+  - name: BiPRO__c
+  - name: MarkForDeletion__c
+  - name: CreatedById
+  - name: CreatedDate
+  - name: HasTLSEncryption__c
+  - name: IsDeleted
+  - name: IsUsingConferencingTool__c
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

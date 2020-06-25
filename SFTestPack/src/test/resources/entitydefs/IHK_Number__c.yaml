@@ -1,0 +1,74 @@
+name: ihk_number__c
+dataTypes:
+  - name: Account__c
+    value: Lookup(Account)
+  - name: BatchId__c
+    value: Text(50)
+  - name: DataSource__c
+    value: Text(200)
+  - name: EndDate__c
+    value: Date/Time
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: IHKChecksumStatus__c
+    value: Picklist
+  - name: IHKNumber__c
+    value: Text(255)  (External ID) (Unique Case Sensitive)
+  - name: IsRegistered__c
+    value: Checkbox
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+labels:
+  - name: Account__c
+    value: Account
+  - name: BatchId__c
+    value: Batch ID
+  - name: DataSource__c
+    value: Data Source
+  - name: EndDate__c
+    value: Valid until
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: IHKChecksumStatus__c
+    value: IHK Checksum Status
+  - name: IHKNumber__c
+    value: IHK Number
+  - name: IsRegistered__c
+    value: Registered
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: IHK Number Name
+deLabels:
+  - name: Account__c
+    value: Geschäftspartner
+  - name: EndDate__c
+    value: Gültig bis
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: IHKChecksumStatus__c
+    value: Status IHK Prüfsumme
+  - name: IHKNumber__c
+    value: IHK Nummer
+  - name: IsRegistered__c
+    value: Registriert
+picklists:
+  - name: IHKChecksumStatus__c
+    value: Invalid Checksum,Valid
+dePicklists:
+  - name: IHKChecksumStatus__c
+    value: Prüfsumme ungültig,gültig
+removals:
+mandatory:
+  - name: MarkForDeletion__c
+  - name: CreatedById
+  - name: IsDeleted
+  - name: IsRegistered__c
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: OwnerId
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

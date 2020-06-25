@@ -1,0 +1,19 @@
+role:
+  - { name: "Broker Consultant BaWu", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Broker Consultant Bayern", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Broker Consultant Mitte", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Broker Consultant Nord", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Broker Consultant NRW", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Director Sales", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Full Access Germany", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Regional Director BaWu", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Regional Director Bayern", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Regional Director Central", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Regional Director Cooperation", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Regional Director Mitte", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Regional Director Nord", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Regional Director NRW", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "Regional Director RKA", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "ZKA 1", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "ZKA 2", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}
+  - { name: "ZKA 3", opportunityAccessForAccountOwner: Edit, caseAccessForAccountOwner: Edit, contactAccessForAccountOwner: Edit}

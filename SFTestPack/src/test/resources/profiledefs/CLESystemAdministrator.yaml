@@ -1,0 +1,1192 @@
+name: CLE System Administrator
+object:
+  - { type: "Account", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "AppAnalyticsQueryRequest", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Asset", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "AuthorizationForm", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "AuthorizationFormConsent", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "AuthorizationFormDataUse", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "AuthorizationFormText", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Campaign", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Case", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Contact", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "ContactPointTypeConsent", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "ContactRequest", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Contract", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "DataUseLegalBasis", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "DataUsePurpose", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Document", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "DuplicateRecordSet", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Idea", read: true, edit: true, create: true, delete: true, viewAll: false, modifyAll: false}
+  - { type: "Image", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Individual", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Lead", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Macro", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Opportunity", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Order", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Pricebook2", read: true, edit: true, create: true, delete: true, viewAll: false, modifyAll: false}
+  - { type: "Product2", read: true, edit: true, create: true, delete: true, viewAll: false, modifyAll: false}
+  - { type: "ProfileSkillEndorsement", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "PushTopic", read: true, edit: true, create: true, delete: true, viewAll: false, modifyAll: false}
+  - { type: "Quote", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Solution", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "StreamingChannel", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Scorecard", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "ScorecardMetric", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "ScorecardAssociation", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Agreement_Line_Item__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Broker_Consultant_Account__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Commission_Agreement__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Commission_Payment__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Competitors__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "IHK_Number__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "iSuite_Task__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Policy_Application__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Policy_Contact_Relationship__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Region__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Statement_Broker__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Strategic_Data__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "Target__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "SalesReport__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "SalesReportTarget__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "GoToWebinarSession__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+  - { type: "GoToWebinarRequestJob__c", read: true, edit: true, create: true, delete: true, viewAll: true, modifyAll: true}
+unCheckedObject:
+  - name: Skill
+  - name: SkillUser
+field:
+  - { type: "Account", fieldName: "AccountHasOptedOutOfEmail__c", read: true, edit: true}
+  - { type: "Account", fieldName: "AccountHasOptedOutOfFax__c", read: true, edit: true}
+  - { type: "Account", fieldName: "AccountHasOptedOutOfPhone__c", read: true, edit: true}
+  - { type: "Account", fieldName: "AccountId__c", read: true, edit: false}
+  - { type: "Account", fieldName: "AccountNumber", read: true, edit: true}
+  - { type: "Account", fieldName: "AccountSource", read: true, edit: true}
+  - { type: "Account", fieldName: "AccountType__c", read: true, edit: true}
+  - { type: "Account", fieldName: "AnnualCaseCountFactor__c", read: true, edit: false}
+  - { type: "Account", fieldName: "AnnualRevenue", read: true, edit: true}
+  - { type: "Account", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Account", fieldName: "BillingAddress", read: true, edit: true}
+  - { type: "Account", fieldName: "BrokerConsultantAccount__c", read: true, edit: true}
+  - { type: "Account", fieldName: "BrokerStatus__c", read: true, edit: false}
+  - { type: "Account", fieldName: "BusinessEmail__c", read: true, edit: true}
+  - { type: "Account", fieldName: "BusinessMobile__c", read: true, edit: true}
+  - { type: "Account", fieldName: "BusinessResponsible__c", read: true, edit: true}
+  - { type: "Account", fieldName: "Classification__c", read: true, edit: true}
+  - { type: "Account", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Account", fieldName: "Description", read: true, edit: true}
+  - { type: "Account", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Account", fieldName: "Fax", read: true, edit: true}
+  - { type: "Account", fieldName: "HeadAccount__c", read: true, edit: true}
+  - { type: "Account", fieldName: "IHKNumber__c", read: true, edit: false}
+  - { type: "Account", fieldName: "Industry", read: true, edit: true}
+  - { type: "Account", fieldName: "IsProductive__c", read: true, edit: false}
+  - { type: "Account", fieldName: "Jigsaw", read: true, edit: true}
+  - { type: "Account", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Account", fieldName: "NumberOfEmployees", read: true, edit: true}
+  - { type: "Account", fieldName: "OfficeNumber__c", read: true, edit: true}
+  - { type: "Account", fieldName: "Ownership", read: true, edit: true}
+  - { type: "Account", fieldName: "ParagraphNumber__c", read: true, edit: false}
+  - { type: "Account", fieldName: "Parent", read: true, edit: true}
+  - { type: "Account", fieldName: "PartnerNumber__c", read: true, edit: false}
+  - { type: "Account", fieldName: "PersonEmail__c", read: true, edit: true}
+  - { type: "Account", fieldName: "Phone", read: true, edit: true}
+  - { type: "Account", fieldName: "PolicyContactId__c", read: true, edit: true}
+  - { type: "Account", fieldName: "Rating", read: true, edit: true}
+  - { type: "Account", fieldName: "Region__c", read: true, edit: false}
+  - { type: "Account", fieldName: "Salutation__c", read: true, edit: false}
+  - { type: "Account", fieldName: "SecurityIndicator__c", read: true, edit: true}
+  - { type: "Account", fieldName: "ShippingAddress", read: true, edit: true}
+  - { type: "Account", fieldName: "Sic", read: true, edit: true}
+  - { type: "Account", fieldName: "SicDesc", read: true, edit: true}
+  - { type: "Account", fieldName: "Site", read: true, edit: true}
+  - { type: "Account", fieldName: "TickerSymbol", read: true, edit: true}
+  - { type: "Account", fieldName: "Type", read: true, edit: true}
+  - { type: "Account", fieldName: "Website", read: true, edit: true}
+  - { type: "AccountContactRelation", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "AccountContactRelation", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "AccountContactRelation", fieldName: "EndDate", read: true, edit: true}
+  - { type: "AccountContactRelation", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "AccountContactRelation", fieldName: "IsActive", read: true, edit: true}
+  - { type: "AccountContactRelation", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "AccountContactRelation", fieldName: "RelationshipKey__c", read: true, edit: true}
+  - { type: "AccountContactRelation", fieldName: "Roles", read: true, edit: true}
+  - { type: "AccountContactRelation", fieldName: "StartDate", read: true, edit: true}
+  - { type: "AccountTeamMember", fieldName: "AccountTeamMemberId__c", read: true, edit: true}
+  - { type: "AccountTeamMember", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "AccountTeamMember", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "AccountTeamMember", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "AccountTeamMember", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Agreement_Line_Item__c", fieldName: "AgreementLineItemId__c", read: true, edit: false}
+  - { type: "Agreement_Line_Item__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Agreement_Line_Item__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Agreement_Line_Item__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Agreement_Line_Item__c", fieldName: "GISProductCode__c", read: true, edit: false}
+  - { type: "Agreement_Line_Item__c", fieldName: "InitialRate__c", read: true, edit: false}
+  - { type: "Agreement_Line_Item__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Agreement_Line_Item__c", fieldName: "ProductId__c", read: true, edit: true}
+  - { type: "Agreement_Line_Item__c", fieldName: "RenewalRate__c", read: true, edit: false}
+  - { type: "Asset", fieldName: "Account", read: true, edit: true}
+  - { type: "Asset", fieldName: "AssetLevel", read: true, edit: true}
+  - { type: "Asset", fieldName: "AssetProvidedBy", read: true, edit: true}
+  - { type: "Asset", fieldName: "AssetServicedBy", read: true, edit: true}
+  - { type: "Asset", fieldName: "Contact", read: true, edit: true}
+  - { type: "Asset", fieldName: "Description", read: true, edit: true}
+  - { type: "Asset", fieldName: "InstallDate", read: true, edit: true}
+  - { type: "Asset", fieldName: "IsCompetitorProduct", read: true, edit: true}
+  - { type: "Asset", fieldName: "IsInternal", read: true, edit: true}
+  - { type: "Asset", fieldName: "Price", read: true, edit: true}
+  - { type: "Asset", fieldName: "Product2", read: true, edit: true}
+  - { type: "Asset", fieldName: "ProductCode", read: true, edit: true}
+  - { type: "Asset", fieldName: "PurchaseDate", read: true, edit: true}
+  - { type: "Asset", fieldName: "Quantity", read: true, edit: true}
+  - { type: "Asset", fieldName: "SerialNumber", read: true, edit: true}
+  - { type: "Asset", fieldName: "Status", read: true, edit: true}
+  - { type: "Asset", fieldName: "StockKeepingUnit", read: true, edit: true}
+  - { type: "Asset", fieldName: "UsageEndDate", read: true, edit: true}
+  - { type: "AssetRelationship", fieldName: "RelationshipType", read: true, edit: true}
+  - { type: "AuthorizationForm", fieldName: "DefaultAuthFormText", read: true, edit: true}
+  - { type: "AuthorizationForm", fieldName: "EffectiveFromDate", read: true, edit: true}
+  - { type: "AuthorizationForm", fieldName: "EffectiveToDate", read: true, edit: true}
+  - { type: "AuthorizationForm", fieldName: "IsSignatureRequired", read: true, edit: true}
+  - { type: "AuthorizationForm", fieldName: "RevisionNumber", read: true, edit: true}
+  - { type: "AuthorizationFormConsent", fieldName: "DocumentVersion", read: true, edit: true}
+  - { type: "AuthorizationFormConsent", fieldName: "Status", read: true, edit: true}
+  - { type: "AuthorizationFormText", fieldName: "ContentDocument", read: true, edit: true}
+  - { type: "AuthorizationFormText", fieldName: "FullAuthorizationFormUrl", read: true, edit: true}
+  - { type: "AuthorizationFormText", fieldName: "Locale", read: true, edit: true}
+  - { type: "AuthorizationFormText", fieldName: "SummaryAuthFormText", read: true, edit: true}
+  - { type: "Broker_Consultant_Account__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Broker_Consultant_Account__c", fieldName: "BrokerConsultant__c", read: true, edit: true}
+  - { type: "Broker_Consultant_Account__c", fieldName: "BrokerConsultantAccountId__c", read: true, edit: true}
+  - { type: "Broker_Consultant_Account__c", fieldName: "BrokerConsultantName__c", read: true, edit: false}
+  - { type: "Broker_Consultant_Account__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Broker_Consultant_Account__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Broker_Consultant_Account__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Broker_Consultant_Account__c", fieldName: "Region__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "DocumentURL__c", read: true, edit: false}
+  - { type: "Campaign", fieldName: "ActualCost", read: true, edit: true}
+  - { type: "Campaign", fieldName: "AmountAllOpportunities", read: true, edit: false}
+  - { type: "Campaign", fieldName: "AmountWonOpportunities", read: true, edit: false}
+  - { type: "Campaign", fieldName: "BudgetedCost", read: true, edit: true}
+  - { type: "Campaign", fieldName: "CampaignContent__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "ContactOnQuestions__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "Description", read: true, edit: true}
+  - { type: "Campaign", fieldName: "DurationOfParticipation__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "EndDate", read: true, edit: true}
+  - { type: "Campaign", fieldName: "ExpectedResponse", read: true, edit: true}
+  - { type: "Campaign", fieldName: "ExpectedRevenue", read: true, edit: true}
+  - { type: "Campaign", fieldName: "FADbTransaction__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "Goal__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "GutBeratenPoints__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "IsActive", read: true, edit: true}
+  - { type: "Campaign", fieldName: "IsRegConfirmationRequired__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "NumberOfContacts", read: true, edit: false}
+  - { type: "Campaign", fieldName: "NumberOfConvertedLeads", read: true, edit: false}
+  - { type: "Campaign", fieldName: "NumberOfLeads", read: true, edit: false}
+  - { type: "Campaign", fieldName: "NumberOfOpportunities", read: true, edit: false}
+  - { type: "Campaign", fieldName: "NumberOfResponses", read: true, edit: false}
+  - { type: "Campaign", fieldName: "NumberOfWonOpportunities", read: true, edit: false}
+  - { type: "Campaign", fieldName: "NumberSent", read: true, edit: true}
+  - { type: "Campaign", fieldName: "Parent", read: true, edit: true}
+  - { type: "Campaign", fieldName: "PointsEarning__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "RegistrationURL__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "StartDate", read: true, edit: true}
+  - { type: "Campaign", fieldName: "Status", read: true, edit: true}
+  - { type: "Campaign", fieldName: "SurveyURL__c", read: true, edit: false}
+  - { type: "Campaign", fieldName: "TrainerEMail__c", read: true, edit: false}
+  - { type: "Campaign", fieldName: "TrainerFirstName__c", read: true, edit: false}
+  - { type: "Campaign", fieldName: "TrainerLastName__c", read: true, edit: false}
+  - { type: "Campaign", fieldName: "TrainerPhone__c", read: true, edit: false}
+  - { type: "Campaign", fieldName: "TrainerSalutation__c", read: true, edit: false}
+  - { type: "Campaign", fieldName: "TrainingType__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "Type", read: true, edit: true}
+  - { type: "Campaign", fieldName: "WBINumber__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "WebinarMinAttendanceDuration__c", read: true, edit: true}
+  - { type: "Campaign", fieldName: "WebinarStart__c", read: true, edit: true}
+  - { type: "CampaignMember", fieldName: "CalcParticipationHours__c", read: true, edit: true}
+  - { type: "CampaignMember", fieldName: "CalcParticipationMins__c", read: true, edit: true}
+  - { type: "CampaignMember", fieldName: "CampaignName__c", read: true, edit: false}
+  - { type: "CampaignMember", fieldName: "DurationofParticipation__c", read: true, edit: true}
+  - { type: "CampaignMember", fieldName: "GutBeratenPoints__c", read: true, edit: false}
+  - { type: "CampaignMember", fieldName: "MinsofParticipation__c", read: true, edit: true}
+  - { type: "CampaignMember", fieldName: "RegistrationURL__c", read: true, edit: false}
+  - { type: "CampaignMember", fieldName: "WebinarStart__c", read: true, edit: false}
+  - { type: "Case", fieldName: "Account", read: true, edit: false}
+  - { type: "Case", fieldName: "ClosedDate", read: true, edit: false}
+  - { type: "Case", fieldName: "Contact", read: true, edit: true}
+  - { type: "Case", fieldName: "Description", read: true, edit: true}
+  - { type: "Case", fieldName: "IsEscalated", read: true, edit: false}
+  - { type: "Case", fieldName: "Origin", read: true, edit: true}
+  - { type: "Case", fieldName: "Parent", read: true, edit: true}
+  - { type: "Case", fieldName: "Priority", read: true, edit: true}
+  - { type: "Case", fieldName: "Reason", read: true, edit: true}
+  - { type: "Case", fieldName: "Subject", read: true, edit: true}
+  - { type: "Case", fieldName: "SuppliedCompany", read: true, edit: false}
+  - { type: "Case", fieldName: "SuppliedEmail", read: true, edit: false}
+  - { type: "Case", fieldName: "SuppliedName", read: true, edit: false}
+  - { type: "Case", fieldName: "SuppliedPhone", read: true, edit: false}
+  - { type: "Case", fieldName: "Type", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "ApplicationCZvonGP__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "ApplicationGPanCZ__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "ApplicationReceived__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "BankGP__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "BookOfBusinessExport__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "BrokerConsultantAccount__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "BusinessAccount__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "BusinessResponsible__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "Cancellation__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "CareIndicator__c", read: true, edit: false}
+  - { type: "Commission_Agreement__c", fieldName: "CommissionAgreementId__c", read: true, edit: false}
+  - { type: "Commission_Agreement__c", fieldName: "CommissionAgreementStatus__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "CommissionAgreementType__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "CommissionLiability__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "FirstApplicationReceived__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "KeyAccountNumber__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "LapsAmount__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "LapsLiability__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "LapsPercent__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "LapsPercentDisplay__c", read: true, edit: false}
+  - { type: "Commission_Agreement__c", fieldName: "LastApplicationReceived__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "LastPolicyDate__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "ParentCommissionAgreement__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "Partnernet__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "PortalStatementBroker__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "Proportional__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "ProtectionOfTrustAmount__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "ProtectionOfTrustStatus__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "StatementBroker__c", read: true, edit: true}
+  - { type: "Commission_Agreement__c", fieldName: "VTOComment__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "CommissionAgreement__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "CommissionPaymentId__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "DebtAmount__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "LapsAmount__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "LiabilityAmount__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "PaidOutAmount__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "PayholdAmount__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "PaymentAmount__c", read: true, edit: true}
+  - { type: "Commission_Payment__c", fieldName: "StatementDate__c", read: true, edit: false}
+  - { type: "Competitors__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Competitors__c", fieldName: "CompetitionArea__c", read: true, edit: true}
+  - { type: "Competitors__c", fieldName: "CompetitorID__c", read: true, edit: true}
+  - { type: "Competitors__c", fieldName: "CompetitorName__c", read: true, edit: true}
+  - { type: "Competitors__c", fieldName: "CompetitorRanking__c", read: true, edit: true}
+  - { type: "Competitors__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Competitors__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Competitors__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Competitors__c", fieldName: "RankingAreaCombination__c", read: true, edit: true}
+  - { type: "Competitors__c", fieldName: "Reason__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "Account", read: true, edit: true}
+  - { type: "Contact", fieldName: "AddressAddition1__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "AddressAddition2__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "AdvisingProduct__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "AdvisingTopic__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "AssistantName", read: true, edit: true}
+  - { type: "Contact", fieldName: "AssistantPhone", read: true, edit: true}
+  - { type: "Contact", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "Birthdate", read: true, edit: true}
+  - { type: "Contact", fieldName: "BrokerComment__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "CommentCLE__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "CommissionAgreement__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "CompanyName__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "ContactableFromTo__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "ContactId__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "ContactSource__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "DateOfBirth__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "Department", read: true, edit: true}
+  - { type: "Contact", fieldName: "Description", read: true, edit: true}
+  - { type: "Contact", fieldName: "DietaryRequirement__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "DoNotCall", read: true, edit: true}
+  - { type: "Contact", fieldName: "Email", read: true, edit: true}
+  - { type: "Contact", fieldName: "EndAge__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "EventID__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "Fax", read: true, edit: true}
+  - { type: "Contact", fieldName: "Gender__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "HasContractWithCLE__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "HasOptedOutOfEmail", read: true, edit: true}
+  - { type: "Contact", fieldName: "HasOptedOutOfFax", read: true, edit: true}
+  - { type: "Contact", fieldName: "HomePhone", read: true, edit: true}
+  - { type: "Contact", fieldName: "Housenumber__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "ISuitePartnerId__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "Jigsaw", read: true, edit: true}
+  - { type: "Contact", fieldName: "LeadSource", read: true, edit: true}
+  - { type: "Contact", fieldName: "LeadSource__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "LeadType__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "LongAddress__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "MailingAddress", read: true, edit: true}
+  - { type: "Contact", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "MobilePhone", read: true, edit: true}
+  - { type: "Contact", fieldName: "NeedHotelroom__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "OtherAddress", read: true, edit: true}
+  - { type: "Contact", fieldName: "OtherPhone", read: true, edit: true}
+  - { type: "Contact", fieldName: "Outdated__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "PaxusPartnerId__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "Phone", read: true, edit: true}
+  - { type: "Contact", fieldName: "PreferredContactType__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "ReportsTo", read: true, edit: true}
+  - { type: "Contact", fieldName: "StartdateLead__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "SumInsured__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "SumPension__c", read: true, edit: true}
+  - { type: "Contact", fieldName: "Title", read: true, edit: true}
+  - { type: "Contact", fieldName: "VVIDNumber__c", read: true, edit: true}
+  - { type: "ContactPointTypeConsent", fieldName: "DataUsePurpose", read: true, edit: true}
+  - { type: "ContactPointTypeConsent", fieldName: "DoubleConsentCaptureDate", read: true, edit: true}
+  - { type: "ContactPointTypeConsent", fieldName: "EffectiveFrom", read: true, edit: true}
+  - { type: "ContactPointTypeConsent", fieldName: "EffectiveTo", read: true, edit: true}
+  - { type: "Contract", fieldName: "ActivatedBy", read: true, edit: false}
+  - { type: "Contract", fieldName: "ActivatedDate", read: true, edit: false}
+  - { type: "Contract", fieldName: "AdvisingBrokerIHK__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "AdvisingBrokerNumber__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "AdvisingBusinessAccount__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "AnnualOrSinglePremium__c", read: true, edit: false}
+  - { type: "Contract", fieldName: "AnnualPremiumAmount__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "APE__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "bAVType__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "BillingAddress", read: true, edit: true}
+  - { type: "Contract", fieldName: "BrokerConsultant__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "BrokerReferenceNumber__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "Cobe__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "CommissionAgreement__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "CommissionOption__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "CompanySigned", read: true, edit: true}
+  - { type: "Contract", fieldName: "CompanySignedDate", read: true, edit: true}
+  - { type: "Contract", fieldName: "ContractTerm", read: true, edit: true}
+  - { type: "Contract", fieldName: "CurrentServicingBroker__c", read: true, edit: false}
+  - { type: "Contract", fieldName: "CustomerSigned", read: true, edit: true}
+  - { type: "Contract", fieldName: "CustomerSignedDate", read: true, edit: true}
+  - { type: "Contract", fieldName: "CustomerSignedTitle", read: true, edit: true}
+  - { type: "Contract", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "Description", read: true, edit: true}
+  - { type: "Contract", fieldName: "EndDate", read: true, edit: false}
+  - { type: "Contract", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "Indexation__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "InputDate__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "IsSinglePremium__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "IssueDate__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "Name", read: true, edit: true}
+  - { type: "Contract", fieldName: "NumberLifesAssured__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "OutstandingBillAmount__c", read: true, edit: false}
+  - { type: "Contract", fieldName: "OutstandingBillCount__c", read: true, edit: false}
+  - { type: "Contract", fieldName: "OwnerExpirationNotice", read: true, edit: true}
+  - { type: "Contract", fieldName: "PaidToDate__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "PolicyId__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "PolicyNumber__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "PolicyNumberLink__c", read: true, edit: false}
+  - { type: "Contract", fieldName: "PolicyStatus__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "PremiumFrequency__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "Pricebook2", read: true, edit: true}
+  - { type: "Contract", fieldName: "ProductClass__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "ProductCode__c", read: true, edit: false}
+  - { type: "Contract", fieldName: "ProductGroup__c", read: true, edit: false}
+  - { type: "Contract", fieldName: "ProductId__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "RegularPremium__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "ShippingAddress", read: true, edit: true}
+  - { type: "Contract", fieldName: "SinglePremium__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "SpecialTerms", read: true, edit: true}
+  - { type: "Contract", fieldName: "StartDate", read: true, edit: true}
+  - { type: "Contract", fieldName: "SumAssured1__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "SumAssured2__c", read: true, edit: true}
+  - { type: "Contract", fieldName: "HasISuiteTask__c", read: true, edit: false}                        #SAL-4393
+  - { type: "DataUseLegalBasis", fieldName: "Description", read: true, edit: true}
+  - { type: "DataUseLegalBasis", fieldName: "Source", read: true, edit: true}
+  - { type: "DataUsePurpose", fieldName: "Description", read: true, edit: true}
+  - { type: "DataUsePurpose", fieldName: "IsMaintainablePerContactPoint", read: true, edit: true}
+  - { type: "DataUsePurpose", fieldName: "IsMaintainablePerParty", read: true, edit: true}
+  - { type: "DataUsePurpose", fieldName: "IsMaintainablePerType", read: true, edit: true}
+  - { type: "DataUsePurpose", fieldName: "LegalBasis", read: true, edit: true}
+  - { type: "Event", fieldName: "Description", read: true, edit: true}
+  - { type: "Event", fieldName: "IsAllDayEvent", read: true, edit: true}
+  - { type: "Event", fieldName: "Location", read: true, edit: true}
+  - { type: "Event", fieldName: "Type", read: true, edit: true}
+  - { type: "Event", fieldName: "What", read: true, edit: true}
+  - { type: "Event", fieldName: "Who", read: true, edit: true}
+  - { type: "Idea", fieldName: "Status", read: true, edit: false}
+  - { type: "IHK_Number__c", fieldName: "Account__c", read: true, edit: true}
+  - { type: "IHK_Number__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "IHK_Number__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "IHK_Number__c", fieldName: "EndDate__c", read: true, edit: true}
+  - { type: "IHK_Number__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "IHK_Number__c", fieldName: "IHKChecksumStatus__c", read: true, edit: true}
+  - { type: "IHK_Number__c", fieldName: "IHKNumber__c", read: true, edit: true}
+  - { type: "IHK_Number__c", fieldName: "IsRegistered__c", read: true, edit: true}
+  - { type: "IHK_Number__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Individual", fieldName: "BirthDate", read: true, edit: true}
+  - { type: "Individual", fieldName: "CanStorePiiElsewhere", read: true, edit: true}
+  - { type: "Individual", fieldName: "ChildrenCount", read: true, edit: true}
+  - { type: "Individual", fieldName: "ConsumerCreditScore", read: true, edit: true}
+  - { type: "Individual", fieldName: "ConsumerCreditScoreProviderName", read: true, edit: true}
+  - { type: "Individual", fieldName: "ConvictionsCount", read: true, edit: true}
+  - { type: "Individual", fieldName: "DeathDate", read: true, edit: true}
+  - { type: "Individual", fieldName: "GDPRDoubleOptIn__c", read: true, edit: true}
+  - { type: "Individual", fieldName: "GDPRDoubleOptInDate__c", read: true, edit: true}
+  - { type: "Individual", fieldName: "HasOptedOutGeoTracking", read: true, edit: true}
+  - { type: "Individual", fieldName: "HasOptedOutProcessing", read: true, edit: true}
+  - { type: "Individual", fieldName: "HasOptedOutProfiling", read: true, edit: true}
+  - { type: "Individual", fieldName: "HasOptedOutSolicit", read: true, edit: true}
+  - { type: "Individual", fieldName: "HasOptedOutTracking", read: true, edit: true}
+  - { type: "Individual", fieldName: "IndividualsAge", read: true, edit: true}
+  - { type: "Individual", fieldName: "InfluencerRating", read: true, edit: true}
+  - { type: "Individual", fieldName: "IsHomeOwner", read: true, edit: true}
+  - { type: "Individual", fieldName: "Lead__c", read: true, edit: true}
+  - { type: "Individual", fieldName: "MasterRecord", read: true, edit: false}
+  - { type: "Individual", fieldName: "MilitaryService", read: true, edit: true}
+  - { type: "Individual", fieldName: "Occupation", read: true, edit: true}
+  - { type: "Individual", fieldName: "SendIndividualData", read: true, edit: true}
+  - { type: "Individual", fieldName: "ShouldForget", read: true, edit: true}
+  - { type: "Individual", fieldName: "Website", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "APE__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "BrokerConsultant__c", read: true, edit: false}
+  - { type: "iSuite_Task__c", fieldName: "CallAttempts__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "Closed__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "Comment__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "CommissionAgreement__c", read: true, edit: false}
+  - { type: "iSuite_Task__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "Description__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "InternalStatus__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "IsAgreementViaPhone__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "IsAlternative__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "IsCheckWithSME__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "ISuiteTaskId__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "LastModified__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "ParentTaskId__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "Partner__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "PolicyNumber__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "Priority__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "Region__c", read: true, edit: false}
+  - { type: "iSuite_Task__c", fieldName: "SourceTaskId__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "Suggestion__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "SuspensionReason__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "TargetDate__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "TaskCreationDate__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "TaskLastModified__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "TaskStatus__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "Team__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "TeamMember__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "Type__c", read: true, edit: true}
+  - { type: "iSuite_Task__c", fieldName: "WeeksInQueue__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "CampaignRegisteredTo__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "Address", read: true, edit: true}
+  - { type: "Lead", fieldName: "AdvisingProduct__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "AdvisingTopic__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "CommentBroker__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "CommentCLE__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "CommissionAgreement__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "ConfirmEmailAddress__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "ContactableFromTo__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "DateOfBirth__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "DietaryRequirement__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "DurationofParticipation__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "Email", read: true, edit: true}
+  - { type: "Lead", fieldName: "EndAge__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "EventId__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "GDPROptIn__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "HasContractwithCLE__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "Industry", read: true, edit: true}
+  - { type: "Lead", fieldName: "Jigsaw", read: true, edit: true}
+  - { type: "Lead", fieldName: "LeadSource", read: true, edit: true}
+  - { type: "Lead", fieldName: "LeadType__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "MobilePhone", read: true, edit: true}
+  - { type: "Lead", fieldName: "NeedHotelroom__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "NumberOfEmployees", read: true, edit: true}
+  - { type: "Lead", fieldName: "Phone", read: true, edit: true}
+  - { type: "Lead", fieldName: "PreferredContactType__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "PrivacyPolicy__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "Rating", read: true, edit: true}
+  - { type: "Lead", fieldName: "StartdateLead__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "SumInsured__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "SumPension__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "Title", read: true, edit: true}
+  - { type: "Lead", fieldName: "ToBeDeleted__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "VVIDNumber__c", read: true, edit: true}
+  - { type: "Lead", fieldName: "Website", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "Account", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "AccountTarget__c", read: true, edit: false}
+  - { type: "Opportunity", fieldName: "Amount", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "BrokerConsultantAccount__c", read: true, edit: false}
+  - { type: "Opportunity", fieldName: "BrokerConsultantTarget__c", read: true, edit: false}
+  - { type: "Opportunity", fieldName: "Campaign", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "CLETarget__c", read: true, edit: false}
+  - { type: "Opportunity", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "Description", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "LeadSource", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "NetAPE__c", read: true, edit: false}
+  - { type: "Opportunity", fieldName: "NextStep", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "OpportunityId__c", read: true, edit: false}
+  - { type: "Opportunity", fieldName: "Probability", read: true, edit: true}
+  - { type: "Opportunity", fieldName: "RegionalDirectorTarget__c", read: true, edit: false}
+  - { type: "Opportunity", fieldName: "SalesDirectorTarget__c", read: true, edit: false}
+  - { type: "Opportunity", fieldName: "Type", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "APEGross__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "APEGrossNewBusiness__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "APEInvestmentFund__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "APEItemId__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "APENet__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "APERuleCode__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "APERuleDescription__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "BrokerConsultantAccountId__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "BrokerConsultantAccountRegionId__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "BrokerConsultantId__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "BrokerConsultantRegion__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "BWSAmount__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "CasesCountFactor__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "CLEPolicyNumber__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "CommissionAgreement__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "CoverType__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "Description", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "EffectiveDate__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "GrossIssued__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IHKNumber__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsCancellation__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsCFI__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsGross__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsGrossCLE__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsGrossNewBusiness__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsIncrease__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsIndexation__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsIssued__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsIsuite__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "IsNet__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsNewBusiness__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsNewIncrease__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsNewIndexation__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsProposal__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsReduction__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsReincrease__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsReindexation__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "IsReversal__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "IsTotal__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "ListPrice", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "OriginalTransactionDescription__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "PolicyNumber__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "PremiumChangeValue__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "PremiumType__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "ProductClass__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "ProductCode", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "SalesEventId__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "SalesPersonId__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "ServiceDate", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "SumOfPremiums__c", read: true, edit: true}
+  - { type: "OpportunityLineItem", fieldName: "TotalPrice", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "TransactionCode__c", read: true, edit: false}
+  - { type: "OpportunityLineItem", fieldName: "TransactionDescription__c", read: true, edit: false}
+  - { type: "Order", fieldName: "ActivatedBy", read: true, edit: false}
+  - { type: "Order", fieldName: "ActivatedDate", read: true, edit: false}
+  - { type: "Order", fieldName: "BillingAddress", read: true, edit: true}
+  - { type: "Order", fieldName: "CompanyAuthorizedBy", read: true, edit: true}
+  - { type: "Order", fieldName: "ContractEndDate", read: true, edit: true}
+  - { type: "Order", fieldName: "CustomerAuthorizedBy", read: true, edit: true}
+  - { type: "Order", fieldName: "Description", read: true, edit: true}
+  - { type: "Order", fieldName: "ShippingAddress", read: true, edit: true}
+  - { type: "Order", fieldName: "TotalAmount", read: true, edit: false}
+  - { type: "Order", fieldName: "Type", read: true, edit: true}
+  - { type: "OrderItem", fieldName: "Description", read: true, edit: true}
+  - { type: "OrderItem", fieldName: "EndDate", read: true, edit: true}
+  - { type: "OrderItem", fieldName: "ListPrice", read: true, edit: false}
+  - { type: "OrderItem", fieldName: "ProductCode", read: true, edit: false}
+  - { type: "OrderItem", fieldName: "ServiceDate", read: true, edit: true}
+  - { type: "Policy_Application__c", fieldName: "BatchId__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "BiPROPartner__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "ClientZIPCode__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "CommissionAgreement__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "ContainsHandwriting__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "CreationTimeStamp__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "DataSource__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "DeletionDateTime__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "ETLVersion__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "ExternalId__c", read: true, edit: true}
+  - { type: "Policy_Application__c", fieldName: "FilenetDocId__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "IsBiPRO__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "IsEncrypted__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "IsESignature__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "IsGFV__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "IsGFVShortHealthQuestions__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "IsGroupApplication__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "IsMagnum__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "IsOnlineQuotes__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "IsPaper__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "isPDF__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "IsTopUp__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Policy_Application__c", fieldName: "NumberOfProposals__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "PolicyApplication__c", read: true, edit: true}
+  - { type: "Policy_Application__c", fieldName: "PolicyApplicationId__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "PolicyApplicationIsDeleted__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "PolicyApplicationProduct__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "ProposalEnteredBy__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "SalesforceProduct__c", read: true, edit: false}
+  - { type: "Policy_Application__c", fieldName: "SinglePremiumAmount__c", read: true, edit: false}
+  - { type: "Policy_Contact_Relationship__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Policy_Contact_Relationship__c", fieldName: "ContactRole__c", read: true, edit: true}
+  - { type: "Policy_Contact_Relationship__c", fieldName: "Contract__c", read: true, edit: false}
+  - { type: "Policy_Contact_Relationship__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Policy_Contact_Relationship__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Policy_Contact_Relationship__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Policy_Contact_Relationship__c", fieldName: "PolicyNumberLink__c", read: true, edit: false}
+  - { type: "Policy_Contact_Relationship__c", fieldName: "RelationshipKey__c", read: true, edit: true}
+  - { type: "Policy_Contact_Relationship__c", fieldName: "SecurityIndicator__c", read: true, edit: false}
+  - { type: "Pricebook2", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Pricebook2", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Pricebook2", fieldName: "ExternalId__c", read: true, edit: true}
+  - { type: "Pricebook2", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Pricebook2", fieldName: "PriceBookId__c", read: true, edit: true}
+  - { type: "PricebookEntry", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "PricebookEntry", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "PricebookEntry", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "PricebookEntry", fieldName: "ExternalId__c", read: true, edit: true}
+  - { type: "PricebookEntry", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Product2", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Product2", fieldName: "CoverType__c", read: true, edit: true}
+  - { type: "Product2", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Product2", fieldName: "Description", read: true, edit: true}
+  - { type: "Product2", fieldName: "DisplayUrl", read: true, edit: true}
+  - { type: "Product2", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Product2", fieldName: "ExternalDataSource", read: true, edit: true}
+  - { type: "Product2", fieldName: "ExternalId", read: true, edit: true}
+  - { type: "Product2", fieldName: "Family", read: true, edit: true}
+  - { type: "Product2", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Product2", fieldName: "ProductCode", read: true, edit: true}
+  - { type: "Product2", fieldName: "ProductGroup__c", read: true, edit: true}
+  - { type: "Product2", fieldName: "ProductID__c", read: true, edit: true}
+  - { type: "Product2", fieldName: "QuantityUnitOfMeasure", read: true, edit: true}
+  - { type: "Product2", fieldName: "StockKeepingUnit", read: true, edit: true}
+  - { type: "Quote", fieldName: "Account", read: true, edit: false}
+  - { type: "Quote", fieldName: "AdditionalAddress", read: true, edit: true}
+  - { type: "Quote", fieldName: "AdditionalName", read: true, edit: true}
+  - { type: "Quote", fieldName: "BillingAddress", read: true, edit: true}
+  - { type: "Quote", fieldName: "BillingName", read: true, edit: true}
+  - { type: "Quote", fieldName: "Contact", read: true, edit: true}
+  - { type: "Quote", fieldName: "Contract", read: true, edit: true}
+  - { type: "Quote", fieldName: "Description", read: true, edit: true}
+  - { type: "Quote", fieldName: "Discount", read: true, edit: false}
+  - { type: "Quote", fieldName: "Email", read: true, edit: true}
+  - { type: "Quote", fieldName: "ExpirationDate", read: true, edit: true}
+  - { type: "Quote", fieldName: "Fax", read: true, edit: true}
+  - { type: "Quote", fieldName: "GrandTotal", read: true, edit: false}
+  - { type: "Quote", fieldName: "Phone", read: true, edit: true}
+  - { type: "Quote", fieldName: "QuoteToAddress", read: true, edit: true}
+  - { type: "Quote", fieldName: "QuoteToName", read: true, edit: true}
+  - { type: "Quote", fieldName: "ShippingAddress", read: true, edit: true}
+  - { type: "Quote", fieldName: "ShippingHandling", read: true, edit: true}
+  - { type: "Quote", fieldName: "ShippingName", read: true, edit: true}
+  - { type: "Quote", fieldName: "Status", read: true, edit: true}
+  - { type: "Quote", fieldName: "Subtotal", read: true, edit: false}
+  - { type: "Quote", fieldName: "Tax", read: true, edit: true}
+  - { type: "Quote", fieldName: "TotalPrice", read: true, edit: false}
+  - { type: "QuoteLineItem", fieldName: "Description", read: true, edit: true}
+  - { type: "QuoteLineItem", fieldName: "Discount", read: true, edit: true}
+  - { type: "QuoteLineItem", fieldName: "ListPrice", read: true, edit: false}
+  - { type: "QuoteLineItem", fieldName: "ProductCode", read: true, edit: true}
+  - { type: "QuoteLineItem", fieldName: "ServiceDate", read: true, edit: true}
+  - { type: "QuoteLineItem", fieldName: "Subtotal", read: true, edit: false}
+  - { type: "QuoteLineItem", fieldName: "TotalPrice", read: true, edit: false}
+  - { type: "Region__c", fieldName: "ActiveFrom__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "ActiveTo__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "Description__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "IsActive__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "RegionalDirector__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "RegionCode__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "RegionID__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "ReportGroup1__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "SalesDirector__c", read: true, edit: true}
+  - { type: "Region__c", fieldName: "SalesGroup__c", read: true, edit: true}
+  - { type: "Solution", fieldName: "IsPublished", read: true, edit: true}
+  - { type: "Solution", fieldName: "IsPublishedInPublicKb", read: true, edit: true}
+  - { type: "Solution", fieldName: "SolutionNote", read: true, edit: true}
+  - { type: "Statement_Broker__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Statement_Broker__c", fieldName: "BrokerConsultantAccount__c", read: true, edit: true}
+  - { type: "Statement_Broker__c", fieldName: "BusinessAccount__c", read: true, edit: true}
+  - { type: "Statement_Broker__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Statement_Broker__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Statement_Broker__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Statement_Broker__c", fieldName: "StatementBrokerId__c", read: true, edit: false}
+  - { type: "Statement_Broker__c", fieldName: "StatementBrokerStatus__c", read: true, edit: false}
+  - { type: "Strategic_Data__c", fieldName: "AdvisorySoftware__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "BiPRO__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "BiPROSystem__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "BusinessAreaCapital__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "BusinessAreaHealth__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "BusinessAreaLife__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "BusinessAreaProperties__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "ClientManagementSystem__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "Communication__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "GeneralInformation__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "PotentialClass__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "StrategicDataID__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "SupportProfile__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "TargetGroup__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "HasTLSEncryption__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "IsUsingConferencingTool__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "ConferencingTool__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "ESignaturePlatform__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "RiskAssessmentPlatform__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "BAVPlatform__c", read: true, edit: true}
+  - { type: "Strategic_Data__c", fieldName: "SocialMediaPlatform__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGross__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossCoverTypePension__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossCoverTypeProtection__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossInvestment__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossManpower__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossPremiumTypeRP__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossPremiumTypeSP__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossProductClassBasic__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossProductClassBAV__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossProductClassPrivate__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossProductClassRisk__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APEGrossVariableAnnuity__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENet__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENetCoverTypePension__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENetCoverTypeProtection__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENetManpower__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENetPremiumTypeRP__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENetPremiumTypeSP__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENetProductClassBasic__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENetProductClassBAV__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENetProductClassPrivate__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENetProductClassRisk__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "APENetVariableAnnuity__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "BatchId__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "BrokerConsultantAccount__c", read: true, edit: false}
+  - { type: "Target__c", fieldName: "BusinessAccount__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesCoverTypePension__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesCoverTypeProtection__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesManpower__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesNewBusiness__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesPremiumTypeRP__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesPremiumTypeSP__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesProductClassBasic__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesProductClassBAV__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesProductClassPrivate__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesProductClassRisk__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "CasesVariableAnnuity__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "DataSource__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "Date__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "ETLVersion__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "MarkForDeletion__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "Premium__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "PremiumCoverTypePension__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "PremiumCoverTypeProtection__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "PremiumManpower__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "PremiumPremiumTypeRP__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "PremiumPremiumTypeSP__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "PremiumProductClassBasic__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "PremiumProductClassBAV__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "PremiumProductClassPrivate__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "PremiumProductClassRisk__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "PremiumVariableAnnuity__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "Productivity__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "SalesPerson__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "TargetId__c", read: true, edit: true}
+  - { type: "Target__c", fieldName: "TargetType__c", read: true, edit: true}
+  - { type: "Task", fieldName: "ActivityDate", read: true, edit: true}
+  - { type: "Task", fieldName: "Description", read: true, edit: true}
+  - { type: "Task", fieldName: "Type", read: true, edit: true}
+  - { type: "Task", fieldName: "What", read: true, edit: true}
+  - { type: "Task", fieldName: "Who", read: true, edit: true}
+  - { type: "User", fieldName: "SalesRegion__c", read: true, edit: true}
+administrative:
+  - name: PermissionsAccessCMC
+    value: false
+  - name: PermissionsAddDirectMessageMembers
+    value: true
+  - name: PermissionsAllowViewEditConvertedLeads
+    value: true
+  - name: PermissionsApexRestServices
+    value: true
+  - name: PermissionsApiEnabled
+    value: true
+  - name: PermissionsApiUserOnly
+    value: false
+  - name: PermissionsAssignPermissionSets
+    value: true
+  - name: PermissionsAuthorApex
+    value: true
+  - name: PermissionsBulkApiHardDelete
+    value: true
+  - name: PermissionsBulkMacrosAllowed
+    value: true
+  - name: PermissionsCanApproveFeedPost
+    value: false
+  - name: PermissionsCanVerifyComment
+    value: true
+  - name: PermissionsChangeDashboardColors
+    value: false
+  - name: PermissionsChatterComposeUiCodesnippet
+    value: false
+  - name: PermissionsChatterEditOwnPost
+    value: true
+  - name: PermissionsChatterEditOwnRecordPost
+    value: true
+  - name: PermissionsChatterFileLink
+    value: true
+  - name: PermissionsChatterInternalUser
+    value: true
+  - name: PermissionsChatterInviteExternalUsers
+    value: true
+  - name: PermissionsChatterOwnGroups
+    value: true
+  - name: PermissionsCloseConversations
+    value: false
+  - name: PermissionsConfigCustomRecs
+    value: false
+  - name: PermissionsContentAdministrator
+    value: true
+  #  - name: PermissionsContentHubUser
+  #    value: false
+  - name: PermissionsContentWorkspaces
+    value: true
+  - name: PermissionsCreateCustomizeDashboards
+    value: true
+  - name: PermissionsCreateCustomizeFilters
+    value: true
+  - name: PermissionsCreateCustomizeReports
+    value: true
+  - name: PermissionsCreateDashboardFolders
+    value: true
+  - name: PermissionsCreateReportFolders
+    value: true
+  - name: PermissionsCreateReportInLightning
+    value: false
+  - name: PermissionsCreateWorkBadgeDefinition
+    value: true
+  - name: PermissionsCustomizeApplication
+    value: true
+  - name: PermissionsDataExport
+    value: true
+  - name: PermissionsDebugApex
+    value: true
+  - name: PermissionsDeferSharingCalculations
+    value: true
+  - name: PermissionsDistributeFromPersWksp
+    value: true
+  - name: PermissionsEditBrandTemplates
+    value: true
+  - name: PermissionsEditHtmlTemplates
+    value: true
+  - name: PermissionsEditMyDashboards
+    value: true
+  - name: PermissionsEditMyReports
+    value: true
+  - name: PermissionsEditPublicDocuments
+    value: true
+  - name: PermissionsEditPublicFilters
+    value: true
+  - name: PermissionsEditPublicTemplates
+    value: true
+  - name: PermissionsEditReadonlyFields
+    value: true
+  - name: PermissionsEnableNotifications
+    value: true
+  - name: PermissionsFeedPinning
+    value: false
+  - name: PermissionsGovernNetworks
+    value: false
+  - name: PermissionsHideReadByList
+    value: false
+  - name: PermissionsIdentityEnabled
+    value: false
+  - name: PermissionsImportCustomObjects
+    value: true
+  - name: PermissionsInboundMigrationToolsUser
+    value: false
+  - name: PermissionsIsSsoEnabled
+    value: false
+  - name: PermissionsLightningConsoleAllowedForUser
+    value: true
+  - name: PermissionsLightningExperienceUser
+    value: true
+  - name: PermissionsManageAnalyticSnapshots
+    value: true
+  - name: PermissionsManageAuthProviders
+    value: false
+  - name: PermissionsManageBusinessHourHolidays
+    value: true
+  - name: PermissionsManageCallCenters
+    value: true
+  - name: PermissionsManageCategories
+    value: true
+  - name: PermissionsManageCertificates
+    value: true
+  - name: PermissionsManageChatterMessages
+    value: false
+  - name: PermissionsManageCustomPermissions
+    value: true
+  - name: PermissionsManageCustomReportTypes
+    value: true
+  - name: PermissionsManageDashbdsInPubFolders
+    value: true
+  - name: PermissionsManageDataCategories
+    value: true
+  - name: PermissionsManageDataIntegrations
+    value: true
+  - name: PermissionsManageDynamicDashboards
+    value: true
+  - name: PermissionsManageEmailClientConfig
+    value: true
+  - name: PermissionsManageEncryptionKeys
+    value: false
+  - name: PermissionsManageExchangeConfig
+    value: true
+  - name: PermissionsManageHealthCheck
+    value: true
+  - name: PermissionsManageInternalUsers
+    value: true
+  - name: PermissionsManageIpAddresses
+    value: true
+  - name: PermissionsManageKnowledge
+    value: true
+  - name: PermissionsManageKnowledgeImportExport
+    value: true
+  - name: PermissionsManageLoginAccessPolicies
+    value: true
+  - name: PermissionsManageMobile
+    value: true
+  - name: PermissionsManageNetworks
+    value: true
+  - name: PermissionsManagePasswordPolicies
+    value: true
+  - name: PermissionsManageProfilesPermissionsets
+    value: true
+  - name: PermissionsManagePropositions
+    value: false
+  - name: PermissionsManagePvtRptsAndDashbds
+    value: true
+  - name: PermissionsManageRecommendationStrategies
+    value: false
+  - name: PermissionsManageReportsInPubFolders
+    value: true
+  - name: PermissionsManageRoles
+    value: true
+  - name: PermissionsManageSearchPromotionRules
+    value: true
+  - name: PermissionsManageSessionPermissionSets
+    value: false
+  - name: PermissionsManageSharing
+    value: true
+  - name: PermissionsManageSynonyms
+    value: true
+  - name: PermissionsManageTranslation
+    value: true
+  - name: PermissionsManageUnlistedGroups
+    value: true
+  - name: PermissionsManageUsers
+    value: true
+  - name: PermissionsModerateChatter
+    value: true
+  - name: PermissionsModerateNetworkUsers
+    value: false
+  - name: PermissionsModifyAllData
+    value: true
+  - name: PermissionsModifyMetadata
+    value: true
+  - name: PermissionsOutboundMigrationToolsUser
+    value: true
+  - name: PermissionsPackaging2
+    value: true
+  - name: PermissionsPasswordNeverExpires
+    value: false
+  - name: PermissionsPreventClassicExperience
+    value: false
+  - name: PermissionsRecordVisibilityAPI
+    value: false
+  - name: PermissionsRemoveDirectMessageMembers
+    value: true
+  - name: PermissionsResetPasswords
+    value: true
+  - name: PermissionsScheduleJob
+    value: true
+  - name: PermissionsScheduleReports
+    value: true
+  - name: PermissionsSelectFilesFromSalesforce
+    value: true
+  - name: PermissionsSendAnnouncementEmails
+    value: false
+  - name: PermissionsShareInternalArticles
+    value: true
+  - name: PermissionsShowCompanyNameAsUserBadge
+    value: true
+  - name: PermissionsSubmitMacrosAllowed
+    value: true
+  - name: PermissionsSubscribeDashboardToOtherUsers
+    value: false
+  - name: PermissionsSubscribeReportsRunAsUser
+    value: true
+  - name: PermissionsSubscribeReportToOtherUsers
+    value: true
+  - name: PermissionsSubscribeToLightningDashboards
+    value: true
+  - name: PermissionsSubscribeToLightningReports
+    value: true
+  - name: PermissionsTransferAnyEntity
+    value: true
+  - name: PermissionsUseTeamReassignWizards
+    value: true
+  - name: PermissionsViewAllData
+    value: true
+  - name: PermissionsViewAllUsers
+    value: true
+  - name: PermissionsViewDataCategories
+    value: true
+  - name: PermissionsViewHealthCheck
+    value: true
+  - name: PermissionsViewHelpLink
+    value: true
+  - name: PermissionsViewPublicDashboards
+    value: true
+  - name: PermissionsViewPublicReports
+    value: true
+  - name: PermissionsViewRoles
+    value: true
+  - name: PermissionsViewSetup
+    value: true
+generalUser:
+  - name: PermissionsActivateContract
+    value: true
+  - name: PermissionsActivateOrder
+    value: false
+  - name: PermissionsAllowEmailIC
+    value: false
+  - name: PermissionsAllowLightningLogin
+    value: false
+  - name: PermissionsAllowUniversalSearch
+    value: true
+  - name: PermissionsAllowViewKnowledge
+    value: true
+  - name: PermissionsAssignTopics
+    value: true
+  - name: PermissionsCanInsertFeedSystemFields
+    value: true
+  - name: PermissionsCanUseNewDashboardBuilder
+    value: true
+  - name: PermissionsConnectOrgToEnvironmentHub
+    value: true
+  - name: PermissionsConvertLeads
+    value: true
+  - name: PermissionsCreateMultiforce
+    value: false
+  - name: PermissionsCreateTopics
+    value: true
+  - name: PermissionsCreateWorkspaces
+    value: true
+  - name: PermissionsCustomSidebarOnAllPages
+    value: false
+  - name: PermissionsDelegatedTwoFactor
+    value: true
+  - name: PermissionsDeleteActivatedContract
+    value: true
+  - name: PermissionsDeleteTopics
+    value: true
+  - name: PermissionsEditActivatedOrders
+    value: false
+  - name: PermissionsEditCaseComments
+    value: false
+  - name: PermissionsEditEvent
+    value: true
+  - name: PermissionsEditKnowledge
+    value: true
+  - name: PermissionsEditOppLineItemUnitPrice
+    value: true
+  - name: PermissionsEditTask
+    value: true
+  - name: PermissionsEditTopics
+    value: true
+  - name: PermissionsEmailMass
+    value: true
+  - name: PermissionsEmailSingle
+    value: true
+  - name: PermissionsExportReport
+    value: true
+  - name: PermissionsForceTwoFactor
+    value: false
+  - name: PermissionsImportLeads
+    value: true
+  - name: PermissionsImportPersonal
+    value: true
+  - name: PermissionsInstallMultiforce # allows the installation of packages
+    value: true
+  - name: PermissionsListEmailSend
+    value: true
+  - name: PermissionsLtngPromoReserved01UserPerm
+    value: false
+  - name: PermissionsManageCases
+    value: false
+  - name: PermissionsManageContentPermissions
+    value: true
+  - name: PermissionsManageContentProperties
+    value: true
+  - name: PermissionsManageContentTypes
+    value: true
+  - name: PermissionsManageInteraction
+    value: true
+  - name: PermissionsManageLeads
+    value: false
+  - name: PermissionsManageQuotas
+    value: true
+  - name: PermissionsManageRemoteAccess
+    value: true
+  - name: PermissionsManageSolutions
+    value: false
+  - name: PermissionsManageTwoFactor
+    value: false
+  - name: PermissionsMassInlineEdit
+    value: true
+  - name: PermissionsMergeTopics
+    value: true
+  - name: PermissionsNewReportBuilder
+    value: true
+  - name: PermissionsOverrideForecasts
+    value: true
+  - name: PermissionsRunFlow
+    value: true
+  - name: PermissionsRunReports
+    value: true
+  - name: PermissionsSendSitRequests
+    value: true
+  - name: PermissionsSolutionImport
+    value: true
+  - name: PermissionsTransferAnyCase
+    value: false
+  - name: PermissionsTransferAnyLead
+    value: true
+  - name: PermissionsTwoFactorApi
+    value: false
+  - name: PermissionsUseWebLink
+    value: true
+  - name: PermissionsViewDataAssessment
+    value: true
+  #  - name: PermissionsViewDataLeakageEvents
+  #    value: true
+  - name: PermissionsViewEncryptedData
+    value: true
+  - name: PermissionsViewEventLogFiles
+    value: true
+  - name: PermissionsViewMyTeamsDashboards
+    value: true

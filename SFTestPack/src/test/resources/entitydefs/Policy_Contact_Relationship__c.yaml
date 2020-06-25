@@ -1,0 +1,83 @@
+name: policy_contact_relationship__c
+dataTypes:
+  - name: Account__c
+    value: Master-Detail(Account)
+  - name: BatchId__c
+    value: Text(50)
+  - name: ContactRole__c
+    value: Picklist
+  - name: Contract__c
+    value: Lookup(Policy)
+  - name: DataSource__c
+    value: Text(200)
+  - name: Date_of_Issue__c
+    value: Formula (Date)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: RelationshipKey__c
+    value: Text(255)  (External ID) (Unique Case Insensitive)
+  - name: SecurityIndicator__c
+    value: Formula (Text)
+  - name: PolicyNumberLink__c
+    value: Formula (Text)
+labels:
+  - name: Account__c
+    value: Policy Member
+  - name: BatchId__c
+    value: BatchId
+  - name: ContactRole__c
+    value: Role
+  - name: Contract__c
+    value: Policy Number
+  - name: DataSource__c
+    value: DataSource
+  - name: Date_of_Issue__c
+    value: Date of Issue
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Policy Contact Relationship Name
+  - name: RelationshipKey__c
+    value: Relationship Key
+  - name: SecurityIndicator__c
+    value: Security Indicator
+  - name: PolicyNumberLink__c
+    value: Policy Number Link
+deLabels:
+  - name: Account__c
+    value: Policenbeteiligte
+  - name: ContactRole__c
+    value: Rolle
+  - name: Contract__c
+    value: Policennummer
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: RelationshipKey__c
+    value: Beziehungsschlüssel
+  - name: SecurityIndicator__c
+    value: Sicherheitsindikator
+picklists:
+  - name: ContactRole__c
+    value: Beneficiary 1,Beneficiary 2,Beneficiary 3,Life Assured 1,Life Assured 2,Policy Holder 1,Policy Holder 2,Premium Payor
+dePicklists:
+removals:
+  - name: PolicyID__c
+  - name: PolicyId__c
+  - name: ContractId__c
+mandatory:
+  - name: Account__c
+  - name: MarkForDeletion__c
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsDeleted
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

@@ -1,0 +1,4 @@
+type: Owner
+object: Commission_Agreement__c
+sharingRule:
+  - { name: "Full_Access_Germany", label: "Full Access Germany", sharedToRole: "Full_Access_Germany", accessLevel: "Read", ownedByRole: "Full_Access_Germany", ownedByRoleAndSubordinates: ""}

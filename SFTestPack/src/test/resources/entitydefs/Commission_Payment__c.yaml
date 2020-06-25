@@ -1,0 +1,101 @@
+name: commission_payment__c
+dataTypes:
+  - name: BatchId__c
+    value: Text(50)
+  - name: CommissionAgreement__c
+    value: Lookup(Commission Agreement)
+  - name: CommissionPaymentId__c
+    value: Text(255)  (External ID) (Unique Case Insensitive)
+  - name: DataSource__c
+    value: Text(200)
+  - name: DebtAmount__c
+    value: Currency(16, 2)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: LapsAmount__c
+    value: Currency(16, 2)
+  - name: LiabilityAmount__c
+    value: Currency(16, 2)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: PaidOutAmount__c
+    value: Currency(16, 2)
+  - name: PayholdAmount__c
+    value: Currency(16, 2)
+  - name: PaymentAmount__c
+    value: Currency(16, 2)
+  - name: StatementBroker__c
+    value: Master-Detail(Statement Broker)
+  - name: StatementDate__c
+    value: Date
+labels:
+  - name: BatchId__c
+    value: BatchId
+  - name: CommissionAgreement__c
+    value: Commission Agreement
+  - name: CommissionPaymentId__c
+    value: Commission Payment ID
+  - name: DataSource__c
+    value: DataSource
+  - name: DebtAmount__c
+    value: Debt Amount
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: LapsAmount__c
+    value: Laps Amount
+  - name: LiabilityAmount__c
+    value: Liability Amount
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Commission Payment Name
+  - name: PaidOutAmount__c
+    value: Paid Out Amount
+  - name: PayholdAmount__c
+    value: Payhold Amount
+  - name: PaymentAmount__c
+    value: Payment Amount
+  - name: StatementBroker__c
+    value: Statement Broker
+  - name: StatementDate__c
+    value: StatementDate
+deLabels:
+  - name: CommissionAgreement__c
+    value: Provisionsvereinbarung
+  - name: CommissionPaymentId__c
+    value: Courtagezahlung ID
+  - name: DebtAmount__c
+    value: Sollsaldo
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: LapsAmount__c
+    value: Stornoreserve
+  - name: LiabilityAmount__c
+    value: Haftungsbetrag
+  - name: PaidOutAmount__c
+    value: Auszahlbetrag
+  - name: PayholdAmount__c
+    value: Payhold
+  - name: PaymentAmount__c
+    value: Zahlbetrag
+  - name: StatementBroker__c
+    value: Abrechnungs-GP
+  - name: StatementDate__c
+    value: Date
+picklists:
+dePicklists:
+removals:
+  - name: PaymentDate__c
+mandatory:
+  - name: MarkForDeletion__c
+  - name: StatementBroker__c
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsDeleted
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

@@ -1,0 +1,63 @@
+name: broker_consultant_account__c
+dataTypes:
+  - name: BatchId__c
+    value: Text(50)
+  - name: BrokerConsultant__c
+    value: Lookup(User)
+  - name: BrokerConsultantAccountId__c
+    value: Text(20)  (External ID) (Unique Case Insensitive)
+  - name: BrokerConsultantName__c
+    value: Formula (Text)
+  - name: DataSource__c
+    value: Text(200)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: OwnerId
+    value: Lookup(User,Group)
+  - name: Region__c
+    value: Lookup(Region)
+labels:
+  - name: BatchId__c
+    value: BatchId
+  - name: BrokerConsultant__c
+    value: Broker Consultant
+  - name: BrokerConsultantAccountId__c
+    value: Broker Consultant Account ID
+  - name: BrokerConsultantName__c
+    value: Broker Consultant Name
+  - name: DataSource__c
+    value: DataSource
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Broker Consultant Account Name
+  - name: OwnerId
+    value: Owner
+  - name: Region__c
+    value: Region
+deLabels:
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: Region__c
+    value: Region
+picklists:
+dePicklists:
+removals:
+  - name: BrokerAccountRegion__c
+  - name: BrokerConsultantAccount__c
+mandatory:
+  - name: MarkForDeletion__c
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsDeleted
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

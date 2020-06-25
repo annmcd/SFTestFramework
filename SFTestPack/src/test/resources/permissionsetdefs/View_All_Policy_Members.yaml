@@ -1,0 +1,474 @@
+name: View_All_Policy_Members
+object:
+  - { type: "Account", read: true, edit: false, create: false, delete: false, viewAll: true, modifyAll: false}
+unCheckedObject:
+  - name: Account_Relationship__c
+  - name: AccountContactRelation
+  - name: Activity
+  - name: Agreement_Line_Item__c
+  - name: Asset
+  - name: AssetRelationship
+  - name: AuthorizationForm
+  - name: AuthorizationFormConsent
+  - name: AuthorizationFormDataUse
+  - name: AuthorizationFormText
+  - name: Broker_Consultant_Account__c
+  - name: Campaign
+  - name: CampaignMember
+  - name: Case
+  - name: Commission_Agreement__c
+  - name: Commission_Payment__c
+  - name: Competitors__c
+  - name: Contact
+  - name: ContactPointTypeConsent
+  - name: ContactRequest
+  - name: ContentVersion
+  - name: Contract
+  - name: DataUseLegalBasis
+  - name: DataUsePurpose
+  - name: DuplicateRecordItem
+  - name: DuplicateRecordSet
+  - name: EmailMessage
+  - name: Event
+  - name: IHK_Number__c
+  - name: Image
+  - name: Individual
+  - name: iSuite_Task__c
+  - name: Lead
+  - name: Macro
+  - name: Opportunity
+  - name: OpportunityLineItem
+  - name: Order
+  - name: OrderItem
+  - name: PersonAccount
+  - name: Policy_Application__c
+  - name: Policy_Contact_Relationship__c
+  - name: Pricebook2
+  - name: PricebookEntry
+  - name: Product2
+  - name: ProfileSkillEndorsement
+  - name: QuickText
+  - name: Quote
+  - name: QuoteLineItem
+  - name: Recommendation
+  - name: Region__c
+  - name: Scorecard
+  - name: ScorecardAssociation
+  - name: ScorecardMetric
+  - name: Statement_Broker__c
+  - name: Strategic_Data__c
+  - name: Target__c
+  - name: Task
+  - name: User
+systemPermissions:
+  - name: HasActivationRequired
+    value: false
+  - name: IsCustom
+    value: true
+  - name: IsOwnedByProfile
+    value: false
+  - name: PermissionsAccessCMC
+    value: false
+  - name: PermissionsActivateContract
+    value: false
+  - name: PermissionsActivateOrder
+    value: false
+  - name: PermissionsAddDirectMessageMembers
+    value: false
+  - name: PermissionsAllowEmailIC
+    value: false
+  - name: PermissionsAllowLightningLogin
+    value: false
+  - name: PermissionsAllowUniversalSearch
+    value: false
+  - name: PermissionsAllowViewEditConvertedLeads
+    value: false
+  - name: PermissionsAllowViewKnowledge
+    value: false
+  - name: PermissionsApexRestServices
+    value: false
+  - name: PermissionsApiEnabled
+    value: false
+  - name: PermissionsApiUserOnly
+    value: false
+  - name: PermissionsAssignTopics
+    value: false
+  - name: PermissionsAuthorApex
+    value: false
+  - name: PermissionsAutomaticActivityCapture
+    value: false
+  - name: PermissionsBulkApiHardDelete
+    value: false
+  - name: PermissionsBulkMacrosAllowed
+    value: false
+  - name: PermissionsCampaignInfluence2
+    value: false
+  - name: PermissionsCanApproveFeedPost
+    value: false
+  - name: PermissionsCanInsertFeedSystemFields
+    value: false
+  - name: PermissionsCanUseNewDashboardBuilder
+    value: false
+  - name: PermissionsCanVerifyComment
+    value: false
+  - name: PermissionsChangeDashboardColors
+    value: false
+  - name: PermissionsChatterComposeUiCodesnippet
+    value: false
+  - name: PermissionsChatterEditOwnPost
+    value: false
+  - name: PermissionsChatterEditOwnRecordPost
+    value: false
+  - name: PermissionsChatterFileLink
+    value: false
+  - name: PermissionsChatterInternalUser
+    value: false
+  - name: PermissionsChatterInviteExternalUsers
+    value: false
+  - name: PermissionsChatterOwnGroups
+    value: false
+  - name: PermissionsCloseConversations
+    value: false
+  - name: PermissionsConfigCustomRecs
+    value: false
+  - name: PermissionsConnectOrgToEnvironmentHub
+    value: false
+  - name: PermissionsContentAdministrator
+    value: false
+  - name: PermissionsContentWorkspaces
+    value: false
+  - name: PermissionsConvertLeads
+    value: false
+  - name: PermissionsCreateCustomizeDashboards
+    value: false
+  - name: PermissionsCreateCustomizeFilters
+    value: false
+  - name: PermissionsCreateCustomizeReports
+    value: false
+  - name: PermissionsCreateDashboardFolders
+    value: false
+  - name: PermissionsCreatePackaging
+    value: false
+  - name: PermissionsCreateReportFolders
+    value: false
+  - name: PermissionsCreateReportInLightning
+    value: false
+  - name: PermissionsCreateTopics
+    value: false
+  - name: PermissionsCreateWorkBadgeDefinition
+    value: false
+  - name: PermissionsCreateWorkspaces
+    value: false
+  - name: PermissionsCustomizeApplication
+    value: false
+  - name: PermissionsCustomMobileAppsAccess
+    value: false
+  - name: PermissionsCustomSidebarOnAllPages
+    value: false
+  - name: PermissionsDataExport
+    value: false
+  - name: PermissionsDebugApex
+    value: false
+  - name: PermissionsDeferSharingCalculations
+    value: false
+  - name: PermissionsDelegatedTwoFactor
+    value: false
+  - name: PermissionsDeleteActivatedContract
+    value: false
+  - name: PermissionsDeleteTopics
+    value: false
+  - name: PermissionsDistributeFromPersWksp
+    value: false
+  - name: PermissionsEditActivatedOrders
+    value: false
+  - name: PermissionsEditBrandTemplates
+    value: false
+  - name: PermissionsEditCaseComments
+    value: false
+  - name: PermissionsEditEvent
+    value: false
+  - name: PermissionsEditHtmlTemplates
+    value: false
+  - name: PermissionsEditKnowledge
+    value: false
+  - name: PermissionsEditMyDashboards
+    value: false
+  - name: PermissionsEditMyReports
+    value: false
+  - name: PermissionsEditOppLineItemUnitPrice
+    value: false
+  - name: PermissionsEditPublicDocuments
+    value: false
+  - name: PermissionsEditPublicFilters
+    value: false
+  - name: PermissionsEditPublicTemplates
+    value: false
+  - name: PermissionsEditReadonlyFields
+    value: false
+  - name: PermissionsEditTask
+    value: false
+  - name: PermissionsEditTopics
+    value: false
+  - name: PermissionsEmailAdministration
+    value: false
+  - name: PermissionsEmailMass
+    value: false
+  - name: PermissionsEmailSingle
+    value: false
+  - name: PermissionsEmailTemplateManagement
+    value: false
+  - name: PermissionsEnableNotifications
+    value: false
+  - name: PermissionsExportReport
+    value: false
+  - name: PermissionsFeedPinning
+    value: false
+  - name: PermissionsFlowUFLRequired
+    value: false
+  - name: PermissionsForceTwoFactor
+    value: false
+  - name: PermissionsGovernNetworks
+    value: false
+  - name: PermissionsHideReadByList
+    value: false
+  - name: PermissionsIdentityConnect
+    value: false
+  - name: PermissionsIdentityEnabled
+    value: false
+  - name: PermissionsImportCustomObjects
+    value: false
+  - name: PermissionsImportLeads
+    value: false
+  - name: PermissionsImportPersonal
+    value: false
+  - name: PermissionsInboundMigrationToolsUser
+    value: false
+  - name: PermissionsInstallPackaging
+    value: false
+  - name: PermissionsIsSsoEnabled
+    value: false
+  - name: PermissionsLightningConsoleAllowedForUser
+    value: false
+  - name: PermissionsLightningExperienceUser
+    value: false
+  - name: PermissionsListEmailSend
+    value: false
+  - name: PermissionsLtngPromoReserved01UserPerm
+    value: false
+  - name: PermissionsManageAnalyticSnapshots
+    value: false
+  - name: PermissionsManageAuthProviders
+    value: false
+  - name: PermissionsManageBusinessHourHolidays
+    value: false
+  - name: PermissionsManageCallCenters
+    value: false
+  - name: PermissionsManageCases
+    value: false
+  - name: PermissionsManageCategories
+    value: false
+  - name: PermissionsManageCertificates
+    value: false
+  - name: PermissionsManageChatterMessages
+    value: false
+  - name: PermissionsManageContentPermissions
+    value: false
+  - name: PermissionsManageContentProperties
+    value: false
+  - name: PermissionsManageContentTypes
+    value: false
+  - name: PermissionsManageCustomPermissions
+    value: false
+  - name: PermissionsManageCustomReportTypes
+    value: false
+  - name: PermissionsManageDashbdsInPubFolders
+    value: false
+  - name: PermissionsManageDataCategories
+    value: false
+  - name: PermissionsManageDataIntegrations
+    value: false
+  - name: PermissionsManageDynamicDashboards
+    value: false
+  - name: PermissionsManageEmailClientConfig
+    value: false
+  - name: PermissionsManageEncryptionKeys
+    value: false
+  - name: PermissionsManageExchangeConfig
+    value: false
+  - name: PermissionsManageHealthCheck
+    value: false
+  - name: PermissionsManageInteraction
+    value: false
+  - name: PermissionsManageKnowledge
+    value: false
+  - name: PermissionsManageKnowledgeImportExport
+    value: false
+  - name: PermissionsManageLeads
+    value: false
+  - name: PermissionsManageMobile
+    value: false
+  - name: PermissionsManageNetworks
+    value: false
+  - name: PermissionsManagePropositions
+    value: false
+  - name: PermissionsManagePvtRptsAndDashbds
+    value: false
+  - name: PermissionsManageQuotas
+    value: false
+  - name: PermissionsManageRecommendationStrategies
+    value: false
+  - name: PermissionsManageRemoteAccess
+    value: false
+  - name: PermissionsManageReportsInPubFolders
+    value: false
+  - name: PermissionsManageSearchPromotionRules
+    value: false
+  - name: PermissionsManageSessionPermissionSets
+    value: false
+  - name: PermissionsManageSolutions
+    value: false
+  - name: PermissionsManageSurveys
+    value: false
+  - name: PermissionsManageSynonyms
+    value: false
+  - name: PermissionsManageTranslation
+    value: false
+  - name: PermissionsManageTwoFactor
+    value: false
+  - name: PermissionsManageUnlistedGroups
+    value: false
+  - name: PermissionsMassInlineEdit
+    value: false
+  - name: PermissionsMergeTopics
+    value: false
+  - name: PermissionsModerateChatter
+    value: false
+  - name: PermissionsModerateNetworkUsers
+    value: false
+  - name: PermissionsModifyAllData
+    value: false
+  - name: PermissionsModifyMetadata
+    value: false
+  - name: PermissionsNewReportBuilder
+    value: false
+  - name: PermissionsOutboundMigrationToolsUser
+    value: false
+  - name: PermissionsOverrideForecasts
+    value: false
+  - name: PermissionsPackaging2
+    value: false
+  - name: PermissionsPasswordNeverExpires
+    value: false
+  - name: PermissionsPreventClassicExperience
+    value: false
+  - name: PermissionsPublishPackaging
+    value: false
+  - name: PermissionsRemoveDirectMessageMembers
+    value: false
+  - name: PermissionsRunFlow
+    value: false
+  - name: PermissionsRunReports
+    value: false
+  - name: PermissionsSalesConsole
+    value: false
+  - name: PermissionsScheduleJob
+    value: false
+  - name: PermissionsScheduleReports
+    value: false
+  - name: PermissionsSelectFilesFromSalesforce
+    value: false
+  - name: PermissionsSendAnnouncementEmails
+    value: false
+  - name: PermissionsSendSitRequests
+    value: false
+  - name: PermissionsShareInternalArticles
+    value: false
+  - name: PermissionsShowCompanyNameAsUserBadge
+    value: false
+  - name: PermissionsSolutionImport
+    value: false
+  - name: PermissionsStdAutomaticActivityCapture
+    value: false
+  - name: PermissionsSubmitMacrosAllowed
+    value: false
+  - name: PermissionsSubscribeDashboardToOtherUsers
+    value: false
+  - name: PermissionsSubscribeReportsRunAsUser
+    value: false
+  - name: PermissionsSubscribeReportToOtherUsers
+    value: false
+  - name: PermissionsSubscribeToLightningDashboards
+    value: false
+  - name: PermissionsSubscribeToLightningReports
+    value: false
+  - name: PermissionsTransferAnyCase
+    value: false
+  - name: PermissionsTransferAnyEntity
+    value: false
+  - name: PermissionsTransferAnyLead
+    value: false
+  - name: PermissionsTwoFactorApi
+    value: false
+  - name: PermissionsUseTeamReassignWizards
+    value: false
+  - name: PermissionsUseWebLink
+    value: false
+  - name: PermissionsViewAllActivities
+    value: false
+  - name: PermissionsViewAllData
+    value: false
+  - name: PermissionsViewAllForecasts
+    value: false
+  - name: PermissionsViewCaseInteraction
+    value: false
+  - name: PermissionsViewContent
+    value: false
+  - name: PermissionsViewDataAssessment
+    value: false
+  - name: PermissionsViewDataCategories
+    value: false
+  - name: PermissionsViewEncryptedData
+    value: false
+  - name: PermissionsViewEventLogFiles
+    value: false
+  - name: PermissionsViewHealthCheck
+    value: false
+  - name: PermissionsViewHelpLink
+    value: false
+  - name: PermissionsViewMyTeamsDashboards
+    value: false
+  - name: PermissionsViewOnlyEmbeddedAppUser
+    value: false
+  - name: PermissionsViewPublicDashboards
+    value: false
+  - name: PermissionsViewPublicReports
+    value: false
+  - name: PermissionsViewRoles
+    value: false
+  - name: PermissionsViewSetup
+    value: false
+userPermissions:
+  - name: PermissionsAssignPermissionSets
+    value: false
+  - name: PermissionsManageInternalUsers
+    value: false
+  - name: PermissionsManageIpAddresses
+    value: false
+  - name: PermissionsManageLoginAccessPolicies
+    value: false
+  - name: PermissionsManagePasswordPolicies
+    value: false
+  - name: PermissionsManageProfilesPermissionsets
+    value: false
+  - name: PermissionsManageRoles
+    value: false
+  - name: PermissionsManageSharing
+    value: false
+  - name: PermissionsManageUsers
+    value: false
+  - name: PermissionsRecordVisibilityAPI
+    value: false
+  - name: PermissionsResetPasswords
+    value: false
+  - name: PermissionsViewAllUsers
+    value: false

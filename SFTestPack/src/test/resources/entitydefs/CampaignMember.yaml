@@ -1,0 +1,137 @@
+name: campaignmember
+dataTypes:
+  - name: CalcParticipationHours__c
+    value: Number(18, 0)
+  - name: CalcParticipationMins__c
+    value: Number(18, 0)
+  - name: CampaignName__c
+    value: Formula (Text)
+  - name: DurationofParticipation__c
+    value: Text(255)
+  - name: GTWAttendanceTimeInSeconds__c
+    value: Number(12, 0)
+  - name: GTWCurrentErrorMessage__c
+    value: Long Text Area(32768)
+  - name: GTWJoinDateTime__c
+    value: Date/Time
+  - name: GTWJoinURL__c
+    value: URL(255)
+  - name: GTWLeaveDateTime__c
+    value: Date/Time
+  - name: GTWRegistrantID__c
+    value: Text(100)
+  - name: GTWSession__c
+    value: Lookup(GoToWebinar Session)
+  - name: GutBeratenPoints__c
+    value: Number(18, 0)
+  - name: LocationCity__c
+    value: Formula (Text)
+  - name: LocationName__c
+    value: Formula (Text)
+  - name: LocationNameExtension__c
+    value: Formula (Text)
+  - name: LocationStreet__c
+    value: Formula (Text)
+  - name: LocationUrl__c
+    value: Formula (Text)
+  - name: LocationZip__c
+    value: Formula (Text)
+  - name: NeedHotelRoom__c
+    value: Checkbox
+  - name: MinsofParticipation__c
+    value: Number(18, 0)
+  - name: RegistrationURL__c
+    value: Formula (Text)
+  - name: RegistrationURLParameters__c
+    value: Text(255)
+  - name: StartDate__c
+    value: Formula (Date)
+  - name: WebinarStart__c
+    value: Formula (Date/Time)
+labels:
+  - name: CalcParticipationHours__c
+    value: Calc Participation Hours
+  - name: CalcParticipationMins__c
+    value: Calc Participation Mins
+  - name: CampaignName__c
+    value: Campaign Name
+  - name: DurationofParticipation__c
+    value: Duration of Participation
+  - name: GTWAttendanceTimeInSeconds__c
+    value: GoToWebinar Attendee Time in Seconds
+  - name: GTWCurrentErrorMessage__c
+    value: GoToWebinar Current Error Message
+  - name: GTWJoinDateTime__c
+    value: GoToWebinar Joined Time
+  - name: GTWJoinURL__c
+    value: GoToWebinar Join URL
+  - name: GTWLeaveDateTime__c
+    value: GoToWebinar Leave Time
+  - name: GTWRegistrantID__c
+    value: GoToWebinar Registrant ID
+  - name: GTWSession__c
+    value: GoToWebinar Session
+  - name: GutBeratenPoints__c
+    value: Gut Beraten Points
+  - name: LocationCity__c
+    value: City
+  - name: LocationName__c
+    value: Location Name
+  - name: LocationNameExtension__c
+    value: Address Extension
+  - name: LocationStreet__c
+    value: Street
+  - name: LocationUrl__c
+    value: Website
+  - name: LocationZip__c
+    value: Zip Code
+  - name: NeedHotelRoom__c
+    value: Is Hotel Room Needed
+  - name: MinsofParticipation__c
+    value: Mins of Participation
+  - name: RegistrationURL__c
+    value: Registration URL
+  - name: RegistrationURLParameters__c
+    value: Registration URL Parameters
+  - name: StartDate__c
+    value: Start Date
+  - name: WebinarStart__c
+    value: Webinar Start
+deLabels:
+  - name: CalcParticipationHours__c
+    value: Berechnete Teilnahmedauer (Std.)
+  - name: CalcParticipationMins__c
+    value: Berechnete Teilnahmedauer (Min.)
+  - name: DurationofParticipation__c
+    value: Teilnahmedauer
+  - name: GTWAttendanceTimeInSeconds__c
+    value: GoTo Webinar Teilnahmezeit in Sekunden
+  - name: GTWJoinDateTime__c
+    value: GoTo Webinar Teilnahmezeit
+  - name: GTWLeaveDateTime__c
+    value: GoTo Webinar Zeitpunkt des Verlassens
+  - name: GTWRegistrantID__c
+    value: GoTo Webinar Teilnehmer ID
+  - name: GutBeratenPoints__c
+    value: Gut beraten Punkte
+  - name: LocationCity__c
+    value: Ort
+  - name: LocationName__c
+    value: Veranstaltungsort
+  - name: LocationNameExtension__c
+    value: Adresszusatz
+  - name: LocationStreet__c
+    value: Straße und Hausnummer
+  - name: LocationZip__c
+    value: PLZ
+  - name: NeedHotelRoom__c
+    value: Benötigt Hotelzimmer
+  - name: MinsofParticipation__c
+    value: Minuten der Teilnahme
+picklists:
+dePicklists:
+removals:
+mandatory:
+  - name: NeedHotelRoom__c
+encryptedFields:
+restrictedPickLists:

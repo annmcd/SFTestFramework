@@ -1,0 +1,57 @@
+name: accountcontactrelation
+dataTypes:
+  - name: AccountId
+    value: Lookup(Account)
+  - name: BatchId__c
+    value: Text(50)
+  - name: ContactId
+    value: Lookup(Contact)
+  - name: DataSource__c
+    value: Text(200)
+  - name: EndDate
+    value: Date
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: RelationshipKey__c
+    value: Text(255)  (External ID) (Unique Case Insensitive)
+  - name: Roles
+    value: Picklist (Multi-Select)
+labels:
+  - name: AccountId
+    value: Account
+  - name: BatchId__c
+    value: BatchId
+  - name: ContactId
+    value: Contact
+  - name: DataSource__c
+    value: DataSource
+  - name: EndDate
+    value: End Date
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: RelationshipKey__c
+    value: Relationship Key
+  - name: Roles
+    value: Roles
+deLabels:
+picklists:
+dePicklists:
+removals:
+mandatory:
+  - name: AccountId
+  - name: ContactId
+  - name: MarkForDeletion__c
+  - name: IsDirect
+  - name: IsActive
+  - name: IsDeleted
+  - name: CreatedDate
+  - name: CreatedById
+  - name: LastModifiedDate
+  - name: LastModifiedById
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

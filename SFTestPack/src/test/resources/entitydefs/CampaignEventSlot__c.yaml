@@ -1,0 +1,29 @@
+name: campaigneventslot__c
+dataTypes:
+  - name: Campaign__c
+    value: Master-Detail(Campaign)
+  - name: Details__c
+    value: Text Area(255)
+  - name: SlotOrder__c
+    value: Number(2, 0)
+labels:
+  - name: Campaign__c
+    value: Campaign
+  - name: Details__c
+    value: Details
+  - name: SlotOrder__c
+    value: Slot Order
+deLabels:
+  - name: Campaign__c
+    value: Kampagne
+  - name: Details__c
+    value: Beschreibung
+  - name: SlotOrder__c
+    value: Slot Reihenfolge
+picklists:
+dePicklists:
+removals:
+mandatory:
+  - name: Campaign__c
+encryptedFields:
+restrictedPickLists:

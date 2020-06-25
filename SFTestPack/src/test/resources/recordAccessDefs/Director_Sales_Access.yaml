@@ -1,0 +1,389 @@
+type: Broker_Consultant_Account__c
+etlEntity: BrokerConsultantAccount
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: Account
+etlEntity: BrokerAccount
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: zka1@canadalife.de, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: Edit, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+---
+type: Statement_Broker__c
+etlEntity: StatementBroker
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: Contract
+etlEntity: Policy
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: Transfer, HasAllAccess: false, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: Commission_Payment__c
+etlEntity: CommissionPayments
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: Delete, HasAllAccess: false, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: Commission_Agreement__c
+etlEntity: CommissionAgreements
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: Agreement_Line_Item__c
+etlEntity: AgreementLineItem
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: Delete, HasAllAccess: false, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: Policy_Application__c
+etlEntity: PolicyApplication
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: IHK_Number__c
+etlEntity: IHKNumber
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: Target__c
+etlEntity: Target
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: None, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: false, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: Opportunity
+etlEntity: Opportunity
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: OpportunityLineItem
+etlEntity: OpportunityLineItem
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+---
+type: iSuite_Task__c
+etlEntity: ISuiteTask
+accessSettings:
+    - { job: admin_user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: bcbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: bcnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: businessadmin@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: false, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: controlling_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: german_legal_rep@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: integration.user@canadalife.de, MaxAccessLevel: All, HasAllAccess: true, HasDeleteAccess: true, HasEditAccess: true, HasReadAccess: true, HasTransferAccess: true}
+    - { job: regdirbawu@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirbayern@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdircentral@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirmitte@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnord@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirnrw@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_management@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_support@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: vto_user@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka1@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka2@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: zka3@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdir_coop@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: regdirrka@canadalife.ie, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: sales_director@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}
+    - { job: dir_sal_chan_man@canadalife.de, MaxAccessLevel: Read, HasAllAccess: false, HasDeleteAccess: false, HasEditAccess: false, HasReadAccess: true, HasTransferAccess: false}

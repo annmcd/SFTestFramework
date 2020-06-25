@@ -1,0 +1,35 @@
+name: campaigneventsessionregistration__c
+dataTypes:
+  - name: CampaignEventSession__c
+    value: Master-Detail(Campaign Event Session)
+  - name: CampaignMemberID__c
+    value: Text(18)
+  - name: CampaignMemberName__c
+    value: Text(255)
+  - name: Lead__c
+    value: Lookup(Lead)
+labels:
+  - name: CampaignEventSession__c
+    value: Campaign Event Session
+  - name: CampaignMemberID__c
+    value: Campaign Member ID
+  - name: CampaignMemberName__c
+    value: Campaign Member Name
+  - name: Lead__c
+    value: Lead
+deLabels:
+  - name: CampaignEventSession__c
+    value: Kampagnenevent Session
+  - name: CampaignMemberID__c
+    value: ID Kampagnenmitglied
+  - name: CampaignMemberName__c
+    value: Name Kampagnenmitglied
+  - name: Lead__c
+    value: Name Lead
+picklists:
+dePicklists:
+removals:
+mandatory:
+  - name: CampaignEventSession__c
+encryptedFields:
+restrictedPickLists:

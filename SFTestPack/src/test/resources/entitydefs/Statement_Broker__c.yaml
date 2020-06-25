@@ -1,0 +1,78 @@
+name: statement_broker__c
+dataTypes:
+  - name: BatchId__c
+    value: Text(50)
+  - name: BrokerConsultantAccount__c
+    value: Lookup(Broker Consultant Account)
+  - name: BusinessAccount__c
+    value: Lookup(Account)
+  - name: CreatedById
+    value: Lookup(User)
+  - name: DataSource__c
+    value: Text(200)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: LastModifiedById
+    value: Lookup(User)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: OwnerId
+    value: Lookup(User,Group)
+  - name: StatementBrokerId__c
+    value: Text(20)  (External ID)
+  - name: StatementBrokerStatus__c
+    value: Picklist
+labels:
+  - name: BatchId__c
+    value: BatchId
+  - name: BrokerConsultantAccount__c
+    value: Broker Consultant Account
+  - name: BusinessAccount__c
+    value: Business Account
+  - name: CreatedById
+    value: Created By
+  - name: DataSource__c
+    value: DataSource
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: LastModifiedById
+    value: Last Modified By
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: H-Number
+  - name: OwnerId
+    value: Owner
+  - name: StatementBrokerId__c
+    value: StatementBrokerId
+  - name: StatementBrokerStatus__c
+    value: Status
+deLabels:
+  - name: BrokerConsultantAccount__c
+    value: VL/BD Konto
+  - name: BusinessAccount__c
+    value: Geschäftspartner
+  - name: StatementBrokerId__c
+    value: Abrechnungs-GP ID
+picklists:
+  - name: StatementBrokerStatus__c
+    value: active,application,NTU,Payhold,revocation,revocation (Payhold without IHK),revocation (Payhold),revocation (without IHK),Sali,Sali(Payhold without IHK),Sali(Payhold),termination,termination (Payhold),Sali(without IHK)
+dePicklists:
+  - name: StatementBrokerStatus__c
+    value: NTU,Payhold,Sali,Sali(Payhold ohne IHK),Sali(Payhold),Sali(ohne IHK),Aktiv,Bewerbung,Widerruf,Widerruf (Payhold ohne IHK),Widerruf (Payhold),Widerruf(ohne IHK),Kündigung,Kündigung (Payhold)
+removals:
+  - name: AccountName__c
+  - name: HNumber__c
+mandatory:
+  - name: LastModifiedById
+  - name: MarkForDeletion__c
+  - name: OwnerId
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsDeleted
+  - name: LastModifiedDate
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

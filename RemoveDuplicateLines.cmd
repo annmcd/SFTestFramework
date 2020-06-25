@@ -1,0 +1,1 @@
+mvn exec:java -DiFile=%1 -DoFile=c%2

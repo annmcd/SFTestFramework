@@ -1,0 +1,388 @@
+name: opportunitylineitem
+dataTypes:
+  - name: APEGross__c
+    value: Currency(16, 2)
+  - name: APEGrossNewBusiness__c
+    value: Currency(16, 2)
+  - name: APEInvestmentFund__c
+    value: Currency(16, 2)
+  - name: APEItemId__c
+    value: Text(80)  (External ID) (Unique Case Insensitive)
+  - name: APENet__c
+    value: Currency(16, 2)
+  - name: APERuleCode__c
+    value: Text(3)
+  - name: APERuleDescription__c
+    value: Text(30)
+  - name: BatchId__c
+    value: Text(50)
+  - name: BrokerConsultantAccountId__c
+    value: Lookup(Broker Consultant Account)
+  - name: BrokerConsultantAccountRegionId__c
+    value: Lookup(Region)
+  - name: BrokerConsultantId__c
+    value: Lookup(User)
+  - name: BrokerConsultantRegion__c
+    value: Formula (Text)
+  - name: BWSAmount__c
+    value: Currency(16, 2)
+  - name: CasesCountBAV__c
+    value: Formula (Number)
+  - name: CasesCountBasis__c
+    value: Formula (Number)
+  - name: CasesCountFactor__c
+    value: Number(1, 0)
+  - name: CasesCountPension__c
+    value: Formula (Number)
+  - name: CasesCountPrivat__c
+    value: Formula (Number)
+  - name: CasesCountProtection__c
+    value: Formula (Number)
+  - name: CasesCountRP__c
+    value: Formula (Number)
+  - name: CasesCountRisiko__c
+    value: Formula (Number)
+  - name: CasesCountSP__c
+    value: Formula (Number)
+  - name: CLEPolicyNumber__c
+    value: Formula (Text)
+  - name: CommissionAgreement__c
+    value: Lookup(Commission Agreement)
+  - name: CoverType__c
+    value: Text(20)
+  - name: DataSource__c
+    value: Text(200)
+  - name: EffectiveDate__c
+    value: Date
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: Gross_APE_BAV__c
+    value: Formula (Currency)
+  - name: Gross_APE_Basis__c
+    value: Formula (Currency)
+  - name: Gross_APE_Privat__c
+    value: Formula (Currency)
+  - name: Gross_APE_Risiko__c
+    value: Formula (Currency)
+  - name: GrossAPEBAV__c
+    value: Formula (Currency)
+  - name: GrossAPEBasis__c
+    value: Formula (Currency)
+  - name: GrossAPEPension__c
+    value: Formula (Currency)
+  - name: GrossAPEPrivat__c
+    value: Formula (Currency)
+  - name: GrossAPEProtection__c
+    value: Formula (Currency)
+  - name: GrossAPERP__c
+    value: Formula (Currency)
+  - name: GrossAPERisiko__c
+    value: Formula (Currency)
+  - name: GrossAPESP__c
+    value: Formula (Currency)
+  - name: GrossIssued__c
+    value: Currency(16, 2)
+  - name: IHKNumber__c
+    value: Lookup(IHK Number)
+  - name: IsCancellation__c
+    value: Checkbox
+  - name: IsCFI__c
+    value: Checkbox
+  - name: IsGross__c
+    value: Checkbox
+  - name: IsGrossCLE__c
+    value: Checkbox
+  - name: IsGrossNewBusiness__c
+    value: Checkbox
+  - name: IsIncrease__c
+    value: Checkbox
+  - name: IsIndexation__c
+    value: Checkbox
+  - name: IsIssued__c
+    value: Checkbox
+  - name: IsIsuite__c
+    value: Checkbox
+  - name: IsNet__c
+    value: Checkbox
+  - name: IsNewBusiness__c
+    value: Checkbox
+  - name: IsNewIncrease__c
+    value: Checkbox
+  - name: IsNewIndexation__c
+    value: Checkbox
+  - name: IsProposal__c
+    value: Checkbox
+  - name: IsReduction__c
+    value: Checkbox
+  - name: IsReincrease__c
+    value: Checkbox
+  - name: IsReindexation__c
+    value: Checkbox
+  - name: IsReversal__c
+    value: Checkbox
+  - name: IsTotal__c
+    value: Checkbox
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: NetAPEBAV__c
+    value: Formula (Currency)
+  - name: NetAPEBasis__c
+    value: Formula (Currency)
+  - name: NetAPEPension__c
+    value: Formula (Currency)
+  - name: NetAPEPrivat__c
+    value: Formula (Currency)
+  - name: NetAPEProtection__c
+    value: Formula (Currency)
+  - name: NetAPERP__c
+    value: Formula (Currency)
+  - name: NetAPERisiko__c
+    value: Formula (Currency)
+  - name: NetAPESP__c
+    value: Formula (Currency)
+  - name: OpportunityId
+    value: Lookup(Opportunity)
+  - name: OriginalTransactionDescription__c
+    value: Text(80)
+  - name: PolicyNumber__c
+    value: Lookup(Policy)
+  - name: PremiumChangeValue__c
+    value: Currency(16, 2)
+  - name: PremiumType__c
+    value: Picklist
+  - name: Product2Id
+    value: Lookup(Product)
+  - name: ProductClass__c
+    value: Picklist
+  - name: ProductCode
+    value: Text(255)
+  - name: SalesEventId__c
+    value: Text(80)
+  - name: SalesPersonId__c
+    value: Lookup(User)
+  - name: ServiceDate
+    value: Date
+  - name: SumOfPremiums__c
+    value: Currency(16, 2)
+  - name: TransactionCode__c
+    value: Text(10)
+  - name: TransactionDescription__c
+    value: Text(60)
+  - name: UnitPrice
+    value: Currency(16, 2)
+labels:
+  - name: APEGross__c
+    value: APE Gross
+  - name: APEGrossNewBusiness__c
+    value: APE Gross New Business
+  - name: APEInvestmentFund__c
+    value: APE (Investment or Fund)
+  - name: APEItemId__c
+    value: APE Item ID
+  - name: APENet__c
+    value: APE Net
+  - name: APERuleCode__c
+    value: APE Rule Code
+  - name: APERuleDescription__c
+    value: APE Rule Description
+  - name: BatchId__c
+    value: Batch ID
+  - name: BrokerConsultantAccountId__c
+    value: Broker Consultant Account ID
+  - name: BrokerConsultantAccountRegionId__c
+    value: Broker Consultant Account Region
+  - name: BrokerConsultantId__c
+    value: Broker Consultant
+  - name: BrokerConsultantRegion__c
+    value: Broker Consultant Region
+  - name: BWSAmount__c
+    value: BWS Amount
+  - name: CasesCountBAV__c
+    value: Cases Count BAV
+  - name: CasesCountBasis__c
+    value: Cases Count Basis
+  - name: CasesCountFactor__c
+    value: Cases Count Factor
+  - name: CasesCountPension__c
+    value: Cases Count Pension
+  - name: CasesCountPrivat__c
+    value: Cases Count Privat
+  - name: CasesCountProtection__c
+    value: Cases Count Protection
+  - name: CasesCountRP__c
+    value: Cases Count RP
+  - name: CasesCountRisiko__c
+    value: Cases Count Risiko
+  - name: CasesCountSP__c
+    value: Cases Count SP
+  - name: CLEPolicyNumber__c
+    value: CLE Policy Number
+  - name: CommissionAgreement__c
+    value: Commission Agreement
+  - name: CoverType__c
+    value: Cover Type
+  - name: DataSource__c
+    value: Data Source
+  - name: EffectiveDate__c
+    value: Transaction Effective date
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: Gross_APE_BAV__c
+    value: Gross APE BAV
+  - name: Gross_APE_Basis__c
+    value: Gross APE Basis
+  - name: Gross_APE_Privat__c
+    value: Gross APE Privat
+  - name: Gross_APE_Risiko__c
+    value: Gross APE Risiko
+  - name: GrossAPEBAV__c
+    value: Gross APE BAV
+  - name: GrossAPEBasis__c
+    value: Gross APE Basis
+  - name: GrossAPEPension__c
+    value: Gross APE Pension
+  - name: GrossAPEPrivat__c
+    value: Gross APE Privat
+  - name: GrossAPEProtection__c
+    value: Gross APE Protection
+  - name: GrossAPERP__c
+    value: Gross APE RP
+  - name: GrossAPERisiko__c
+    value: Gross APE Risiko
+  - name: GrossAPESP__c
+    value: Gross APE SP
+  - name: GrossIssued__c
+    value: Gross Issued
+  - name: IHKNumber__c
+    value: IHK Number
+  - name: IsCancellation__c
+    value: Cancelled
+  - name: IsCFI__c
+    value: CFI
+  - name: IsGross__c
+    value: Gross
+  - name: IsGrossCLE__c
+    value: Gross CLE
+  - name: IsGrossNewBusiness__c
+    value: New Business (gross)
+  - name: IsIncrease__c
+    value: Increase
+  - name: IsIndexation__c
+    value: Is Indexation
+  - name: IsIssued__c
+    value: Issued
+  - name: IsIsuite__c
+    value: iSuite
+  - name: IsNet__c
+    value: Net
+  - name: IsNewBusiness__c
+    value: New Business
+  - name: IsNewIncrease__c
+    value: New Increase
+  - name: IsNewIndexation__c
+    value: New Indexation
+  - name: IsProposal__c
+    value: Proposal
+  - name: IsReduction__c
+    value: Reduction
+  - name: IsReincrease__c
+    value: Reincrease
+  - name: IsReindexation__c
+    value: Reindexation
+  - name: IsReversal__c
+    value: Reversal
+  - name: IsTotal__c
+    value: Total
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: NetAPEBAV__c
+    value: Net APE BAV
+  - name: NetAPEBasis__c
+    value: Net APE Basis
+  - name: NetAPEPension__c
+    value: Net APE Pension
+  - name: NetAPEPrivat__c
+    value: Net APE Privat
+  - name: NetAPEProtection__c
+    value: Net APE Protection
+  - name: NetAPERP__c
+    value: Net APE RP
+  - name: NetAPERisiko__c
+    value: Net APE Risiko
+  - name: NetAPESP__c
+    value: Net APE SP
+  - name: OpportunityId
+    value: Opportunity
+  - name: OriginalTransactionDescription__c
+    value: Original Transaction Description
+  - name: PolicyNumber__c
+    value: Policy Number
+  - name: PremiumChangeValue__c
+    value: Premium Change
+  - name: PremiumType__c
+    value: Premium Type
+  - name: Product2Id
+    value: Product
+  - name: ProductClass__c
+    value: Product Class
+  - name: ProductCode
+    value: Product Code
+  - name: SalesEventId__c
+    value: Sales Event
+  - name: SalesPersonId__c
+    value: Sold By
+  - name: ServiceDate
+    value: Date
+  - name: SumOfPremiums__c
+    value: Sum of Premiums (Term)
+  - name: TransactionCode__c
+    value: Transaction Code
+  - name: TransactionDescription__c
+    value: Transaction Description
+  - name: UnitPrice
+    value: Sales Price
+deLabels:
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: GrossIssued__c
+    value: Prämie
+  - name: PremiumType__c
+    value: Beitragsweise
+  - name: ProductClass__c
+    value: Produkt Klasse
+picklists:
+  - name: ProductClass__c
+    value: Basis,bAV,Privat,Risiko
+dePicklists:
+removals:
+mandatory:
+  - name: IsCancellation__c
+  - name: IsCFI__c
+  - name: IsGross__c
+  - name: IsGrossCLE__c
+  - name: IsGrossNewBusiness__c
+  - name: IsIncrease__c
+  - name: IsIndexation__c
+  - name: IsIssued__c
+  - name: IsIsuite__c
+  - name: IsNet__c
+  - name: IsNewBusiness__c
+  - name: IsNewIncrease__c
+  - name: IsNewIndexation__c
+  - name: IsProposal__c
+  - name: IsReduction__c
+  - name: IsReincrease__c
+  - name: IsReindexation__c
+  - name: IsReversal__c
+  - name: IsTotal__c
+  - name: MarkForDeletion__c
+  - name: OpportunityId
+  - name: Quantity
+  - name: CreatedDate
+  - name: CreatedById
+  - name: LastModifiedDate
+  - name: LastModifiedById
+  - name: SystemModstamp
+  - name: IsDeleted
+encryptedFields:
+restrictedPickLists:

@@ -1,0 +1,2 @@
+We cannot assume that this folder is always empty and thus cannot add it to the .ignore list.
+Empty folders are not recognised in git

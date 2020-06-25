@@ -1,0 +1,226 @@
+name: isuite_task__c
+dataTypes:
+  - name: APE__c
+    value: Number(18, 0)
+  - name: BatchId__c
+    value: Text(50)
+  - name: BrokerConsultant__c
+    value: Formula (Text)
+  - name: CallAttempts__c
+    value: Number(2, 0)
+  - name: Closed__c
+    value: Date/Time
+  - name: Comment__c
+    value: Text Area(255)
+  - name: CommissionAgreement__c
+    value: Formula (Text)
+  - name: DataSource__c
+    value: Text(200)
+  - name: Description__c
+    value: Long Text Area(5000)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: InternalStatus__c
+    value: Picklist
+  - name: IsAgreementViaPhone__c
+    value: Checkbox
+  - name: IsAlternative__c
+    value: Checkbox
+  - name: IsCheckWithSME__c
+    value: Checkbox
+  - name: ISuiteTaskId__c
+    value: Text(80)  (External ID)
+  - name: LastModified__c
+    value: Date/Time
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: OwnerId
+    value: Lookup(User,Group)
+  - name: ParentTaskId__c
+    value: Lookup(iSuite Task)
+  - name: Partner__c
+    value: Text(80)
+  - name: PolicyNumber__c
+    value: Lookup(Policy)
+  - name: Priority__c
+    value: Picklist
+  - name: Region__c
+    value: Formula (Text)
+  - name: SourceTaskId__c
+    value: Number(18, 0)
+  - name: Suggestion__c
+    value: Long Text Area(32768)
+  - name: SuspensionReason__c
+    value: Text(80)
+  - name: TargetDate__c
+    value: Date
+  - name: TaskCreationDate__c
+    value: Date
+  - name: TaskLastModified__c
+    value: Date/Time
+  - name: TaskStatus__c
+    value: Picklist
+  - name: Team__c
+    value: Text(80)
+  - name: TeamMember__c
+    value: Text(80)
+  - name: Type__c
+    value: Text(80)
+  - name: WeeksInQueue__c
+    value: Number(4, 0)
+labels:
+  - name: APE__c
+    value: APE
+  - name: BatchId__c
+    value: BatchId
+  - name: BrokerConsultant__c
+    value: Broker Consultant
+  - name: CallAttempts__c
+    value: Call Attempts
+  - name: Closed__c
+    value: Closed Date
+  - name: Comment__c
+    value: Comment
+  - name: CommissionAgreement__c
+    value: Commission Agreement
+  - name: DataSource__c
+    value: Data Source
+  - name: Description__c
+    value: Description
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: InternalStatus__c
+    value: Internal Status
+  - name: IsAgreementViaPhone__c
+    value: Agreement via Phone
+  - name: IsAlternative__c
+    value: Alternative
+  - name: IsCheckWithSME__c
+    value: Check with Internal
+  - name: ISuiteTaskId__c
+    value: iSuite Task ID
+  - name: LastModified__c
+    value: Last Modified
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: iSuite_Task Name
+  - name: OwnerId
+    value: Owner
+  - name: ParentTaskId__c
+    value: Parent Task ID
+  - name: Partner__c
+    value: Partner
+  - name: PolicyNumber__c
+    value: Policy Number
+  - name: Priority__c
+    value: Priority
+  - name: Region__c
+    value: Region
+  - name: SourceTaskId__c
+    value: Source Task ID
+  - name: Suggestion__c
+    value: Suggestion
+  - name: SuspensionReason__c
+    value: Suspension Reason
+  - name: TargetDate__c
+    value: Target Date
+  - name: TaskCreationDate__c
+    value: Task Creation Date
+  - name: TaskLastModified__c
+    value: Task Last Modified
+  - name: TaskStatus__c
+    value: Task Status
+  - name: Team__c
+    value: Team
+  - name: TeamMember__c
+    value: Member
+  - name: Type__c
+    value: Type
+  - name: WeeksInQueue__c
+    value: Weeks In Queue
+deLabels:
+  - name: APE__c
+    value: APE
+  - name: BrokerConsultant__c
+    value: Berater
+  - name: CallAttempts__c
+    value: Anrufversuche
+  - name: Closed__c
+    value: Geschlossen am
+  - name: Comment__c
+    value: Bemerkung
+  - name: CommissionAgreement__c
+    value: Courtagevereinbarung
+  - name: Description__c
+    value: Beschreibung
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: InternalStatus__c
+    value: Interner Status
+  - name: IsAgreementViaPhone__c
+    value: Annahme per Telefon
+  - name: IsAlternative__c
+    value: Alternativen
+  - name: IsCheckWithSME__c
+    value: Rückfrage Fachabteilung
+  - name: LastModified__c
+    value: Zuletzt Aktualisiert
+  - name: ParentTaskId__c
+    value: Übergeordnete Task-ID
+  - name: Partner__c
+    value: Partner
+  - name: PolicyNumber__c
+    value: Policen Nummer
+  - name: Priority__c
+    value: Priorität
+  - name: Region__c
+    value: Region
+  - name: Suggestion__c
+    value: Vorschlag
+  - name: SuspensionReason__c
+    value: Verspätungsgrund
+  - name: TargetDate__c
+    value: Zieldatum
+  - name: TaskCreationDate__c
+    value: Task erstellt am
+  - name: TaskLastModified__c
+    value: zuletzt bearbeitet
+  - name: TaskStatus__c
+    value: Status
+  - name: Team__c
+    value: Gruppe
+  - name: TeamMember__c
+    value: Mitglied
+  - name: Type__c
+    value: Typ
+  - name: WeeksInQueue__c
+    value: Wochen in Liste
+picklists:
+  - name: InternalStatus__c
+    value: New,Open,Closed
+  - name: Priority__c
+    value: Low,Medium,High,Unknown
+  - name: TaskStatus__c
+    value: Open,On Hold,Cancelled,Closed
+dePicklists:
+  - name: InternalStatus__c
+    value: Geschlossen,Neu,Offen
+  - name: TaskStatus__c
+    value: storniert,geschlossen,wartend,offen
+removals:
+  - name: Name__c
+mandatory:
+  - name: IsAgreementViaPhone__c
+  - name: IsAlternative__c
+  - name: IsCheckWithSME__c
+  - name: MarkForDeletion__c
+  - name: OwnerId
+  - name: CreatedById
+  - name: IsDeleted
+  - name: LastModifiedById
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

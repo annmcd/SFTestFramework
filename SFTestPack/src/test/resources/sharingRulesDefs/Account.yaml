@@ -1,0 +1,39 @@
+ruleName: Brokerages_InternalUsers
+ruleLabel: Brokerages-InternalUsers
+type: Criteria
+object: Account
+sharingRule:
+  - { field: "RecordTypeId", operator: "equals", value: "Brokerage"}
+access:
+  - { defaultAccess: "Edit", contactAccess: "Read", opportunityAccess: "Read", caseAccess: "None", sharedWith: "" }
+---
+ruleName: PersonAccount_CentralKeyAccounts
+ruleLabel: PersonAccount_CentralKeyAccounts
+type: Criteria
+object: Account
+sharingRule:
+  - { field: "RecordTypeId", operator: "equals", value: "Policy Business Account,Policy Members"}
+  - { field: "SecurityIndicator__c", operator: "notEqual" , value: "CLE Mitarbeiter,gesicherter Partner"}
+access:
+  - { defaultAccess: "Read", contactAccess: "Read", opportunityAccess: "None", caseAccess: "None", sharedWith: ""}
+---
+ruleName: PersonAccount_SalesDirector
+ruleLabel: PersonAccount_SalesDirector
+type: Criteria
+object: Account
+sharingRule:
+  - { field: "RecordTypeId", operator: "equals", value: "Policy Business Account,Policy Members"}
+  - { field: "SecurityIndicator__c", operator: "notEqual" , value: "CLE Mitarbeiter,gesicherter Partner"}
+access:
+  - { defaultAccess: "Read",  contactAccess: "Read", opportunityAccess: "None", caseAccess: "None", sharedWith: ""}
+---
+ruleName: Share_Policy_Members_with_VTO
+ruleLabel: Share Policy Members with VTO
+type: Criteria
+object: Account
+sharingRule:
+  - { field: "RecordTypeId", operator: "equals", value: "Policy Business Account,Policy Members"}
+  - { field: "SecurityIndicator__c", operator: "notEqual" , value: "CLE Mitarbeiter,gesicherter Partner"}
+access:
+  - { defaultAccess: "Read", contactAccess: "Read", opportunityAccess: "None", caseAccess: "None", sharedWith: ""}
+

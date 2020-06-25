@@ -1,0 +1,222 @@
+name: dev
+environment:
+  partnerEndPoint: https://test.salesforce.com/services/Soap/u/45.0
+  enterpriseEndPoint: https://test.salesforce.com/services/Soap/c/45.0
+  proxyServer: ilserverproxy
+  proxyPort: 8080
+  user: integration.user@canadalife.de.dev
+  encryptedPassword: VG9yb250b18yMDIwYUFJQVBQdXhqdjVLQmNXYUhIdERIYU4xcw==
+  logDirectory: //WintstAI1250/crm_data/dev/logs
+  dataDirectory: //WintstAI1250/crm_data/dev/data
+  batchIdFile: //WintstAI1250/crm_data/dev/data/batchId.txt
+entities:
+  - etlEntityName: Product
+    sfEntityName: Product2
+    csvFile: Product.csv
+    parallelMode: true
+    externalId: ProductID__c
+    run: true
+    delete: false
+  - etlEntityName: PricebookEntry
+    sfEntityName: PricebookEntry
+    csvFile: PricebookEntry.csv
+    parallelMode: true
+    externalId: ExternalId__c
+    run: true
+    delete: false
+  - etlEntityName: Region
+    sfEntityName: Region__c
+    csvFile: Region.csv
+    parallelMode: true
+    externalId: RegionID__c
+    run: true
+    delete: false
+  - etlEntityName: BrokerConsultantAccount
+    sfEntityName: Broker_Consultant_Account__c
+    csvFile: BrokerConsultantAccount.csv
+    parallelMode: true
+    externalId: BrokerConsultantAccountId__c
+    run: true
+    delete: false
+  - etlEntityName: BrokerAccount
+    sfEntityName: Account
+    csvFile: BrokerAccount.csv
+    parallelMode: true
+    externalId: AccountId__c
+    run: true
+    delete: false
+  - etlEntityName: BAHierarchy
+    sfEntityName: Account
+    csvFile: BAHierarchy.csv
+    parallelMode: true
+    externalId: AccountId__c
+    run: true
+    delete: false
+  - etlEntityName: StatementBroker
+    sfEntityName: Statement_Broker__c
+    csvFile: StatementBroker.csv
+    parallelMode: true
+    externalId: StatementBrokerId__c
+    run: true
+    delete: false
+  - etlEntityName: CommissionPayments
+    sfEntityName: Commission_Payment__c
+    csvFile: CommissionPayment.csv
+    parallelMode: true
+    externalId: CommissionPaymentId__c
+    run: true
+    delete: false
+  - etlEntityName: CommissionAgreement
+    sfEntityName: Commission_Agreement__c
+    csvFile: CommissionAgreement.csv
+    parallelMode: true
+    externalId: CommissionAgreementId__c
+    run: true
+    delete: false
+  - etlEntityName: CANetworkHierachy
+    sfEntityName: Commission_Agreement__c
+    csvFile: CANetworkHierachy.csv
+    parallelMode: true
+    externalId: CommissionAgreementId__c
+    run: true
+    delete: false
+  - etlEntityName: AccountTeamMember
+    sfEntityName: AccountTeamMember
+    csvFile: AccountTeamMembers.csv
+    parallelMode: true
+    externalId: AccountTeamMemberId__c
+    run: true
+    delete: false
+  - etlEntityName: DeleteAccountTeamMember
+    sfEntityName: AccountTeamMember
+    csvFile: DeleteAccountTeamMembers.csv
+    parallelMode: true
+    externalId: AccountTeamMemberId__c
+    run: true
+    delete: true
+  - etlEntityName: AgreementLineItem
+    sfEntityName: Agreement_Line_Item__c
+    csvFile: AgreementLineItem.csv
+    parallelMode: true
+    externalId: AgreementLineItemId__c
+    run: true
+    delete: false
+  - etlEntityName: PolicyApplication
+    sfEntityName: Policy_Application__c
+    csvFile: PolicyApplication.csv
+    parallelMode: true
+    externalId: PolicyApplicationId__c
+    run: true
+    delete: false
+  - etlEntityName: IHKNumber
+    sfEntityName: IHK_Number__c
+    csvFile: IHKNumber.csv
+    parallelMode: true
+    externalId: IHKNumber__c
+    run: true
+    delete: false
+  - etlEntityName: NewPolicy
+    sfEntityName: Contract
+    csvFile: NewPolicy.csv
+    parallelMode: false
+    externalId: PolicyId__c
+    run: true
+    delete: false
+  - etlEntityName: Policy
+    sfEntityName: Contract
+    csvFile: Policy.csv
+    parallelMode: false
+    externalId: PolicyId__c
+    run: true
+    delete: false
+  - etlEntityName: ContactAccountTypes
+    sfEntityName: Account
+    csvFile: ContactAccountTypes.csv
+    parallelMode: true
+    externalId: PolicyContactId__c
+    run: true
+    delete: false
+  - etlEntityName: PolicyBusinessAccount
+    sfEntityName: Account
+    csvFile: PolicyBusinessAccount.csv
+    parallelMode: true
+    externalId: PolicyContactId__c
+    run: true
+    delete: false
+  - etlEntityName: PolicyContact
+    sfEntityName: Account
+    csvFile: PolicyContact.csv
+    parallelMode: true
+    externalId: PolicyContactId__c
+    run: true
+    delete: false
+  - etlEntityName: PolicyContactRelationship
+    sfEntityName: Policy_Contact_Relationship__c
+    csvFile: PolicyContactRelationship.csv
+    parallelMode: true
+    externalId: RelationshipKey__c
+    run: true
+    delete: false
+  - etlEntityName: BrokerContact
+    sfEntityName: Contact
+    csvFile: BKGISBrokerContact.csv
+    parallelMode: true
+    externalId: ContactId__c
+    run: true
+    delete: false
+  - etlEntityName: BrokerContactRelationship
+    sfEntityName: AccountContactRelation
+    csvFile: BKGISBrokerContactRelationship.csv
+    parallelMode: true
+    externalId: RelationshipKey__c
+    run: true
+    delete: false
+  - etlEntityName: Target
+    sfEntityName: Target__c
+    csvFile: Target.csv
+    parallelMode: true
+    externalId: TargetId__c
+    run: true
+    delete: false
+  - etlEntityName: DummyTargets
+    sfEntityName: Target__c
+    csvFile: DummyTarget.csv
+    parallelMode: true
+    externalId: TargetId__c
+    run: true
+    delete: false
+  - etlEntityName: OpportunitySeries
+    sfEntityName: Opportunity
+    csvFile: OpportunitySeries.csv
+    parallelMode: false
+    externalId: OpportunityId__c
+    run: true
+    delete: false
+  - etlEntityName: OpportunityParallel
+    sfEntityName: Opportunity
+    csvFile: OpportunityParallel.csv
+    parallelMode: true
+    externalId: OpportunityId__c
+    run: true
+    delete: false
+  - etlEntityName: DeleteOpportunityLineItem
+    sfEntityName: OpportunityLineItem
+    csvFile: DeleteOpportunityLineItem.csv
+    parallelMode: true
+    externalId: APEItemId__c
+    run: true
+    delete: true
+  - etlEntityName: OpportunityLineItem
+    sfEntityName: OpportunityLineItem
+    csvFile: OpportunityLineItem.csv
+    parallelMode: true
+    externalId: APEItemId__c
+    run: true
+    delete: false
+  - etlEntityName: ISuiteTask
+    sfEntityName: iSuite_Task__c
+    csvFile: iSuiteTask.csv
+    parallelMode: true
+    externalId: ISuiteTaskId__c
+    run: true
+    delete: false

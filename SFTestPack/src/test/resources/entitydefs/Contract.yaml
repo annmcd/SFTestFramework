@@ -1,0 +1,294 @@
+name: contract
+dataTypes:
+  - name: AccountId
+    value: Lookup(Account)
+  - name: AdvisingBrokerIHK__c
+    value: Lookup(IHK Number)
+  - name: AdvisingBrokerNumber__c
+    value: Text(50)
+  - name: AdvisingBusinessAccount__c
+    value: Lookup(Account)
+  - name: AnnualOrSinglePremium__c
+    value: Formula (Currency)
+  - name: AnnualPremiumAmount__c
+    value: Currency(16, 2)
+  - name: APE__c
+    value: Number(16, 2)
+  - name: BatchId__c
+    value: Text(50)
+  - name: bAVType__c
+    value: Picklist
+  - name: BrokerConsultant__c
+    value: Lookup(User)
+  - name: BrokerReferenceNumber__c
+    value: Text(50)
+  - name: Cobe__c
+    value: Text(11)
+  - name: CommissionAgreement__c
+    value: Lookup(Commission Agreement)
+  - name: CommissionOption__c
+    value: Text(30)
+  - name: ContractTerm
+    value: Number(4, 0)
+  - name: CurrentServicingBroker__c
+    value: Lookup(Account)
+  - name: DataSource__c
+    value: Text(200)
+  - name: EndDate
+    value: Date
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: HasISuiteTask__c
+    value: Checkbox
+  - name: Indexation__c
+    value: Picklist
+  - name: InputDate__c
+    value: Date
+  - name: IsSinglePremium__c
+    value: Checkbox
+  - name: IssueDate__c
+    value: Date
+  - name: LastActivityDate
+    value: Date
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: NumberLifesAssured__c
+    value: Number(18, 0)
+  - name: OutstandingBillAmount__c
+    value: Currency(16, 2)
+  - name: OutstandingBillCount__c
+    value: Number(3, 0)
+  - name: OwnerId
+    value: Lookup(User)
+  - name: PaidToDate__c
+    value: Date
+  - name: PolicyId__c
+    value: Text(255)  (External ID)
+  - name: PolicyNumber__c
+    value: Text(50)
+  - name: PolicyNumberLink__c
+    value: Formula (Text)
+  - name: PolicyStatus__c
+    value: Picklist
+  - name: PremiumFrequency__c
+    value: Picklist
+  - name: Pricebook2Id
+    value: Lookup(Price Book)
+  - name: ProductClass__c
+    value: Picklist
+  - name: ProductCode__c
+    value: Formula (Text)
+  - name: ProductGroup__c
+    value: Formula (Text)
+  - name: ProductId__c
+    value: Lookup(Product)
+  - name: RegularPremium__c
+    value: Currency(16, 2)
+  - name: SinglePremium__c
+    value: Currency(16, 2)
+  - name: StartDate
+    value: Date
+  - name: Status
+    value: Picklist
+  - name: SumAssured1__c
+    value: Currency(16, 2)
+  - name: SumAssured2__c
+    value: Currency(16, 2)
+labels:
+  - name: AccountId
+    value: Account Name
+  - name: AdvisingBrokerIHK__c
+    value: Advising Broker IHK
+  - name: AdvisingBrokerNumber__c
+    value: Advising Broker Number
+  - name: AdvisingBusinessAccount__c
+    value: Advising Business Account
+  - name: AnnualOrSinglePremium__c
+    value: Annual or Single Premium
+  - name: AnnualPremiumAmount__c
+    value: Annual Premium
+  - name: APE__c
+    value: APE
+  - name: BatchId__c
+    value: BatchId
+  - name: bAVType__c
+    value: bAV Type
+  - name: BrokerConsultant__c
+    value: Broker Consultant
+  - name: BrokerReferenceNumber__c
+    value: Broker Reference Number
+  - name: Cobe__c
+    value: COBE
+  - name: CommissionAgreement__c
+    value: Commission Agreement
+  - name: CommissionOption__c
+    value: Commission Option
+  - name: ContractTerm
+    value: Policy Term (months)
+  - name: CurrentServicingBroker__c
+    value: Current Servicing Broker
+  - name: DataSource__c
+    value: DataSource
+  - name: EndDate
+    value: Policy End Date
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: HasISuiteTask__c
+    value: Has ISuite Task
+  - name: Indexation__c
+    value: Indexation in %
+  - name: InputDate__c
+    value: Entry Date
+  - name: IsSinglePremium__c
+    value: Is Single Premium
+  - name: IssueDate__c
+    value: Date Issued
+  - name: LastActivityDate
+    value: Last Activity
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Policy Name
+  - name: NumberLifesAssured__c
+    value: Number Lifes Assured
+  - name: OutstandingBillAmount__c
+    value: Outstanding Bill Amount
+  - name: OutstandingBillCount__c
+    value: Outstanding Bill Count
+  - name: OwnerId
+    value: Policy Owner
+  - name: PaidToDate__c
+    value: Paid To Date
+  - name: PolicyId__c
+    value: Policy Id
+  - name: PolicyNumber__c
+    value: CLE Policy Number
+  - name: PolicyNumberLink__c
+    value: Policy Number Link
+  - name: PolicyStatus__c
+    value: Policy Status
+  - name: PremiumFrequency__c
+    value: Premium Frequency
+  - name: Pricebook2Id
+    value: Price Book
+  - name: ProductClass__c
+    value: Product Class
+  - name: ProductCode__c
+    value: Product Code (iSuite)
+  - name: ProductGroup__c
+    value: Product Group
+  - name: ProductId__c
+    value: Product
+  - name: RegularPremium__c
+    value: Regular Premium
+  - name: SinglePremium__c
+    value: Single Premium
+  - name: StartDate
+    value: Policy Start Date
+  - name: Status
+    value: Status
+  - name: SumAssured1__c
+    value: Sum Assured LA1
+  - name: SumAssured2__c
+    value: Sum Assured LA2
+deLabels:
+  - name: AdvisingBrokerIHK__c
+    value: IHK-Nummer beratender GP
+  - name: AdvisingBrokerNumber__c
+    value: beratende GP-Nr.
+  - name: AdvisingBusinessAccount__c
+    value: beratender GP
+  - name: AnnualOrSinglePremium__c
+    value: Jahres- oder Einmalbeitrag
+  - name: AnnualPremiumAmount__c
+    value: Jahresbeitrag
+  - name: bAVType__c
+    value: bAV Typ
+  - name: BrokerConsultant__c
+    value: VL/BD
+  - name: BrokerReferenceNumber__c
+    value: GP-Referenz
+  - name: Cobe__c
+    value: COBE
+  - name: CommissionAgreement__c
+    value: Courtagevereinbarung
+  - name: CommissionOption__c
+    value: Provisions-Option
+  - name: CurrentServicingBroker__c
+    value: aktueller GP
+  - name: DataSource__c
+    value: Datenquelle
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: HasISuiteTask__c
+    value: Hat Pipeline Task
+  - name: Indexation__c
+    value: Dynamik in %
+  - name: InputDate__c
+    value: Datum der Eingabe
+  - name: IsSinglePremium__c
+    value: Produkt Ist Einmalbeitrag
+  - name: IssueDate__c
+    value: Police ausgestellt am
+  - name: NumberLifesAssured__c
+    value: Anzahl versicherte Personen
+  - name: OutstandingBillAmount__c
+    value: Summe offener Beiträge
+  - name: OutstandingBillCount__c
+    value: Anzahl offener Beiträge
+  - name: PaidToDate__c
+    value: Beitrag gezahlt bis
+  - name: PolicyId__c
+    value: Policen ID
+  - name: PolicyNumber__c
+    value: CLE Policen Nummer
+  - name: PolicyStatus__c
+    value: Policenstatus
+  - name: PremiumFrequency__c
+    value: Anzahl Prämien p.a.
+  - name: ProductClass__c
+    value: Produkt Klasse
+  - name: ProductCode__c
+    value: Produkt Code
+  - name: ProductGroup__c
+    value: Produkt Gruppe
+  - name: ProductId__c
+    value: Produkt
+  - name: RegularPremium__c
+    value: Laufender Beitrag
+  - name: SinglePremium__c
+    value: Einmalbeitrag
+  - name: SumAssured1__c
+    value: Versicherungssumme VP1
+  - name: SumAssured2__c
+    value: Versicherungssumme VP2
+picklists:
+  - name: bAVType__c
+    value: Ukasse,Pensionszusage,Direktversicherung,Übertragsabkommen
+  - name: Indexation__c
+    value: BBG,0,3,5,7,10
+  - name: PolicyStatus__c
+    value: Error,Cancel From Inception(NPW),Death,Expiry,Paid Up Premium,Premium Ceased,Premium Holiday,In Force,Grp Conv,Cancel,Lapse,Proposal Pending Conversion,Not Taken Up Proposal,Maturity,Death Notify,Surrender
+  - name: PremiumFrequency__c
+    value: one off,yearly,half yearly,quarterly,monthly
+  - name: ProductClass__c
+    value: Basis,bAV,Privat,Risiko
+  - name: Status
+    value: In Approval Process,Activated,Draft
+  - name: BillingGeocodeAccuracy
+    value: Address,NearAddress,Block,Street,ExtendedZip,Zip,Neighborhood,City,County,State,Unknown
+  - name: OwnerExpirationNotice
+    value: 15 Days,30 Days,45 Days,60 Days,90 Days,120 Days
+  - name: ShippingGeocodeAccuracy
+    value: Address,NearAddress,Block,Street,ExtendedZip,Zip,Neighborhood,City,County,State,Unknown
+  - name: StatusCode
+    value: Draft,In Approval Process,Activated,Terminated,Expired
+dePicklists:
+removals:
+mandatory:
+  - name: IsSinglePremium__c
+  - name: MarkForDeletion__c
+encryptedFields:
+restrictedPickLists:

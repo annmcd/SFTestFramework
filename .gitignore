@@ -1,0 +1,12 @@
+/.idea
+/SFTestFramework.iml
+/SFConfigManager/SFConfigManager.iml
+/SFObjectModel/target
+/SFObjectModel/SFObjectModel.iml
+/SFTestPack/target
+/SFTestPack/SFTestPack.iml
+/SFConfigManager/target
+/SFTestPack/TempFiles
+/SFTestPack/exit_code.txt
+/SFConfigManager/src/test/resources/*.yaml
+/SFConfigManager/src/main/resources/~$SFEntities.xlsm

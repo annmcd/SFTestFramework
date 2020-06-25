@@ -1,0 +1,345 @@
+name: target__c
+dataTypes:
+  - name: APEGross__c
+    value: Currency(9, 0)
+  - name: APEGrossCoverTypePension__c
+    value: Currency(9, 0)
+  - name: APEGrossCoverTypeProtection__c
+    value: Currency(9, 0)
+  - name: APEGrossInvestment__c
+    value: Currency(9, 0)
+  - name: APEGrossManpower__c
+    value: Currency(9, 0)
+  - name: APEGrossPremiumTypeRP__c
+    value: Currency(9, 0)
+  - name: APEGrossPremiumTypeSP__c
+    value: Currency(9, 0)
+  - name: APEGrossProductClassBasic__c
+    value: Currency(9, 0)
+  - name: APEGrossProductClassBAV__c
+    value: Currency(9, 0)
+  - name: APEGrossProductClassPrivate__c
+    value: Currency(9, 0)
+  - name: APEGrossProductClassRisk__c
+    value: Currency(9, 0)
+  - name: APEGrossVariableAnnuity__c
+    value: Currency(9, 0)
+  - name: APENet__c
+    value: Currency(9, 0)
+  - name: APENetCoverTypePension__c
+    value: Currency(9, 0)
+  - name: APENetCoverTypeProtection__c
+    value: Currency(9, 0)
+  - name: APENetManpower__c
+    value: Currency(9, 0)
+  - name: APENetPremiumTypeRP__c
+    value: Currency(9, 0)
+  - name: APENetPremiumTypeSP__c
+    value: Currency(9, 0)
+  - name: APENetProductClassBasic__c
+    value: Currency(9, 0)
+  - name: APENetProductClassBAV__c
+    value: Currency(9, 0)
+  - name: APENetProductClassPrivate__c
+    value: Currency(9, 0)
+  - name: APENetProductClassRisk__c
+    value: Currency(9, 0)
+  - name: APENetVariableAnnuity__c
+    value: Currency(9, 0)
+  - name: BatchId__c
+    value: Text(50)
+  - name: BrokerConsultantAccount__c
+    value: Lookup(Broker Consultant Account)
+  - name: BusinessAccount__c
+    value: Lookup(Account)
+  - name: CasesCoverTypePension__c
+    value: Number(6, 0)
+  - name: CasesCoverTypeProtection__c
+    value: Number(6, 0)
+  - name: CasesManpower__c
+    value: Number(6, 0)
+  - name: CasesNewBusiness__c
+    value: Number(6, 0)
+  - name: CasesPremiumTypeRP__c
+    value: Number(6, 0)
+  - name: CasesPremiumTypeSP__c
+    value: Number(6, 0)
+  - name: CasesProductClassBasic__c
+    value: Number(6, 0)
+  - name: CasesProductClassBAV__c
+    value: Number(6, 0)
+  - name: CasesProductClassPrivate__c
+    value: Number(6, 0)
+  - name: CasesProductClassRisk__c
+    value: Number(6, 0)
+  - name: CasesVariableAnnuity__c
+    value: Number(6, 0)
+  - name: DataSource__c
+    value: Text(200)
+  - name: Date__c
+    value: Date
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Text(80)
+  - name: OwnerId
+    value: Lookup(User,Group)
+  - name: Premium__c
+    value: Currency(9, 0)
+  - name: PremiumCoverTypePension__c
+    value: Currency(9, 0)
+  - name: PremiumCoverTypeProtection__c
+    value: Currency(9, 0)
+  - name: PremiumManpower__c
+    value: Currency(9, 0)
+  - name: PremiumPremiumTypeRP__c
+    value: Currency(9, 0)
+  - name: PremiumPremiumTypeSP__c
+    value: Currency(9, 0)
+  - name: PremiumProductClassBasic__c
+    value: Currency(9, 0)
+  - name: PremiumProductClassBAV__c
+    value: Currency(9, 0)
+  - name: PremiumProductClassPrivate__c
+    value: Currency(9, 0)
+  - name: PremiumProductClassRisk__c
+    value: Currency(9, 0)
+  - name: PremiumVariableAnnuity__c
+    value: Currency(9, 0)
+  - name: Productivity__c
+    value: Number(18, 0)
+  - name: SalesPerson__c
+    value: Lookup(User)
+  - name: TargetId__c
+    value: Text(255)  (External ID) (Unique Case Insensitive)
+  - name: TargetType__c
+    value: Picklist
+labels:
+  - name: APEGross__c
+    value: APE Gross
+  - name: APEGrossCoverTypePension__c
+    value: APE Gross Cover Type Pension
+  - name: APEGrossCoverTypeProtection__c
+    value: APE Gross Cover Type Protection
+  - name: APEGrossInvestment__c
+    value: APE Gross Investment
+  - name: APEGrossManpower__c
+    value: APE Gross Manpower
+  - name: APEGrossPremiumTypeRP__c
+    value: APE Gross Premium Type RP
+  - name: APEGrossPremiumTypeSP__c
+    value: APE Gross Premium Type SP
+  - name: APEGrossProductClassBasic__c
+    value: APE Gross Product Class Basic
+  - name: APEGrossProductClassBAV__c
+    value: APE Gross Product Class BAV
+  - name: APEGrossProductClassPrivate__c
+    value: APE Gross Product Class Private
+  - name: APEGrossProductClassRisk__c
+    value: APE Gross Product Class Risk
+  - name: APEGrossVariableAnnuity__c
+    value: APE Gross Variable Annuity
+  - name: APENet__c
+    value: APE Net
+  - name: APENetCoverTypePension__c
+    value: APE Net Cover Type Pension
+  - name: APENetCoverTypeProtection__c
+    value: APE Net Cover Type Protection
+  - name: APENetManpower__c
+    value: APE Net Manpower
+  - name: APENetPremiumTypeRP__c
+    value: APE Net Premium Type RP
+  - name: APENetPremiumTypeSP__c
+    value: APE Net Premium Type SP
+  - name: APENetProductClassBasic__c
+    value: APE Net Product Class Basic
+  - name: APENetProductClassBAV__c
+    value: APE Net Product Class BAV
+  - name: APENetProductClassPrivate__c
+    value: APE Net Product Class Private
+  - name: APENetProductClassRisk__c
+    value: APE Net Product Class Risk
+  - name: APENetVariableAnnuity__c
+    value: APE Net Variable Annuity
+  - name: BatchId__c
+    value: BatchId
+  - name: BrokerConsultantAccount__c
+    value: Broker Consultant Account
+  - name: BusinessAccount__c
+    value: Business Account
+  - name: CasesCoverTypePension__c
+    value: Cases Cover Type Pension
+  - name: CasesCoverTypeProtection__c
+    value: Cases Cover Type Protection
+  - name: CasesManpower__c
+    value: Cases Manpower
+  - name: CasesNewBusiness__c
+    value: Cases New Business
+  - name: CasesPremiumTypeRP__c
+    value: Cases Premium Type RP
+  - name: CasesPremiumTypeSP__c
+    value: Cases Premium Type SP
+  - name: CasesProductClassBasic__c
+    value: Cases Product Class Basic
+  - name: CasesProductClassBAV__c
+    value: Cases Product Class BAV
+  - name: CasesProductClassPrivate__c
+    value: Cases Product Class Private
+  - name: CasesProductClassRisk__c
+    value: Cases Product Class Risk
+  - name: CasesVariableAnnuity__c
+    value: Cases Variable Annuity
+  - name: DataSource__c
+    value: DataSource
+  - name: Date__c
+    value: Date
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Target Name
+  - name: OwnerId
+    value: Owner
+  - name: Premium__c
+    value: Premium
+  - name: PremiumCoverTypePension__c
+    value: Premium Cover Type Pension
+  - name: PremiumCoverTypeProtection__c
+    value: Premium Cover Type Protection
+  - name: PremiumManpower__c
+    value: Premium Manpower
+  - name: PremiumPremiumTypeRP__c
+    value: Premium Premium TypeRP
+  - name: PremiumPremiumTypeSP__c
+    value: Premium Premium TypeSP
+  - name: PremiumProductClassBasic__c
+    value: Premium Product Class Basic
+  - name: PremiumProductClassBAV__c
+    value: Premium Product Class BAV
+  - name: PremiumProductClassPrivate__c
+    value: Premium Product Class Private
+  - name: PremiumProductClassRisk__c
+    value: Premium Product Class Risk
+  - name: PremiumVariableAnnuity__c
+    value: Premium Variable Annuity
+  - name: Productivity__c
+    value: Productivity
+  - name: SalesPerson__c
+    value: Broker Consultant
+  - name: TargetId__c
+    value: Target ID
+  - name: TargetType__c
+    value: Target Type
+deLabels:
+  - name: APEGross__c
+    value: Plan Brutto APE
+  - name: APEGrossCoverTypeProtection__c
+    value: Plan Brutto APE Absicherungstyp Risiko
+  - name: APEGrossInvestment__c
+    value: Plan Brutto APE Investment
+  - name: APEGrossManpower__c
+    value: Plan Brutto APE Arbeitskraft
+  - name: APEGrossPremiumTypeRP__c
+    value: Plan Brutto APE Beitragsart LB
+  - name: APEGrossPremiumTypeSP__c
+    value: Plan Brutto APE Beitragsart EB
+  - name: APEGrossProductClassBasic__c
+    value: Plan Brutto APE Produktklasse Basic
+  - name: APEGrossProductClassBAV__c
+    value: Plan Brutto APE Produktklasse BAV
+  - name: APEGrossProductClassPrivate__c
+    value: Plan Brutto APE Produktklasse Privat
+  - name: APEGrossProductClassRisk__c
+    value: Plan Brutto APE Produktklasse Risiko
+  - name: APEGrossVariableAnnuity__c
+    value: Plan Brutto APE Variable Annuity
+  - name: APENet__c
+    value: Plan Netto APE
+  - name: APENetCoverTypeProtection__c
+    value: Plan Netto APE Absicherungstyp Risiko
+  - name: APENetManpower__c
+    value: Plan Netto APE Arbeitskraft
+  - name: APENetPremiumTypeRP__c
+    value: Plan Netto APE Beitragsart LB
+  - name: APENetPremiumTypeSP__c
+    value: Plan Netto APE Beitragsart EB
+  - name: APENetProductClassBasic__c
+    value: Plan Netto APE Produktklasse Basic
+  - name: APENetProductClassBAV__c
+    value: Plan Netto APE Produktklasse BAV
+  - name: APENetProductClassPrivate__c
+    value: Plan Netto APE Produktklasse Privat
+  - name: APENetProductClassRisk__c
+    value: Plan Netto APE Produktklasse Risiko
+  - name: APENetVariableAnnuity__c
+    value: Plan Netto APE Variable Annuity
+  - name: BusinessAccount__c
+    value: Geschäftspartner
+  - name: CasesCoverTypeProtection__c
+    value: Plan Brutto Stück Absicherungstyp Risiko
+  - name: CasesManpower__c
+    value: Plan Brutto Stück Arbeitskraft
+  - name: CasesNewBusiness__c
+    value: Plan Brutto Stück
+  - name: CasesPremiumTypeRP__c
+    value: Plan Brutto Stück Beitragsart LB
+  - name: CasesPremiumTypeSP__c
+    value: Plan Brutto Stück Beitragsart EB
+  - name: CasesProductClassBasic__c
+    value: Plan Brutto Stück Produktklasse Basic
+  - name: CasesProductClassBAV__c
+    value: Plan Brutto Stück Produktklasse BAV
+  - name: CasesProductClassPrivate__c
+    value: Plan Brutto Stück Produktklasse Privat
+  - name: CasesProductClassRisk__c
+    value: Plan Brutto Stück Produktklasse Risiko
+  - name: CasesVariableAnnuity__c
+    value: Plan Brutto Stück Variable Annuity
+  - name: Date__c
+    value: Datum
+  - name: Premium__c
+    value: Plan Beiträge
+  - name: PremiumCoverTypeProtection__c
+    value: Plan Beiträge Absicherungstyp Risiko
+  - name: PremiumManpower__c
+    value: Plan Beiträge Arbeitskraft
+  - name: PremiumPremiumTypeRP__c
+    value: Plan Beiträge Beitragsart LB
+  - name: PremiumPremiumTypeSP__c
+    value: Plan Beiträge Beitragsart EB
+  - name: PremiumProductClassBasic__c
+    value: Plan Beiträge Produktklasse Basic
+  - name: PremiumProductClassBAV__c
+    value: Plan Beiträge Produktklasse BAV
+  - name: PremiumProductClassPrivate__c
+    value: Plan Beiträge Produktklasse Privat
+  - name: PremiumProductClassRisk__c
+    value: Plan Beiträge Produktklasse Risiko
+  - name: PremiumVariableAnnuity__c
+    value: Plan Beiträge Variable Annuity
+  - name: Productivity__c
+    value: Plan Produktivität
+  - name: SalesPerson__c
+    value: VL/BD
+picklists:
+  - name: TargetType__c
+    value: Broker Consultant,Sales Director,Regional Director,Broker,CLE
+dePicklists:
+removals:
+  - name: APEGrossNewBusiness__c
+  - name: APENetNewBusiness__c
+  - name: PremiumNewBusiness__c
+mandatory:
+  - name: MarkForDeletion__c
+  - name: OwnerId
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsDeleted
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

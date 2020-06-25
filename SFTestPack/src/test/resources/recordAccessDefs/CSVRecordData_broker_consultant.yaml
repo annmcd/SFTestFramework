@@ -1,0 +1,748 @@
+#Records owned by Broker Consultant users
+#Lookup name acts as lookup key for creating records and finding where clauses of ETLEntity/EntityType combinations
+#columnHeaders are the values in the required values in the CSV to honour constraints
+#whereConditions allow us to find the records after they have been created
+
+lookupName: Region.nord
+whereConditions:
+  - {condition: "Region__r.regionID__c=1"}
+columnHeaders:
+  - { header: "RegionId__c=1"}
+  - { header: "Name=1"}
+---
+lookupName: Region.bayern
+whereConditions:
+  - {condition: "Region__r.regionID__c=3"}
+columnHeaders:
+  - { header: "RegionId__c=3"}
+  - { header: "Name=3"}
+---
+lookupName: Region.nrw
+whereConditions:
+  - {condition: "Region__r.regionID__c=4"}
+columnHeaders:
+  - { header: "RegionId__c=4"}
+  - { header: "Name=4"}
+---
+lookupName: Region.mitte
+whereConditions:
+  - {condition: "Region__r.regionID__c=5"}
+columnHeaders:
+  - { header: "RegionId__c=5"}
+  - { header: "Name=5"}
+---
+lookupName: Region.bawu
+whereConditions:
+  - {condition: "Region__r.regionID__c=6"}
+columnHeaders:
+  - { header: "RegionId__c=6"}
+  - { header: "Name=6"}
+---
+lookupName: BrokerConsultantAccount.nord
+whereConditions:
+  - {condition: "Region__r.regionID__c=1" }
+  - {condition: "Owner.Username = 'bcnord@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "BrokerConsultantAccountId__c=20191"}
+  - { header: "User:Owner.Username=bcnord@canadalife.ie.$environment"}
+  - { header: "Region__r.regionID__c = 1"}
+---
+lookupName: BrokerConsultantAccount.bayern
+whereConditions:
+  - {condition: "Region__r.regionID__c=3"}
+  - {condition: "Owner.Username='bcbayern@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "BrokerConsultantAccountId__c=20193"}
+  - { header: "User:Owner.Username=bcbayern@canadalife.ie.$environment"}
+  - { header: "Region__r.regionID__c = 3"}
+---
+lookupName: BrokerConsultantAccount.nrw
+whereConditions:
+  - {condition: "Region__r.regionID__c=4"}
+  - {condition: "Owner.Username='bcnrw@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "BrokerConsultantAccountId__c=20194"}
+  - { header: "User:Owner.Username=bcnrw@canadalife.ie.$environment"}
+  - { header: "Region__r.regionID__c = 4"}
+---
+lookupName: BrokerConsultantAccount.mitte
+whereConditions:
+  - {condition: "Region__r.regionID__c=5"}
+  - {condition: "Owner.Username='bcmitte@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "BrokerConsultantAccountId__c=20195"}
+  - { header: "User:Owner.Username=bcmitte@canadalife.ie.$environment"}
+  - { header: "Region__r.regionID__c = 5"}
+---
+lookupName: BrokerConsultantAccount.bawu
+whereConditions:
+  - {condition: "Region__r.regionID__c=6"}
+  - {condition: "Owner.Username='bcbawu@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "BrokerConsultantAccountId__c=20196"}
+  - { header: "User:Owner.Username=bcbawu@canadalife.ie.$environment"}
+  - { header: "Region__r.regionID__c = 6"}
+---
+#======================Broker Account===============================================
+lookupName: BrokerAccount.nord
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '20191'"}
+  - {condition: "Owner.Username='bcnord@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "Name = BcNord"}
+  - { header: "AccountId__c = 20191"}
+  - { header: "Owner.Username=bcnord@canadalife.ie.$environment"}
+  - { header: "BusinessResponsible__r.Username = bcnord@canadalife.ie.$environment"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c= 20191"}
+  - { header: "RecordType.Name = Brokerage"}
+  - { header: "BrokerStatus__c = active"}
+---
+lookupName: BrokerAccount.bayern
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '20193'"}
+  - {condition: "Owner.Username='bcbayern@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "Name = BcBayern"}
+  - { header: "AccountId__c = 20193"}
+  - { header: "Owner.Username=bcbayern@canadalife.ie.$environment"}
+  - { header: "BusinessResponsible__r.Username = bcbayern@canadalife.ie.$environment"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c= 20193"}
+  - { header: "RecordType.Name = Brokerage"}
+  - { header: "BrokerStatus__c = active"}
+---
+lookupName: BrokerAccount.nrw
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '20194'"}
+  - {condition: "Owner.Username='bcnrw@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "Name = BcNRW"}
+  - { header: "AccountId__c = 20194"}
+  - { header: "Owner.Username=bcnrw@canadalife.ie.$environment"}
+  - { header: "BusinessResponsible__r.Username = bcnrw@canadalife.ie.$environment"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c= 20194"}
+  - { header: "RecordType.Name = Brokerage"}
+  - { header: "BrokerStatus__c = active"}
+---
+lookupName: BrokerAccount.mitte
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '20195'"}
+  - {condition: "Owner.Username='bcmitte@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "Name = BcMitte"}
+  - { header: "AccountId__c = 20195"}
+  - { header: "Owner.Username=bcmitte@canadalife.ie.$environment"}
+  - { header: "BusinessResponsible__r.Username = bcmitte@canadalife.ie.$environment"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c= 20195"}
+  - { header: "RecordType.Name = Brokerage"}
+  - { header: "BrokerStatus__c = active"}
+---
+lookupName: BrokerAccount.bawu
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '20196'"}
+  - {condition: "Owner.Username='bcbawu@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "Name = BcBawu"}
+  - { header: "AccountId__c = 20196"}
+  - { header: "Owner.Username=bcbawu@canadalife.ie.$environment"}
+  - { header: "BusinessResponsible__r.Username = bcbawu@canadalife.ie.$environment"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c= 20196"}
+  - { header: "RecordType.Name = Brokerage"}
+  - { header: "BrokerStatus__c = active"}
+---
+#======================Statement Broker===============================================
+lookupName: StatementBroker.nord
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '20191'"}
+  - {condition: "Owner.Username='bcnord@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "BusinessAccount__r.AccountId__c=20191"}
+  - { header: "User:Owner.Username=bcnord@canadalife.ie.$environment"}
+  - { header: "StatementBrokerId__c = A-20191"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = 20191"}
+---
+lookupName: StatementBroker.bayern
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '20193'"}
+  - {condition: "Owner.Username='bcbayern@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "BusinessAccount__r.AccountId__c=20193"}
+  - { header: "User:Owner.Username=bcbayern@canadalife.ie.$environment"}
+  - { header: "StatementBrokerId__c = A-20193"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = 20193"}
+---
+lookupName: StatementBroker.nrw
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '20194'"}
+  - {condition: "Owner.Username='bcnrw@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "BusinessAccount__r.AccountId__c=20194"}
+  - { header: "User:Owner.Username=bcnrw@canadalife.ie.$environment"}
+  - { header: "StatementBrokerId__c = A-20194"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = 20194"}
+---
+lookupName: StatementBroker.mitte
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '20195'"}
+  - {condition: "Owner.Username='bcmitte@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "BusinessAccount__r.AccountId__c=20195"}
+  - { header: "User:Owner.Username=bcmitte@canadalife.ie.$environment"}
+  - { header: "StatementBrokerId__c = A-20195"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = 20195"}
+---
+lookupName: StatementBroker.bawu
+whereConditions:
+  - {condition: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = '20196'"}
+  - {condition: "Owner.Username='bcbawu@canadalife.ie.$environment'"}
+columnHeaders:
+  - { header: "BusinessAccount__r.AccountId__c=20196"}
+  - { header: "User:Owner.Username=bcbawu@canadalife.ie.$environment"}
+  - { header: "StatementBrokerId__c = A-20196"}
+  - { header: "BrokerConsultantAccount__r.BrokerConsultantAccountId__c = 20196"}
+---
+#=========================New Policy==========================
+lookupName: NewPolicy.nord
+whereConditions:
+  - {condition: "Account.AccountId__c = 20191"}
+  - {condition: "policyId__c = '20199'"}
+columnHeaders:
+  - { header: "Account.AccountId__c=20191"}
+  - { header: "policyId__c=20199"}
+---
+lookupName: NewPolicy.bayern
+whereConditions:
+  - {condition: "Account.AccountId__c = 20193"}
+  - {condition: "policyId__c = 20197"}
+columnHeaders:
+  - { header: "Account.AccountId__c=20193"}
+  - { header: "policyId__c=20197"}
+---
+lookupName: NewPolicy.nrw
+whereConditions:
+  - {condition: "Account.AccountId__c = 20194"}
+  - {condition: "policyId__c = 20196"}
+columnHeaders:
+  - { header: "Account.AccountId__c=20194"}
+  - { header: "policyId__c=20196"}
+---
+lookupName: NewPolicy.mitte
+whereConditions:
+  - {condition: "Account.AccountId__c = 20195"}
+  - {condition: "policyId__c = 20195"}
+columnHeaders:
+  - { header: "Account.AccountId__c=20195"}
+  - { header: "policyId__c=20195"}
+---
+lookupName: NewPolicy.bawu
+whereConditions:
+  - {condition: "Account.AccountId__c = 20196"}
+  - {condition: "policyId__c = 20194"}
+columnHeaders:
+  - { header: "Account.AccountId__c=20196"}
+  - { header: "policyId__c=20194"}
+---
+#============================Policy===========================
+lookupName: Policy.nord
+whereConditions:
+  - {condition: "Account.AccountId__c = 20191"}
+  - {condition: "policyId__c = '20199'"}
+  - {condition: "ownerId in (select id from user where username = 'bcnord@canadalife.ie.$environment')"}
+columnHeaders:
+  - { header: "Owner.Username=bcnord@canadalife.ie.$environment"}
+  - { header: "PolicyNumber__c=20191"}
+  - { header: "BrokerConsultant__r.Username=bcnord@canadalife.ie.$environment"}
+  - { header: "Account.AccountId__c=20191"}
+  - { header: "PolicyId__c=20199"}
+---
+lookupName: Policy.bayern
+whereConditions:
+  - {condition: "Account.AccountId__c = 20193"}
+  - {condition: "policyId__c = '20197'"}
+  - {condition: "ownerId in (select id from user where username = 'bcbayern@canadalife.ie.$environment')"}
+columnHeaders:
+  - { header: "Owner.Username=bcbayern@canadalife.ie.$environment"}
+  - { header: "PolicyNumber__c='20193'"}
+  - { header: "BrokerConsultant__r.Username=bcbayern@canadalife.ie.$environment"}
+  - { header: "Account.AccountId__c=20193"}
+  - { header: "PolicyId__c=20197"}
+---
+lookupName: Policy.nrw
+whereConditions:
+  - {condition: "Account.AccountId__c = 20194"}
+  - {condition: "policyId__c = '20196'"}
+  - {condition: "ownerId in (select id from user where username = 'bcnrw@canadalife.ie.$environment')"}
+columnHeaders:
+  - { header: "Owner.Username=bcnrw@canadalife.ie.$environment"}
+  - { header: "PolicyNumber__c=20194"}
+  - { header: "BrokerConsultant__r.Username=bcnrw@canadalife.ie.$environment"}
+  - { header: "Account.AccountId__c=20194"}
+  - { header: "PolicyId__c=20196"}
+---
+lookupName: Policy.mitte
+whereConditions:
+  - {condition: "Account.AccountId__c = 20195"}
+  - {condition: "policyId__c = '20195'"}
+  - {condition: "ownerId in (select id from user where username = 'bcmitte@canadalife.ie.$environment')"}
+columnHeaders:
+  - { header: "Owner.Username=bcmitte@canadalife.ie.$environment"}
+  - { header: "PolicyNumber__c='20195'"}
+  - { header: "BrokerConsultant__r.Username=bcmitte@canadalife.ie.$environment"}
+  - { header: "Account.AccountId__c=20195"}
+  - { header: "PolicyId__c=20195"}
+---
+lookupName: Policy.bawu
+whereConditions:
+  - {condition: "Account.AccountId__c = 20196"}
+  - {condition: "policyId__c = '20194'"}
+  - {condition: "ownerId in (select id from user where username = 'bcbawu@canadalife.ie.$environment')"}
+columnHeaders:
+  - { header: "Owner.Username=bcbawu@canadalife.ie.$environment"}
+  - { header: "PolicyNumber__c=20194"}
+  - { header: "BrokerConsultant__r.Username=bcbawu@canadalife.ie.$environment"}
+  - { header: "Account.AccountId__c=20196"}
+  - { header: "PolicyId__c=20194"}
+---
+#==============Commission Payments=========================================================
+lookupName: CommissionPayments.nord
+whereConditions:
+  - {condition: "StatementBroker__r.StatementBrokerId__c = 'A-20191'"}
+  - {condition: "Name = '20191'"}
+columnHeaders:
+  - { header: "PaymentAmount__c = 2191.9100000"}
+  - { header: "StatementDate__c = 2019-05-15"}
+  - { header: "StatementBroker__r.StatementBrokerId__c = A-20191"}
+  - { header: "CommissionPaymentId__c = 201911"}
+  - { header: "Name = 20191"}
+---
+lookupName: CommissionPayments.bayern
+whereConditions:
+  - {condition: "StatementBroker__r.StatementBrokerId__c = 'A-20193'"}
+  - {condition: "Name = '20193'"}
+columnHeaders:
+  - { header: "PaymentAmount__c = 2193.9100000"}
+  - { header: "StatementDate__c = 2019-05-15"}
+  - { header: "StatementBroker__r.StatementBrokerId__c = A-20193"}
+  - { header: "CommissionPaymentId__c = 201913"}
+  - { header: "Name = 20193"}
+---
+lookupName: CommissionPayments.nrw
+whereConditions:
+  - {condition: "StatementBroker__r.StatementBrokerId__c = 'A-20194'"}
+  - {condition: "Name = '20194'"}
+columnHeaders:
+  - { header: "PaymentAmount__c = 2194.9100000"}
+  - { header: "StatementDate__c = 2019-05-15"}
+  - { header: "StatementBroker__r.StatementBrokerId__c = A-20194"}
+  - { header: "CommissionPaymentId__c = 201914"}
+  - { header: "Name = 20194"}
+---
+lookupName: CommissionPayments.mitte
+whereConditions:
+  - {condition: "StatementBroker__r.StatementBrokerId__c = 'A-20195'"}
+  - {condition: "Name = '20195'"}
+columnHeaders:
+  - { header: "PaymentAmount__c = 2195.9100000"}
+  - { header: "StatementDate__c = 2019-05-15"}
+  - { header: "StatementBroker__r.StatementBrokerId__c = A-20195"}
+  - { header: "CommissionPaymentId__c = 201915"}
+  - { header: "Name = 20195"}
+---
+lookupName: CommissionPayments.bawu
+whereConditions:
+  - {condition: "StatementBroker__r.StatementBrokerId__c = 'A-20196'"}
+  - {condition: "Name = '20196'"}
+columnHeaders:
+  - { header: "PaymentAmount__c = 2196.9100000"}
+  - { header: "StatementDate__c = 2019-05-15"}
+  - { header: "StatementBroker__r.StatementBrokerId__c = A-20196"}
+  - { header: "CommissionPaymentId__c = 201916"}
+  - { header: "Name = 20196"}
+---
+#==============Commission Agreements=======================
+
+lookupName: CommissionAgreements.nord
+whereConditions:
+  - {condition: "Owner.Username='bcnord@canadalife.ie.$environment'"}
+  - {condition: "CommissionAgreementId__c = '20191'"}
+columnHeaders:
+  - { header: "User:Owner.Username=bcnord@canadalife.ie.$environment"}
+  - { header: "CommissionAgreementId__c = 20191"}
+  - { header: "BusinessResponsible__r.Username = bcnord@canadalife.ie.$environment"}
+---
+lookupName: CommissionAgreements.bayern
+whereConditions:
+  - {condition: "Owner.Username='bcbayern@canadalife.ie.$environment'"}
+  - {condition: "CommissionAgreementId__c = '20193'"}
+columnHeaders:
+  - { header: "User:Owner.Username=bcbayern@canadalife.ie.$environment"}
+  - { header: "CommissionAgreementId__c = 20193"}
+  - { header: "BusinessResponsible__r.Username = bcbayern@canadalife.ie.$environment"}
+---
+lookupName: CommissionAgreements.nrw
+whereConditions:
+  - {condition: "Owner.Username='bcnrw@canadalife.ie.$environment'"}
+  - {condition: "CommissionAgreementId__c = '20194'"}
+columnHeaders:
+  - { header: "User:Owner.Username=bcnrw@canadalife.ie.$environment"}
+  - { header: "CommissionAgreementId__c = 20194"}
+  - { header: "BusinessResponsible__r.Username = bcnrw@canadalife.ie.$environment"}
+---
+lookupName: CommissionAgreements.mitte
+whereConditions:
+  - {condition: "Owner.Username='bcmitte@canadalife.ie.$environment'"}
+  - {condition: "CommissionAgreementId__c = '20195'"}
+columnHeaders:
+  - { header: "User:Owner.Username=bcmitte@canadalife.ie.$environment"}
+  - { header: "CommissionAgreementId__c = 20195"}
+  - { header: "BusinessResponsible__r.Username = bcmitte@canadalife.ie.$environment"}
+---
+lookupName: CommissionAgreements.bawu
+whereConditions:
+  - {condition: "Owner.Username='bcbawu@canadalife.ie.$environment'"}
+  - {condition: "CommissionAgreementId__c = '20196'"}
+columnHeaders:
+  - { header: "User:Owner.Username=bcbawu@canadalife.ie.$environment"}
+  - { header: "CommissionAgreementId__c = 20196"}
+  - { header: "BusinessResponsible__r.Username = bcbawu@canadalife.ie.$environment"}
+---
+#===================Agreement Line Item===============================
+lookupName: AgreementLineItem.nord
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='20191'"}
+  - {condition: "AgreementLineItemId__c = '20191'"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c=20191"}
+  - { header: "AgreementLineItemId__c = 20191"}
+---
+lookupName: AgreementLineItem.bayern
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='20193'"}
+  - {condition: "AgreementLineItemId__c = '20193'"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c=20193"}
+  - { header: "AgreementLineItemId__c = 20193"}
+---
+lookupName: AgreementLineItem.nrw
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='20194'"}
+  - {condition: "AgreementLineItemId__c = '20194'"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c=20194"}
+  - { header: "AgreementLineItemId__c = 20194"}
+---
+lookupName: AgreementLineItem.mitte
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='20195'"}
+  - {condition: "AgreementLineItemId__c= '20195'"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c=20195"}
+  - { header: "AgreementLineItemId__c = 20195"}
+---
+lookupName: AgreementLineItem.bawu
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='20196'"}
+  - {condition: "AgreementLineItemId__c = '20196'"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c=20196"}
+  - { header: "AgreementLineItemId__c = 20196"}
+---
+#=====================Policy Application owned by Integration user============================
+lookupName: PolicyApplication.nord
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='20191'"}
+  - {condition: "PolicyApplicationid__c = 20191"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c = 20191"}
+  - { header: "PolicyApplicationid__c = 20191"}
+---
+lookupName: PolicyApplication.bayern
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='20193'"}
+  - {condition: "PolicyApplicationid__c = 20193"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c = 20193"}
+  - { header: "PolicyApplicationid__c = 20193"}
+---
+lookupName: PolicyApplication.nrw
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='20194'"}
+  - {condition: "PolicyApplicationid__c = 20194"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c = 20194"}
+  - { header: "PolicyApplicationid__c = 20194"}
+---
+lookupName: PolicyApplication.mitte
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='20195'"}
+  - {condition: "PolicyApplicationid__c = 20195"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c = 20195"}
+  - { header: "PolicyApplicationid__c = 20195"}
+---
+lookupName: PolicyApplication.bawu
+whereConditions:
+  - {condition: "CommissionAgreement__r.CommissionAgreementId__c='20196'"}
+  - {condition: "PolicyApplicationid__c = 20196"}
+columnHeaders:
+  - { header: "CommissionAgreement__r.CommissionAgreementId__c = 20196"}
+  - { header: "PolicyApplicationid__c = 20196"}
+---
+#=============IHK Number===========================
+lookupName: IHKNumber.nord
+whereConditions:
+  - {condition: "IHKNumber__c = '20191'"}
+  - {condition: "Account__r.AccountId__c=20191"}
+columnHeaders:
+  - { header: "IHKNumber__c = 20191"}
+  - { header: "Account__r.AccountId__c=20191"}
+---
+lookupName: IHKNumber.bayern
+whereConditions:
+  - {condition: "IHKNumber__c = '20193'"}
+  - {condition: "Account__r.AccountId__c=20193"}
+columnHeaders:
+  - { header: "IHKNumber__c = 20193"}
+  - { header: "Account__r.AccountId__c=20193"}
+---
+lookupName: IHKNumber.nrw
+whereConditions:
+  - {condition: "IHKNumber__c = '20194'"}
+  - {condition: "Account__r.AccountId__c=20194"}
+columnHeaders:
+  - { header: "IHKNumber__c = 20194"}
+  - { header: "Account__r.AccountId__c=20194"}
+---
+lookupName: IHKNumber.mitte
+whereConditions:
+  - {condition: "IHKNumber__c = '20195'"}
+  - {condition: "Account__r.AccountId__c=20195"}
+columnHeaders:
+  - { header: "IHKNumber__c = 20195"}
+  - { header: "Account__r.AccountId__c=20195"}
+---
+lookupName: IHKNumber.bawu
+whereConditions:
+  - {condition: "IHKNumber__c = '20196'"}
+  - {condition: "Account__r.AccountId__c=20196"}
+columnHeaders:
+  - { header: "IHKNumber__c = 20196"}
+  - { header: "Account__r.AccountId__c=20196"}
+---
+#================Target===========================
+lookupName: Target.nord
+whereConditions:
+  - {condition: "TargetId__c = '20191'"}
+  - {condition: "ownerId in (select id from user where username = 'bcnord@canadalife.ie.$environment')"}
+columnHeaders:
+  - { header: "TargetId__c = 20191"}
+  - { header: "SalesPerson__r.Username = bcnord@canadalife.ie.$environment"}
+  - { header: "User:Owner.Username=bcnord@canadalife.ie.$environment"}
+---
+lookupName: Target.bayern
+whereConditions:
+  - {condition: "TargetId__c = '20193'"}
+  - {condition: "ownerId in (select id from user where username = 'bcbayern@canadalife.ie.$environment')"}
+columnHeaders:
+  - { header: "TargetId__c = 20193"}
+  - { header: "SalesPerson__r.Username = bcbayern@canadalife.ie.$environment"}
+  - { header: "User:Owner.Username=bcbayern@canadalife.ie.$environment"}
+---
+lookupName: Target.nrw
+whereConditions:
+  - {condition: "TargetId__c = '20194'"}
+  - {condition: "ownerId in (select id from user where username = 'bcnrw@canadalife.ie.$environment')"}
+columnHeaders:
+  - { header: "TargetId__c = 20194"}
+  - { header: "SalesPerson__r.Username = bcnrw@canadalife.ie.$environment"}
+  - { header: "User:Owner.Username=bcnrw@canadalife.ie.$environment"}
+---
+lookupName: Target.mitte
+whereConditions:
+  - {condition: "TargetId__c = '20195'"}
+  - {condition: "ownerId in (select id from user where username = 'bcmitte@canadalife.ie.$environment')"}
+columnHeaders:
+  - { header: "TargetId__c = 20195"}
+  - { header: "SalesPerson__r.Username = bcmitte@canadalife.ie.$environment"}
+  - { header: "User:Owner.Username=bcmitte@canadalife.ie.$environment"}
+---
+lookupName: Target.bawu
+whereConditions:
+  - {condition: "TargetId__c = '20196'"}
+  - {condition: "ownerId in (select id from user where username = 'bcbawu@canadalife.ie.$environment')"}
+columnHeaders:
+  - { header: "TargetId__c = 20196"}
+  - { header: "SalesPerson__r.Username = bcbawu@canadalife.ie.$environment"}
+  - { header: "User:Owner.Username=bcbawu@canadalife.ie.$environment"}
+---
+#=============Opportunity============================
+lookupName: Opportunity.nord
+whereConditions:
+  - {condition: "Account.AccountId__c = 20191"}
+  - {condition: "OpportunityId__c = '20101'"}
+columnHeaders:
+  - { header: "Account.AccountId__c = 20191"}
+  - { header: "OpportunityId__c = 20101"}
+  - { header: "Name = Y2006_M12_A1_Obernd.kreutzer@canadalife.de_R12"}
+  - { header: "StageName = Closed Won"}
+  - { header: "CloseDate = 2019-09-15"}
+  - { header: "Pricebook2.Name=Standard Price Book"}
+---
+lookupName: Opportunity.bayern
+whereConditions:
+  - {condition: "Account.AccountId__c = 20193"}
+  - {condition: "OpportunityId__c = '20103'"}
+columnHeaders:
+  - { header: "Account.AccountId__c = 20193"}
+  - { header: "OpportunityId__c = 20103"}
+  - { header: "Name = Y2006_M12_A1_Obernd.kreutzer@canadalife.de_R12"}
+  - { header: "StageName = Closed Won"}
+  - { header: "CloseDate = 2019-09-15"}
+  - { header: "Pricebook2.Name=Standard Price Book"}
+---
+lookupName: Opportunity.nrw
+whereConditions:
+  - {condition: "Account.AccountId__c = 20194"}
+  - {condition: "OpportunityId__c = '20104'"}
+columnHeaders:
+  - { header: "Account.AccountId__c = 20194"}
+  - { header: "OpportunityId__c = 20104"}
+  - { header: "Name = Y2006_M12_A1_Obernd.kreutzer@canadalife.de_R12"}
+  - { header: "StageName = Closed Won"}
+  - { header: "CloseDate = 2019-09-15"}
+  - { header: "Pricebook2.Name=Standard Price Book"}
+---
+lookupName: Opportunity.mitte
+whereConditions:
+  - {condition: "Account.AccountId__c = 20195"}
+  - {condition: "OpportunityId__c = '20105'"}
+columnHeaders:
+  - { header: "Account.AccountId__c = 20195"}
+  - { header: "OpportunityId__c = 20105"}
+  - { header: "Name = Y2006_M12_A1_Obernd.kreutzer@canadalife.de_R12"}
+  - { header: "StageName = Closed Won"}
+  - { header: "CloseDate = 2019-09-15"}
+  - { header: "Pricebook2.Name=Standard Price Book"}
+---
+lookupName: Opportunity.bawu
+whereConditions:
+  - {condition: "Account.AccountId__c = 20196"}
+  - {condition: "OpportunityId__c = '20106'"}
+columnHeaders:
+  - { header: "Account.AccountId__c = 20196"}
+  - { header: "OpportunityId__c = 20106"}
+  - { header: "Name = Y2006_M12_A1_Obernd.kreutzer@canadalife.de_R12"}
+  - { header: "StageName = Closed Won"}
+  - { header: "CloseDate = 2019-09-15"}
+  - { header: "Pricebook2.Name=Standard Price Book"}
+---
+#==============Opportunity Line Item================
+lookupName: OpportunityLineItem.nord
+whereConditions:
+  - {condition: "APEItemId__c = '20191'"}
+  - {condition: "Opportunity.OpportunityId__c = '20101'"}
+columnHeaders:
+  - { header: "APEItemId__c = 20191"}
+  - { header: "Opportunity.OpportunityId__c = 20101"}
+  - { header: "PolicyNumber__r.PolicyId__c = 20199"}
+  - { header: "Quantity = 1"}
+  - { header: "TotalPrice = 132.84"}
+  - { header: "Product2.ProductId__c= 11"}
+  - { header: "ProductClass__c=Basis"}
+---
+lookupName: OpportunityLineItem.bayern
+whereConditions:
+  - {condition: "APEItemId__c = '20193'"}
+  - {condition: "Opportunity.OpportunityId__c = '20103'"}
+columnHeaders:
+  - { header: "APEItemId__c = 20193"}
+  - { header: "Opportunity.OpportunityId__c = 20103"}
+  - { header: "PolicyNumber__r.PolicyId__c = 20197"}
+  - { header: "Quantity = 1"}
+  - { header: "TotalPrice = 132.84"}
+  - { header: "Product2.ProductId__c= 11"}
+  - { header: "ProductClass__c=Basis"}
+---
+lookupName: OpportunityLineItem.nrw
+whereConditions:
+  - {condition: "APEItemId__c = '20194'"}
+  - {condition: "Opportunity.OpportunityId__c = '20104'"}
+columnHeaders:
+  - { header: "APEItemId__c = 20194"}
+  - { header: "Opportunity.OpportunityId__c = 20104"}
+  - { header: "PolicyNumber__r.PolicyId__c = 20196"}
+  - { header: "Quantity = 1"}
+  - { header: "TotalPrice = 132.84"}
+  - { header: "Product2.ProductId__c= 11"}
+  - { header: "ProductClass__c=Basis"}
+---
+lookupName: OpportunityLineItem.mitte
+whereConditions:
+  - {condition: "APEItemId__c = '20195'"}
+  - {condition: "Opportunity.OpportunityId__c = '20105'"}
+columnHeaders:
+  - { header: "APEItemId__c = 20195"}
+  - { header: "Opportunity.OpportunityId__c = 20105"}
+  - { header: "PolicyNumber__r.PolicyId__c = 20195"}
+  - { header: "Quantity = 1"}
+  - { header: "TotalPrice = 132.84"}
+  - { header: "Product2.ProductId__c= 11"}
+  - { header: "ProductClass__c=Basis"}
+---
+lookupName: OpportunityLineItem.bawu
+whereConditions:
+  - {condition: "APEItemId__c = '20196'"}
+  - {condition: "Opportunity.OpportunityId__c = '20106'"}
+columnHeaders:
+  - { header: "APEItemId__c = 20196"}
+  - { header: "Opportunity.OpportunityId__c = 20106"}
+  - { header: "PolicyNumber__r.PolicyId__c = 20196"}
+  - { header: "Quantity = 1"}
+  - { header: "TotalPrice = 132.84"}
+  - { header: "Product2.ProductId__c= 11"}
+  - { header: "ProductClass__c=Basis"}
+---
+#================ISuite Task====================
+lookupName: ISuiteTask.nord
+whereConditions:
+  - {condition: "ISuiteTaskid__c = '20191'"}
+  - {condition: "PolicyNumber__r.PolicyId__c = '20199'"}
+columnHeaders:
+  - { header: "ISuiteTaskid__c = 20191"}
+  - { header: "User:Owner.Username=bcnord@canadalife.ie.$environment"}
+  - { header: "PolicyNumber__r.PolicyId__c = 20199"}
+---
+lookupName: ISuiteTask.bayern
+whereConditions:
+  - {condition: "ISuiteTaskid__c = '20193'"}
+  - {condition: "PolicyNumber__r.PolicyId__c = '20197'"}
+columnHeaders:
+  - { header: "ISuiteTaskid__c = 20193"}
+  - { header: "User:Owner.Username=bcbayern@canadalife.ie.$environment"}
+  - { header: "PolicyNumber__r.PolicyId__c = 20197"}
+---
+lookupName: ISuiteTask.nrw
+whereConditions:
+  - {condition: "ISuiteTaskid__c = '20194'"}
+  - {condition: "PolicyNumber__r.PolicyId__c = '20196'"}
+columnHeaders:
+  - { header: "ISuiteTaskid__c = 20194"}
+  - { header: "User:Owner.Username=bcnrw@canadalife.ie.$environment"}
+  - { header: "PolicyNumber__r.PolicyId__c = 20196"}
+---
+lookupName: ISuiteTask.mitte
+whereConditions:
+  - {condition: "ISuiteTaskid__c = '20195'"}
+  - {condition: "PolicyNumber__r.PolicyId__c = '20195'"}
+columnHeaders:
+  - { header: "ISuiteTaskid__c = 20195"}
+  - { header: "User:Owner.Username=bcmitte@canadalife.ie.$environment"}
+  - { header: "PolicyNumber__r.PolicyId__c = 20195"}
+---
+lookupName: ISuiteTask.bawu
+whereConditions:
+  - {condition: "ISuiteTaskid__c = '20196'"}
+  - {condition: "PolicyNumber__r.PolicyId__c = '20194'"}
+columnHeaders:
+  - { header: "ISuiteTaskid__c = 20196"}
+  - { header: "User:Owner.Username=bcbawu@canadalife.ie.$environment"}
+  - { header: "PolicyNumber__r.PolicyId__c = 20194"}

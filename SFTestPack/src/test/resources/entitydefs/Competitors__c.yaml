@@ -1,0 +1,91 @@
+name: competitors__c
+dataTypes:
+  - name: AccountId__c
+    value: Master-Detail(Account)
+  - name: BatchId__c
+    value: Text(50)
+  - name: CompetitionArea__c
+    value: Picklist
+  - name: CompetitorID__c
+    value: Text(255)  (External ID) (Unique Case Insensitive)
+  - name: CompetitorName__c
+    value: Picklist
+  - name: CompetitorRanking__c
+    value: Picklist
+  - name: DataSource__c
+    value: Text(200)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: Name
+    value: Auto Number
+  - name: RankingAreaCombination__c
+    value: Text(255)  (Unique Case Sensitive)
+  - name: Reason__c
+    value: Picklist (Multi-Select)
+labels:
+  - name: AccountId__c
+    value: Account Name
+  - name: BatchId__c
+    value: BatchId
+  - name: CompetitionArea__c
+    value: Product Area
+  - name: CompetitorID__c
+    value: CompetitorID
+  - name: CompetitorName__c
+    value: Competitor
+  - name: CompetitorRanking__c
+    value: Ranking
+  - name: DataSource__c
+    value: DataSource
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: Name
+    value: Competitor
+  - name: RankingAreaCombination__c
+    value: Ranking and Area Combination
+  - name: Reason__c
+    value: Reason
+deLabels:
+  - name: AccountId__c
+    value: Geschäftspartner
+  - name: CompetitionArea__c
+    value: Produktbereich
+  - name: CompetitorName__c
+    value: Wettbewerber
+  - name: CompetitorRanking__c
+    value: Position
+  - name: Reason__c
+    value: Grund
+picklists:
+  - name: CompetitionArea__c
+    value: Area bAV,Area Riskcover Combined Products,Area Privat Pension,Area Riester,Area Riskcover BU,Area Riskcover GFV,Area Riskcover Long Term Care,Area Riskcover RLV,Area Riskcover SKV,Area Rürup,Area Single Premium,Popular Company
+  - name: CompetitorName__c
+    value: .,<keine Auswahl>,123 Bank,AachenMünchener,ablehnend,Ageas,Alle Gesellschaften,Allianz,Alpeco,Alte Leipziger,Altersvorsorge,Analysetool,ARAG,asc,Assecuradeur,ASSTEL  AG,Atlantic Lux,auf Anfrage,Augsburger Aktienbank,AXA,AXA/Allianz,Baloise,Bankprodukte,Barmenia,Basler,Bayerische (ehem. BBV),Bayern Versicherung,Bayrische,bBeteiligungen/Vermögensverwaltung,BBV,BCA,Beteiligung,Beteiligung Rohstoffe,Beteiligungen,Beteiligungen / VVW,Beteiligungen und Fonds,Beteiligungen und Immobilien,bisher nicht,Blockheizkraftwerke,BSV,Bundesversorgungswerk,Canada Life,Canada Life/BBV,Captura,Central,Central Kranken,CiV,Clerical Medical,Concordia,Condor,Container,Container Leasing,Continentale,Cosmos,C-Quadrat,DAB,DBV Winterthur,Debeka,Debi Select,Delta Direkt,Delta Lloyd,Depots,Depots, geschl. Fonds,Deutsche,Deutsche Ärzte,Deutsche Familien Versicherung,Deutsche Gesellschaften,Deutscher Ring,DEVK,Dialog,Dienstunfähigkeitsversicherung für Soldaten,Direktanlage,DIREKTANLAGE FÜRST FUGGER,Direktinvestments,diverse,DKV,DLV AG,Düsseldorfer,DWS,DWS (Zürich D. H.),DWS Premium,DWS Riester,Eagle Star,ebase,Edelmetalle,eher selten vorhanden,eigene Fonds,Eigene Vermögensverwaltung,eigenes Produkt,entfällt,Ergo,Europa,Excalibur,F + P,FiGo,Finance Life,Firends,Flex Fonds,Fonds,Fortis Deutschland,Freie Kapitalanlage,Friends Provident,Fürst Fugger Bank,Geldanlage,Gelegentlich,Generali,Geschlossene Fonds,geschlossene Immofonds,gibt es nicht,Gip,Gold,Gold sparen,Gold, Fonds, Infius,Gold/Silber,Goldsparpläne,Gothaer,Gothaer  AG (Sach),Gothaer Kranken,Gothaer/Skandia,Haig Vermögensverwaltung,Hallesche Leben,Hallesche Nat.,Hamburg-Mannheimer,Hannoversche  AG,HanseMerkur,HDI,Heidelberger,Helvetia,HLCM,Honorarkonzept,Ideal,Iduna,IMMO,Immobilien,Infinius AG,Inter,InterLloyd,InterRisk,Invers Ima Protokoll,Invest Produkt,Investmentfonds,ja,Janitos,Kapitalanlagen,Karlsruher,Kein BAV,kein Potential,kein Riester,kein Rürup,keine,keine Präferenzen,keiner,Kurzfristige Anlagen,Legal&General,Level 9 Vergl. Software,Liberty,Logi Invest,LV 1871,LVM,maklermanagement,mamax,Mannheimer,Mecklenburgische,MoneyMaxx,Monuta,Morgen & Morgen,mpc,Multilnvest,Münchener Verein,mylife,nach Rating,nein,neue Leben,nicht genannt,NN,noch nicht,noch wenig,Nordea,nur KV,Nürnberger,Nürnberger (BU),oeco capital,offene Immobilienfonds,Öko Fonds,Ökocapital,ÖkoRenta,Ölfonds,Optima,OWS,Performance AG,Perikon,Prisma Life,PrismaLife,Projektgruppe,Provinzial Hannover,Provinzial NordWest,Provinzial Rheinland,Prudentia,Quantum Leben,R+V,reines Investment,Rohstoffe, Edelmetalle,Rothschild,Royal London,RWB,RWB u. Gold,s,Saarland,Sachversicherer,Sachwete,Sanitas Multirente,Schweizer Kapitalanlagen,SDK,si,Signal,signal Iduna,Silber/Beteiligungen, LV Ankauf,Skandia,Sparkassen Versicherung,Sparkassenversicherung,Standard Life,Stiftungen,Strixner,Stuttgarter,Süddeutsche,Swiss Life,Thomas Lloyd,Tools,ü. DL Schulte,über Invers,ukasse,uniqua,Universa,v,vbk,vdsw,Vermögensverwaltung,Versicherungskammer Bayern,VGH,VHV,via Immobilien,Vienna Life,Volksfürsorge,Volkswohlbund,Volkswohl-Bund, Stuttgarter,Vorsorge,Vorsorge Lux,VPV,VV,VWB,Wechselt,Wechselt nach Rating,wenig,Württembergische,Würzburger,WWF,WWK,Zurich
+  - name: CompetitorRanking__c
+    value: first,second,third,fourth
+  - name: Reason__c
+    value: Premium < 50 Euro,Premium < 10.000 Euro,Premiuim Stability,Participations,Fund Variety,optional BU Cover,Commission Rates,Easy and understandable,Start-Up Premiums,Flexebility,Funds,Fundbased Tariffs,Low Net Premiums,Structure with low costs,Benefitial Rates,Good Acceptance Policies,High Maturity Values,High Guarantees,High Surrender Value,High Productrating,Commission Sacrifice Tariffs,Classic Coverage,Salesfriendly Presentation of Costs,Online Application,Fast Processing,Tariffs with guaranteed maturity value,Tariffs with extra Options,Tele-Interview,Competitor with highest revenue,Availability,Asset Management
+dePicklists:
+  - name: CompetitionArea__c
+    value: Bereich private Rente,Bereich Riester,Bereich Risiko BU,Bereich Risiko Kombiprodukte,Bereich Risiko GFV,Bereich Risiko Pflege,Bereich Risiko RLV,Bereich Risiko SKV,Bereich Rürup,Bereich Einmalbeitrag,Bereich bAV,Beliebte Gesellschaft
+  - name: CompetitorRanking__c
+    value: erster,vierter,zweiter,dritter
+  - name: Reason__c
+    value: Vermögensverwaltung,Verfügbarkeit,Günstige Prämien,Klassischer Deckungsstock,Courtage/Bewertung,Honorartarife,Umsatzstärkster Mitbewerber,Einfach und Verständlich,Schnelle Abwicklung,Flexibilität,Breite Fondsauswahl,Fondsbasierte Tarife,Fonds,Gute Annahmepolitik,Hohe Garantien,Hohe Ablaufleistung,Hohes Produktrating,Hohe RKW,Geringe Netto-Prämie,Online-Antrag,Beteiligungen,Beitragsstabilität,Beiträge < 10.000 Euro,Beitrag < 50 Euro,Kostenausweis vertriebsfreundlich,Einsteigertarife (Start-Up-Prämie),Günstige Kostenstruktur,Tarif-Extraoptionen,Tarife endfällige Garantien,Teleinterview,BU-Rente möglich
+removals:
+mandatory:
+  - name: AccountId__c
+  - name: MarkForDeletion__c
+  - name: Name
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsDeleted
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

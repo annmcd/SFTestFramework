@@ -1,0 +1,211 @@
+name: policy_application__c
+dataTypes:
+  - name: BatchId__c
+    value: Text(50)
+  - name: BiPROPartner__c
+    value: Picklist
+  - name: ClientZIPCode__c
+    value: Text(5)
+  - name: CommissionAgreement__c
+    value: Lookup(Commission Agreement)
+  - name: ContainsHandwriting__c
+    value: Checkbox
+  - name: CreatedById
+    value: Lookup(User)
+  - name: CreationTimeStamp__c
+    value: Date/Time
+  - name: DataSource__c
+    value: Text(200)
+  - name: DeletionDateTime__c
+    value: Date/Time
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: ExternalId__c
+    value: Text(255)
+  - name: FilenetDocId__c
+    value: Text(20)
+  - name: IsBiPRO__c
+    value: Checkbox
+  - name: IsEncrypted__c
+    value: Checkbox
+  - name: IsESignature__c
+    value: Checkbox
+  - name: IsGFV__c
+    value: Checkbox
+  - name: IsGFVShortHealthQuestions__c
+    value: Checkbox
+  - name: IsGroupApplication__c
+    value: Checkbox
+  - name: IsMagnum__c
+    value: Checkbox
+  - name: IsOnlineQuotes__c
+    value: Checkbox
+  - name: IsPaper__c
+    value: Checkbox
+  - name: isPDF__c
+    value: Checkbox
+  - name: IsTopUp__c
+    value: Checkbox
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: NumberOfProposals__c
+    value: Number(18, 0)
+  - name: PolicyApplication__c
+    value: Text(80)
+  - name: PolicyApplicationId__c
+    value: Number(18, 0)  (External ID)
+  - name: PolicyApplicationIsDeleted__c
+    value: Checkbox
+  - name: PolicyApplicationProduct__c
+    value: Text(20)
+  - name: ProposalEnteredBy__c
+    value: Text(50)
+  - name: SalesforceProduct__c
+    value: Lookup(Product)
+  - name: SinglePremiumAmount__c
+    value: Currency(16, 2)
+labels:
+  - name: BatchId__c
+    value: BatchId
+  - name: BiPROPartner__c
+    value: BiPRO Partner
+  - name: ClientZIPCode__c
+    value: Client ZIP Code
+  - name: CommissionAgreement__c
+    value: Commission Agreement
+  - name: ContainsHandwriting__c
+    value: Contains Handwriting
+  - name: CreatedById
+    value: Created By
+  - name: CreationTimeStamp__c
+    value: Created
+  - name: DataSource__c
+    value: DataSource
+  - name: DeletionDateTime__c
+    value: Deletion Date/Time
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: ExternalId__c
+    value: External ID
+  - name: FilenetDocId__c
+    value: Filenet Document ID
+  - name: IsBiPRO__c
+    value: BiPRO
+  - name: IsEncrypted__c
+    value: Encrypted
+  - name: IsESignature__c
+    value: E-Signature
+  - name: IsGFV__c
+    value: GFV
+  - name: IsGFVShortHealthQuestions__c
+    value: GFV (Short-Health-Questions)
+  - name: IsGroupApplication__c
+    value: Group-Application
+  - name: IsMagnum__c
+    value: Magnum
+  - name: IsOnlineQuotes__c
+    value: Online Quotes
+  - name: IsPaper__c
+    value: Paper
+  - name: isPDF__c
+    value: PDF
+  - name: IsTopUp__c
+    value: Top-Up
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: NumberOfProposals__c
+    value: Number of Proposals
+  - name: PolicyApplication__c
+    value: Policy Application
+  - name: PolicyApplicationId__c
+    value: PolicyApplicationId
+  - name: PolicyApplicationIsDeleted__c
+    value: Deleted
+  - name: PolicyApplicationProduct__c
+    value: Policy Application Product
+  - name: ProposalEnteredBy__c
+    value: Entered by
+  - name: SalesforceProduct__c
+    value: Salesforce Product
+  - name: SinglePremiumAmount__c
+    value: Single Premium Amount
+deLabels:
+  - name: BiPROPartner__c
+    value: BiPRO Partner
+  - name: ClientZIPCode__c
+    value: PLZ der Vers. Person
+  - name: CommissionAgreement__c
+    value: Courtagevereinbarung
+  - name: ContainsHandwriting__c
+    value: Handschrift
+  - name: CreationTimeStamp__c
+    value: Angelegt
+  - name: DeletionDateTime__c
+    value: Löschzeitpunkt
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: FilenetDocId__c
+    value: Filenet Dokumenten-Nr.
+  - name: IsBiPRO__c
+    value: BiPRO
+  - name: IsEncrypted__c
+    value: Verschlüsselt
+  - name: IsESignature__c
+    value: E-Signatur
+  - name: IsGFV__c
+    value: GFV
+  - name: IsGFVShortHealthQuestions__c
+    value: GFV (Kurzantrag)
+  - name: IsGroupApplication__c
+    value: Gruppen-Antrag
+  - name: IsMagnum__c
+    value: Magnum
+  - name: IsOnlineQuotes__c
+    value: Online-Quotes
+  - name: IsPaper__c
+    value: Papierantrag
+  - name: isPDF__c
+    value: PDF
+  - name: IsTopUp__c
+    value: Zuzahlung
+  - name: NumberOfProposals__c
+    value: Anzahl Anträge
+  - name: PolicyApplication__c
+    value: Neuantrag
+  - name: PolicyApplicationIsDeleted__c
+    value: Gelöscht
+  - name: PolicyApplicationProduct__c
+    value: Produkt (Eingangsbuch)
+  - name: ProposalEnteredBy__c
+    value: Eingegeben durch
+  - name: SalesforceProduct__c
+    value: Produkt
+  - name: SinglePremiumAmount__c
+    value: Einmalbeitrag
+picklists:
+  - name: BiPROPartner__c
+    value: (0) - Canada Life,(1) - Swiss Life Select,(2) - BlauDirekt,(3) - SoftFair,(4) - Telis,(5) - horbach,(6) - Jung DMS & Cie,(7) - maklersoftware,(8) - morgen & morgen,(9) - Franke & Bornberg,(16) - SBL,(22) - INVERS,(42) - xbAV Berater
+dePicklists:
+removals:
+mandatory:
+  - name: ContainsHandwriting__c
+  - name: IsBiPRO__c
+  - name: IsEncrypted__c
+  - name: IsESignature__c
+  - name: IsGFV__c
+  - name: IsGFVShortHealthQuestions__c
+  - name: IsGroupApplication__c
+  - name: IsMagnum__c
+  - name: IsOnlineQuotes__c
+  - name: IsPaper__c
+  - name: isPDF__c
+  - name: IsTopUp__c
+  - name: MarkForDeletion__c
+  - name: PolicyApplicationIsDeleted__c
+  - name: CreatedDate
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: OwnerId
+  - name: SystemModstamp
+encryptedFields:
+restrictedPickLists:

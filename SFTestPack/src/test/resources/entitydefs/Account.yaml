@@ -1,0 +1,485 @@
+name: account
+dataTypes:
+  - name: AccountHasOptedOutOfEmail__c
+    value: Checkbox
+  - name: AccountHasOptedOutOfFax__c
+    value: Checkbox
+  - name: AccountHasOptedOutOfPhone__c
+    value: Checkbox
+  - name: AccountId__c
+    value: Number(12, 0)  (External ID)
+  - name: AccountType__c
+    value: Picklist
+  - name: AddressAddition1__pc
+    value: Text(40)
+  - name: AddressAddition2__pc
+    value: Text(40)
+  - name: AdvisingProduct__pc
+    value: Picklist
+  - name: AdvisingTopic__pc
+    value: Picklist
+  - name: AnnualCaseCountFactor__c
+    value: Number(6, 0)
+  - name: BatchId__c
+    value: Text(50)
+  - name: BatchId__pc
+    value: Text(50)
+  - name: BrokerComment__pc
+    value: Text(255)
+  - name: BrokerConsultantAccount__c
+    value: Lookup(Broker Consultant Account)
+  - name: BrokerStatus__c
+    value: Picklist
+  - name: BusinessEmail__c
+    value: Text(80)
+  - name: BusinessMobile__c
+    value: Phone
+  - name: BusinessResponsible__c
+    value: Lookup(User)
+  - name: Classification__c
+    value: Picklist
+  - name: CommentCLE__pc
+    value: Text(255)
+  - name: CommissionAgreement__pc
+    value: Text(80)
+  - name: CompanyName__pc
+    value: Text(255)
+  - name: ContactableFromTo__pc
+    value: Text(80)
+  - name: ContactId__pc
+    value: Text(255)
+  - name: ContactSource__pc
+    value: Picklist
+  - name: DataSource__c
+    value: Text(200)
+  - name: DataSource__pc
+    value: Text(200)
+  - name: DateOfBirth__pc
+    value: Date
+  - name: DietaryRequirement__pc
+    value: Text(200)
+  - name: EndAge__pc
+    value: Number(2, 0)
+  - name: ETLVersion__c
+    value: Text(10)
+  - name: ETLVersion__pc
+    value: Text(10)
+  - name: EventID__pc
+    value: Text(20)
+  - name: Fax
+    value: Fax
+  - name: Gender__pc
+    value: Picklist
+  - name: HasContractWithCLE__pc
+    value: Checkbox
+  - name: HeadAccount__c
+    value: Lookup(Account)
+  - name: HeadAccountName__c
+    value: Formula (Text)
+  - name: Housenumber__pc
+    value: Text(10)
+  - name: IHKNumber__c
+    value: Text(80)
+  - name: IsProductive__c
+    value: Formula (Number)
+  - name: ISuitePartnerId__pc
+    value: Text(20)
+  - name: LeadSource__pc
+    value: Picklist
+  - name: LeadType__pc
+    value: Picklist
+  - name: LongAddress__pc
+    value: Text(255)
+  - name: MarkForDeletion__c
+    value: Checkbox
+  - name: MasterRecordId
+    value: Lookup(Account)
+  - name: Name
+    value: Name
+  - name: NeedHotelroom__pc
+    value: Checkbox
+  - name: OfficeNumber__c
+    value: Text(255)
+  - name: OwnerId
+    value: Lookup(User)
+  - name: ParagraphNumber__c
+    value: Text(30)
+  - name: ParentId
+    value: Hierarchy
+  - name: PartnerNumber__c
+    value: Text(20)  (Unique Case Insensitive)
+  - name: PaxusPartnerId__pc
+    value: Text(20)
+  - name: PersonContactId
+    value: Lookup(Contact)
+  - name: PersonEmail
+    value: Email
+  - name: PersonEmail__c
+    value: Email
+  - name: PersonIndividualId
+    value: Lookup(Individual)
+  - name: PersonMailingAddress
+    value: Address
+  - name: PersonMobilePhone
+    value: Phone
+  - name: PersonTitle
+    value: Text(80)
+  - name: Phone
+    value: Phone
+  - name: PolicyContactId__c
+    value: Number(12, 0)  (External ID) (Unique)
+  - name: PreferredContactType__pc
+    value: Picklist
+  - name: RecordTypeId
+    value: Record Type
+  - name: Region__c
+    value: Formula (Text)
+  - name: Salutation__c
+    value: Picklist
+  - name: SecurityIndicator__c
+    value: Picklist
+  - name: Sic
+    value: Text(20)
+  - name: SicDesc
+    value: Text(80)
+  - name: StartdateLead__pc
+    value: Date
+  - name: SumInsured__pc
+    value: Currency(18, 0)
+  - name: SumPension__pc
+    value: Currency(18, 0)
+  - name: UserRecordAccessId
+    value: Lookup(User Record Access)
+  - name: VVIDNumber__pc
+    value: Text(18)
+  - name: Website
+    value: Url(255)
+  - name: CreatedById
+    value: Lookup(User)
+  - name: CreatedDate
+    value: Date/Time
+  - name: IsDeleted
+    value: Checkbox
+  - name: IsPersonAccount
+    value: Checkbox
+  - name: LastModifiedById
+    value: Lookup(User)
+  - name: LastModifiedDate
+    value: Date/Time
+  - name: MarkForDeletion__pc
+    value: Checkbox
+  - name: Outdated__pc
+    value: Checkbox
+  - name: OwnerId
+    value: Lookup(User)
+  - name: PersonDoNotCall
+    value: Checkbox
+  - name: PersonHasOptedOutOfEmail
+    value: Checkbox
+  - name: PersonHasOptedOutOfFax
+    value: Checkbox
+  - name: SystemModstamp
+    value: Date/Time
+labels:
+  - name: AccountHasOptedOutOfEmail__c
+    value: Email Opt Out
+  - name: AccountHasOptedOutOfFax__c
+    value: Fax Opt Out
+  - name: AccountHasOptedOutOfPhone__c
+    value: Phone Opt Out
+  - name: AccountId__c
+    value: Account ID
+  - name: AccountType__c
+    value: Account Type
+  - name: AddressAddition1__pc
+    value: Address Addition 1
+  - name: AddressAddition2__pc
+    value: Address Addition 2
+  - name: AdvisingProduct__pc
+    value: Advising Product
+  - name: AdvisingTopic__pc
+    value: Advising Topic
+  - name: AnnualCaseCountFactor__c
+    value: Annual Case Count Factor
+  - name: BatchId__c
+    value: BatchId
+  - name: BatchId__pc
+    value: BatchId
+  - name: BrokerComment__pc
+    value: Broker Comment
+  - name: BrokerConsultantAccount__c
+    value: Broker Consultant Account
+  - name: BrokerStatus__c
+    value: Broker Status
+  - name: BusinessEmail__c
+    value: Business Email
+  - name: BusinessMobile__c
+    value: Business Mobile
+  - name: BusinessResponsible__c
+    value: Broker Consultant
+  - name: Classification__c
+    value: Classification
+  - name: CommentCLE__pc
+    value: Comment CLE
+  - name: CommissionAgreement__pc
+    value: Commission Agreement
+  - name: CompanyName__pc
+    value: Company Name
+  - name: ContactableFromTo__pc
+    value: Contactable From To
+  - name: ContactId__pc
+    value: Contact ID
+  - name: ContactSource__pc
+    value: Contact Source
+  - name: DataSource__c
+    value: DataSource
+  - name: DataSource__pc
+    value: DataSource
+  - name: DateOfBirth__pc
+    value: Date Of Birth
+  - name: DietaryRequirement__pc
+    value: Dietary Requirement
+  - name: EndAge__pc
+    value: EndAge
+  - name: ETLVersion__c
+    value: ETLVersion
+  - name: ETLVersion__pc
+    value: ETLVersion
+  - name: EventID__pc
+    value: Event ID
+  - name: Fax
+    value: Fax
+  - name: Gender__pc
+    value: Gender
+  - name: HasContractWithCLE__pc
+    value: Has Contract with CLE
+  - name: HeadAccount__c
+    value: Head Account
+  - name: HeadAccountName__c
+    value: Head Account Name
+  - name: Housenumber__pc
+    value: Housenumber
+  - name: IHKNumber__c
+    value: IHK Number
+  - name: IsProductive__c
+    value: Is Productive
+  - name: ISuitePartnerId__pc
+    value: ISuitePartnerId
+  - name: LeadSource__pc
+    value: Lead Source
+  - name: LeadType__pc
+    value: Lead Type
+  - name: LongAddress__pc
+    value: Address
+  - name: MarkForDeletion__c
+    value: Mark For Deletion
+  - name: MasterRecordId
+    value: Account
+  - name: Name
+    value: Account Name
+  - name: NeedHotelroom__pc
+    value: Need Hotelroom
+  - name: OfficeNumber__c
+    value: Office Number
+  - name: OwnerId
+    value: Account Owner
+  - name: ParagraphNumber__c
+    value: Paragraph Number
+  - name: ParentId
+    value: Parent Account
+  - name: PartnerNumber__c
+    value: Partner Number
+  - name: PaxusPartnerId__pc
+    value: Paxus Partner ID
+  - name: PersonContactId
+    value: Person Account
+  - name: PersonEmail
+    value: Email
+  - name: PersonEmail__c
+    value: PersonEmail
+  - name: PersonIndividualId
+    value: Individual
+  - name: PersonMobilePhone
+    value: Mobile
+  - name: PersonTitle
+    value: Title
+  - name: Phone
+    value: Phone
+  - name: PolicyContactId__c
+    value: Policy Contact Id
+  - name: PreferredContactType__pc
+    value: Preferred Contact Type
+  - name: RecordTypeId
+    value: Account Record Type
+  - name: Region__c
+    value: Region
+  - name: Salutation__c
+    value: Salutation
+  - name: SecurityIndicator__c
+    value: Security Indicator
+  - name: Sic
+    value: SIC Code
+  - name: SicDesc
+    value: SIC Description
+  - name: StartdateLead__pc
+    value: Startdate Lead
+  - name: SumInsured__pc
+    value: Sum Insured
+  - name: SumPension__pc
+    value: Sum Pension
+  - name: UserRecordAccessId
+    value: Object Access Level
+  - name: VVIDNumber__pc
+    value: VVID Number
+  - name: Website
+    value: Website
+  - name: CreatedById
+    value: Created By
+  - name: CreatedDate
+    value: Created Date
+  - name: IsDeleted
+    value: Deleted
+  - name: IsPersonAccount
+    value: Is Person Account
+  - name: LastModifiedById
+    value: Last Modified By
+  - name: LastModifiedDate
+    value: Last Modified Date
+  - name: MarkForDeletion__pc
+    value: Mark For Deletion
+  - name: Outdated__pc
+    value: Outdated
+  - name: OwnerId
+    value: Account Owner
+  - name: PersonDoNotCall
+    value: Do Not Call
+  - name: PersonHasOptedOutOfEmail
+    value: Has opted out of Email
+  - name: PersonHasOptedOutOfFax
+    value: Has opted out of Fax
+  - name: SystemModstamp
+    value: System Modstamp
+deLabels:
+  - name: AccountHasOptedOutOfEmail__c
+    value: Keine E-Mails
+  - name: AccountHasOptedOutOfFax__c
+    value: Kein Fax
+  - name: AccountHasOptedOutOfPhone__c
+    value: Nicht anrufen
+  - name: AccountId__c
+    value: Geschäftspartner ID
+  - name: AccountType__c
+    value: GP Typ
+  - name: AnnualCaseCountFactor__c
+    value: Policen aktuelles Jahr
+  - name: BrokerConsultantAccount__c
+    value: VL/BD Konto
+  - name: BrokerStatus__c
+    value: GP-Status
+  - name: BusinessEmail__c
+    value: Email
+  - name: BusinessMobile__c
+    value: Mobil
+  - name: BusinessResponsible__c
+    value: VL/BD
+  - name: Classification__c
+    value: ABC Status
+  - name: DataSource__c
+    value: Datenquelle
+  - name: ETLVersion__c
+    value: ETL Version
+  - name: HeadAccount__c
+    value: Kopfvermittler
+  - name: HeadAccountName__c
+    value: Kopfvermittler
+  - name: IHKNumber__c
+    value: IHK Nummer
+  - name: OfficeNumber__c
+    value: Büro Nummer
+  - name: ParagraphNumber__c
+    value: Paragraphennummer
+  - name: PartnerNumber__c
+    value: Partner Nummer
+  - name: PersonEmail__c
+    value: E-Mail
+  - name: PolicyContactId__c
+    value: Kunden ID
+  - name: Region__c
+    value: Region
+  - name: Salutation__c
+    value: Anrede
+  - name: SecurityIndicator__c
+    value: Sicherheitsindikator
+picklists:
+  - name: AccountType__c
+    value: Central Key Account,Regional Key Account,Major Account,Premium Partner Program,Tandem Partner
+  - name: AdvisingProduct__pc
+    value: GENERATION basic,GENERATION business,GENERATION private,Flexibler Kapitalplan,Garantie Investment Rente,Schwere Krankheiten Vorsorge,RISIKOLEBEN komfort,RISIKOLEBEN optimal,Berufsunfähigkeitsschutz,Grundfähigkeitsversicherung,Premium Grundfähigkeitsversicherung
+  - name: AdvisingTopic__pc
+    value: Basisrente,Betriebliche Altersversorgung,Private Rente,Sofortrente,Berufsunfähigkeitsversicherung,Grundfähigkeitsabsicherung,Dread Disease/Schwere Krankheiten Vorsorge,Risikolebensversicherung
+  - name: BillingGeocodeAccuracy
+    value: Address,NearAddress,Block,Street,ExtendedZip,Zip,Neighborhood,City,County,State,Unknown
+  - name: BrokerStatus__c
+    value: Active,Inactive
+  - name: Classification__c
+    value: A,B,C,D
+  - name: ContactSource__pc
+    value: ISuite,Salesforce,Betreuungskompass,Outlook
+  - name: Gender__pc
+    value: male,female
+  - name: LeadSource__pc
+    value: Commercial,Customer Event,Employee Referral,Google AdWords,Others,Partner,Acquired List,Trade Fair,Webinar,Website
+  - name: LeadType__pc
+    value: Customer,Broker
+  - name: PersonMailingGeocodeAccuracy
+    value: Address,NearAddress,Block,Street,ExtendedZip,Zip,Neighborhood,City,County,State,Unknown
+  - name: PersonOtherGeocodeAccuracy
+    value: Address,NearAddress,Block,Street,ExtendedZip,Zip,Neighborhood,City,County,State,Unknown
+  - name: PreferredContactType__pc
+    value: email,phone,mobile
+  - name: Salutation__c
+    value: Mr.,Ms.,Mrs.,Dr.,Prof.
+  - name: SecurityIndicator__c
+    value: None,VIP,Secured Client,Employee
+  - name: ShippingGeocodeAccuracy
+    value: Address,NearAddress,Block,Street,ExtendedZip,Zip,Neighborhood,City,County,State,Unknown
+dePicklists:
+  - name: AccountType__c
+    value: Zentraler Key Account,Major Account,Premium Partner Programm,Regionaler Key Account,Tandem Partner
+  - name: BrokerStatus__c
+    value: Aktiv,Inaktiv
+  - name: Salutation__c
+    value: Dr.,Herr,Frau,Frau,Prof.
+  - name: SecurityIndicator__c
+    value: keine,VIP,gesicherter Partner,CLE Mitarbeiter
+removals:
+mandatory:
+  - name: AccountHasOptedOutOfEmail__c
+  - name: AccountHasOptedOutOfFax__c
+  - name: AccountHasOptedOutOfPhone__c
+  - name: HasContractWithCLE__pc
+  - name: MarkForDeletion__c
+  - name: NeedHotelroom__pc
+  - name: CreatedById
+  - name: CreatedDate
+  - name: IsDeleted
+  - name: IsPersonAccount
+  - name: LastModifiedById
+  - name: LastModifiedDate
+  - name: MarkForDeletion__pc
+  - name: Outdated__pc
+  - name: OwnerId
+  - name: PersonDoNotCall
+  - name: PersonHasOptedOutOfEmail
+  - name: PersonHasOptedOutOfFax
+  - name: SystemModstamp
+encryptedFields:
+  - name: DateOfBirth__pc
+  - name: FirstName
+  - name: LastName
+  - name: MiddleName
+  - name: Name
+  - name: PersonMailingAddress
+  - name: PersonMailingCity
+  - name: PersonMailingStreet
+restrictedPickLists:

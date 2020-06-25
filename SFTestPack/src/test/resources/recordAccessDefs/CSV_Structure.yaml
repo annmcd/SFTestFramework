@@ -1,0 +1,327 @@
+#This file is use to create the csv outline in the format required by SFBulkData. If records representing more than one region are required
+#they must be added to the region list
+
+#Regionlist reporesents the regions occupied by Regional Directors type directors, and Potentially BCs assigned to regionsif configured
+#records in CSVRecordData_broker_consultant.yaml are created
+##all owned by broker consultants
+#non regional directors are prefixed with 'Director'
+
+etlEntity: Region
+type: Region__c
+csv: Region.csv
+header: RegionId__c,Name
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: BrokerConsultantAccount
+type: Broker_Consultant_Account__c
+csv: BrokerConsultantAccount.csv
+header: BrokerConsultantAccountId__c,User:Owner.Username,Region__r.regionID__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: BrokerAccount
+type: Account
+csv: BrokerAccount.csv
+header: Name,AccountId__c,Owner.Username,BusinessResponsible__r.Username,BrokerConsultantAccount__r.BrokerConsultantAccountId__c,RecordType.Name,BrokerStatus__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: StatementBroker
+type: Statement_Broker__c
+csv: StatementBroker.csv
+header: BusinessAccount__r.AccountId__c,User:Owner.Username,StatementBrokerId__c,BrokerConsultantAccount__r.BrokerConsultantAccountId__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: central}
+  - { region: nrw}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: NewPolicy
+type: Contract
+csv: NewPolicy.csv
+header: Account.AccountId__c,policyId__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: Policy
+type: Contract
+csv: Policy.csv
+header: Owner.Username,PolicyNumber__c,BrokerConsultant__r.Username,Account.AccountId__c,PolicyId__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: CommissionPayments
+type: Commission_Payment__c
+csv: CommissionPayment.csv
+header: PaymentAmount__c,StatementDate__c,StatementBroker__r.StatementBrokerId__c,CommissionPaymentId__c,Name
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: CommissionAgreements
+type: Commission_Agreement__c
+csv: CommissionAgreement.csv
+header: User:Owner.Username,BusinessResponsible__r.Username,CommissionAgreementId__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: AgreementLineItem
+type: Agreement_Line_Item__c
+csv: AgreementLineItem.csv
+header: CommissionAgreement__r.CommissionAgreementId__c,AgreementLineItemId__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: PolicyApplication
+type: Policy_Application__c
+csv: PolicyApplication.csv
+header: CommissionAgreement__r.CommissionAgreementId__c,PolicyApplicationid__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: IHKNumber
+type: IHK_Number__c
+csv: IHKNumber.csv
+header: IHKNumber__c,Account__r.AccountId__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: Target
+type: Target__c
+csv: Target.csv
+header: TargetId__c,SalesPerson__r.Username,User:Owner.Username
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: Opportunity
+type: Opportunity
+csv: Opportunity.csv
+header: Account.AccountId__c,OpportunityId__c,Name,StageName,CloseDate,Pricebook2.Name
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: OpportunityLineItem
+type: OpportunityLineItem
+csv: OpportunityLineItem.csv
+header: APEItemId__c,Opportunity.OpportunityId__c,PolicyNumber__r.PolicyId__c,Quantity,TotalPrice,Product2.ProductId__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+---
+etlEntity: ISuiteTask
+type: iSuite_Task__c
+csv: ISuiteTask.csv
+header: ISuiteTaskid__c,User:Owner.Username,PolicyNumber__r.PolicyId__c
+regionList:
+  - { region: nord}
+  - { region: bayern}
+  - { region: nrw}
+  - { region: central}
+  - { region: bawu}
+  - { region: mitte}
+  - { region: regionale ka}
+  - { region: kooperationen 1}
+userRoleList:
+  - { userRole: ZKA 1}
+  - { userRole: ZKA 2}
+  - { userRole: ZKA 3}
+  - { userRole: Admin}
+  - { userRole: Sales}
+  - { userRole: Sales Channel Management}
+
+
+
+
+

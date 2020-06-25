@@ -1,0 +1,19 @@
+ruleName: Share_All_Contact_Brokers
+ruleLabel: Share All Contact Brokers
+type: Criteria
+object: Contact
+sharingRule:
+  - { field: "ContactSource__c", operator: "equals", value: "ISuite,Betreuungskompass,Salesforce"}
+access:
+  - { defaultAccess: "Edit" , contactAccess: "", opportunityAccess: "", caseAccess: "" ,sharedWith: ""}
+---
+ruleName: Share_All_Contact_Brokers
+ruleLabel: Share All Contact Brokers
+type: Criteria
+object: Contact
+sharingRule:
+  - { field: "ContactSource__c", operator: "equals", value: "ISuite,Betreuungskompass,Salesforce"}
+access:
+  - { defaultAccess: "Edit" , contactAccess: "", opportunityAccess: "", caseAccess: "" ,sharedWith: ""}
+#No contact opportunity contact case acecss on Contacts but they are on the model so ignore,
+#Rule is repeated as snake serialisation for multiples throws exception when one instance only
