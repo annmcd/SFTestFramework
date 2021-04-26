@@ -14,7 +14,7 @@
         <surefire-version>2.18</surefire-version>
         <slf4j-version>1.7.5</slf4j-version>
         <sfobjectmodel.version>1.2.4-SNAPSHOT</sfobjectmodel.version>
-        <commons-io-version>2.5</commons-io-version>
+        <commons-io-version>2.7</commons-io-version>
         <screenplay-webdriver-version>2.0.90</screenplay-webdriver-version>
         <serenity-cucumber-version>1.9.20</serenity-cucumber-version>
         <lambdaj-version>2.3.3</lambdaj-version>
